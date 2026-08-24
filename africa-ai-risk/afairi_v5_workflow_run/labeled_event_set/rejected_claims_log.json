@@ -1,0 +1,52 @@
+[
+  {
+    "country": "Nigeria",
+    "description": "Reporting on Nigeria's expanding AI/data-center buildout (installed IT load projected to exceed 150MW by 2027) flags strain on already-limited Lagos w",
+    "reasoning": "Checked the cited primary source directly (the ACM SIGCAS/SIGCHI 2025 water-efficiency paper) and the Nairametrics article itself.\n\nKey findings that undermine the claim:\n1. The ACM SIGCAS/SIGCHI paper explicitly does NOT include Nigeria among its analyzed countries for water-consumption-per-inferen"
+  },
+  {
+    "country": "Tanzania",
+    "description": "In May 2025, hackers compromised Tanzanian government social media accounts (police account posted pornographic images; falsely announced President Sa",
+    "reasoning": "Confirmed the underlying event: on May 20-21, 2025, Tanzania Police Force's X account, Airtel Tanzania, Tanzania Revenue Authority YouTube, Tanzania Investment Centre, and Simba SC accounts were hacked, with the police account posting pornographic images and falsely announcing President Samia Suluhu"
+  },
+  {
+    "country": "Zambia",
+    "description": "INTERPOL's Operation Serengeti 2.0 dismantled a Zambia-based cybercrime/scam network implicated in AI-assisted fraud (synthetic identities, deepfake-e",
+    "reasoning": "The core facts (Zambia, ~65,000 victims, ~$300M in losses via a crypto investment fraud scheme, part of Operation Serengeti 2.0) are confirmed by INTERPOL's own press release. However, the AI-specific claims in the description (synthetic identities, deepfake voice cloning) are NOT present in that pr"
+  },
+  {
+    "country": "Iraq",
+    "description": "A cyber team affiliated with Iran-backed militias in Iraq claimed three cyberattacks, the first targeting a joint Israeli-American AI project/company ",
+    "reasoning": "Could not fetch the MEMRI page directly (403), but WebSearch surfaced its content, and I searched broadly for independent corroboration (news outlets, security researchers, incident-response reports) referencing this specific June 7, 2024 claim of an attack on a \"joint Israeli-American AI project\" b"
+  },
+  {
+    "country": "Yemen",
+    "description": "Houthi forces in Yemen fielded drones (e.g., the platform used in the July 19 2024 Tel Aviv strike and the Sept 24 2025 Eilat strike) that reportedly ",
+    "reasoning": "Searched for primary/technical sources beyond the Wikipedia aggregation: the Sanaa Center's dedicated technical deep-dive on Houthi drone technology (Jan-Mar 2025 Yemen Review) and Jerusalem Post's analysis of how Houthis evaded Israeli air defenses in the Eilat attack. Neither mentions AI, machine "
+  },
+  {
+    "country": "Yemen",
+    "description": "AQAP (based in Yemen) continued producing its English-language Inspire magazine (revived late 2023) for Western-audience recruitment/incitement, inclu",
+    "reasoning": "Searches confirm AQAP's Inspire magazine has been highly active 2024-2025 (11th edition in Oct 2024, covering the Manchester synagogue attack), per Soufan Center, WaterISAC, and UN letters. Separately, ICCT, Atlantic Council, and CTC West Point sources document jihadist groups broadly (ISIS, al-Qaed"
+  },
+  {
+    "country": "Yemen",
+    "description": "Reporting on facial-recognition and biometric technology diffusion notes Yemen among countries where such tools (used in the context of male-guardians",
+    "reasoning": "Searched for corroboration of AI/facial-recognition/biometric tools used for male-guardianship enforcement in Yemen. Found nothing: search results on Yemen guardianship focus entirely on Houthi-imposed mahram (male chaperone) travel restrictions on female aid workers (Arab News, More to Her Story) w"
+  },
+  {
+    "country": "Lebanon",
+    "description": "Iranian state-linked outlet (IRNA) reported that Hezbollah used AI to help drones evade Israeli missile-defense systems during attacks against Israel ",
+    "reasoning": "The cited GlobalSecurity.org reproduction of the June 15, 2024 IRNA piece could not be fetched directly (403), but its content is corroborated across multiple search results, all converging on the same thin sourcing: the article says Hezbollah is using AI to help drones evade Israeli missile defense"
+  },
+  {
+    "country": "Lebanon",
+    "description": "A coordinated campaign attributed to Hezbollah supporters used AI-generated/manipulated images to mock and target Lebanon's Maronite Patriarch, part o",
+    "reasoning": "The core factual claim (Hezbollah-supporter campaign using AI-generated/manipulated images to mock Maronite Patriarch Bechara Boutros al-Rai) is real and multiply corroborated by independent outlets (CathNews, EWTN, National Catholic Register, Catholic World Report, Gaudium Press, plus contemporaneo"
+  },
+  {
+    "country": "Lebanon",
+    "description": "An Iranian state-linked outlet (IRNA) reported in June 2024 that Hezbollah used AI to help its drones evade Israeli missile-defense systems during att",
+    "reasoning": "I could not access the GlobalSecurity.org page directly (403) or the MEMRI page directly (403), but search-engine summaries of both were consistent: a June 15, 2024 IRNA (Islamic Republic News Agency, Iranian state media) report claimed Hezbollah is using AI to help its drones evade Israeli missile-"
+  }
+]
