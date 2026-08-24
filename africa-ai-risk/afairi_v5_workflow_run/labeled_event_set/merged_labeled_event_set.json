@@ -1,0 +1,1341 @@
+[
+  {
+    "country": "Egypt",
+    "events": {
+      "country": "Egypt",
+      "positive_events": [],
+      "negative_domains_checked": [
+        {
+          "domain": "biosecurity/DNA-synthesis-screening",
+          "search_summary": "Prior AFAIRI v4 work flagged a governance gap (no DNA-synth screening regulation) but explicitly no confirmed compliance data and no documented incident. No new incident found this session."
+        },
+        {
+          "domain": "financial/fraud (AI voice cloning, deepfake scams)",
+          "search_summary": "Searched 'Egypt AI voice cloning scam victim news' and general deepfake fraud 2025-2026 queries. Results are all global/US-focused (FBI $893M loss figures, US victim cases); no Egypt-specific named victim, outlet report, or dated incident surfaced."
+        },
+        {
+          "domain": "disinformation/political manipulation",
+          "search_summary": "Searched Egypt AI-generated disinformation. Found Egypt's own government AI fact-checking platform (The National, Dec 2025) and historical (pre-AI, 2019-2024) coordinated-inauthentic-behavior campaigns, but no incident where AI was documented as causing a realized harm (e.g., a viral AI deepfake that triggered unrest, a specific prosecution tied to AI-generated content). Not a confirmed positive."
+        },
+        {
+          "domain": "environmental (AI compute siting / grid / water strain)",
+          "search_summary": "Searched Egypt data center AI water/electricity grid strain. Found general MENA regional analysis and Egypt's role as a data-transit corridor (subsea cables), but no documented case of an Egyptian AI data center causing measurable grid or water strain."
+        },
+        {
+          "domain": "cybersecurity (AI-enabled attacks)",
+          "search_summary": "Searched Egypt AI cybersecurity attack/bank. Found general rising cyberattack trend commentary and the 2023-era 'EG Leaks'/Egypt Leaks hacktivist financial data breach, but no source attributing that breach or any other specific incident to AI as a contributing factor."
+        },
+        {
+          "domain": "neuropsychological/behavioral manipulation (AI chatbot harm)",
+          "search_summary": "Searched Egypt AI chatbot harmful advice/lawsuit. Only US-based chatbot lawsuits (OpenAI/Character.AI) surfaced; no Egypt-linked case found."
+        }
+      ],
+      "domains_not_searched": [
+        "biosecurity beyond DNA-synthesis governance (e.g., AI-assisted pathogen research misuse in Egyptian labs specifically)",
+        "labor/economic displacement harms attributed to AI in Egypt",
+        "AI-enabled surveillance/censorship harms to specific named individuals in Egypt (only general disinformation-law context was checked, not individual case documentation)",
+        "AI in critical infrastructure/industrial control incidents in Egypt",
+        "Arabic-language local news sources (all searches were English-language via WebSearch tool; an Arabic-language pass was not conducted and could surface region-specific reporting missed here)"
+      ]
+    },
+    "verdict": {
+      "country": "Egypt",
+      "overall_risk": "low",
+      "positive_event_audit": [],
+      "negative_label_audit": "Mixed quality, generally acceptable but uneven rigor. Most entries (financial fraud, disinformation, environmental, cybersecurity, neuropsychological/chatbot) describe genuine, specific search queries with named sources checked and an explicit account of what was found (even if off-target/global) versus not found \u2014 this is real absence-of-evidence, not just an assertion. The disinformation entry is the most substantive, correctly distinguishing \"AI fact-checking platform exists\" and \"pre-AI CIB campaigns exist\" from \"AI caused a realized harm,\" which is good calibration. The weakest entry is biosecurity/DNA-synthesis-screening: it leans entirely on a prior AFAIRI v4 governance-gap flag rather than describing any search performed this session beyond \"no new incident found\" \u2014 this is closer to a recycled assertion than a fresh genuine search, and should be flagged for a real re-check rather than accepted at face value. The domains_not_searched list is honestly disclosed (including the important caveat that all searches were English-language only, missing Arabic-language local sources), which is a strength for calibration purposes \u2014 it doesn't disguise gaps as thoroughness. Overall: no positive events are claimed (list is empty), so there is no overclaiming risk on the positive side; the negative-domain checks are mostly genuine but the biosecurity entry and the English-only search limitation mean this entry likely undercounts true incidence and should be treated as low-confidence null rather than confirmed null, especially given Egypt's size and the acknowledged Arabic-language blind spot."
+    }
+  },
+  {
+    "country": "Nigeria",
+    "events": {
+      "country": "Nigeria",
+      "positive_events": [
+        {
+          "domain": "terrorism/security",
+          "year": "2026",
+          "description": "Juelich/Cambridge field study: 57 interviews with 27 former Boko Haram/ISWAP members documenting institutionalized use of ChatGPT/Claude/Gemini/Grok/DeepSeek for bomb-making guidance, jailbreak circumvention, and battlefield tactics.",
+          "source": "Juelich/Cambridge field study (prior confirmed work, reused per task instructions, not re-derived)",
+          "confidence": "reused_from_v5"
+        },
+        {
+          "domain": "financial/fraud",
+          "year": "2025-2026",
+          "description": "AI-generated deepfake videos of prominent Nigerians (Ibukun Awosika debunked fake AI videos in Jan 2026; Ngozi Okonjo-Iweala warned of an AI-generated video falsely promoting an investment opportunity in Feb 2026) used to push fake investment platforms, crypto schemes and giveaway scams; SEC Nigeria issued a formal alarm over AI-generated investment scams (Sept 2025). Fraudsters also use deepfake video/voice cloning to bypass bank KYC liveness checks during remote onboarding.",
+          "severity_note": "Nigeria's instant-payment fraud losses rose 603% to \u20a63.29 billion in Q1 2025 (broader fraud figure; AI-specific share not separately broken out in sources)",
+          "source": "Businessday NG; AllAfrica (SEC Nigeria); Techpoint Africa",
+          "source_url": "https://businessday.ng/technology/article/ai-deepfake-fraud-surges-across-africa-as-firms-race-to-stop-new-scams/ ; https://allafrica.com/stories/202509290675.html ; https://techpoint.africa/guide/nigeria-bank-fraud-ai-deepfake-identity/",
+          "confidence": "confirmed"
+        },
+        {
+          "domain": "cyber",
+          "year": "2025-2026",
+          "description": "INTERPOL's African cyberthreat assessment (reported Aug 2026) found AI implicated in 55% of reported cybercrime incidents across Africa, with Nigeria among the top-5 most-targeted countries in the Middle East/Turkey/Africa region: 1.6 million online cyberattack attempts in H1 2026, 4,388 attacks/week since the start of 2025. Nigeria accounted for 29% of Africa's business email compromise (BEC) detections in 2025, with AI used to replicate executives' writing style, internal language and digital signatures for BEC phishing.",
+          "severity_note": "Nigeria lost \u20a61.1 trillion (~$805M) to cybercrime across banks, telecom and government agencies 2017-2023; AI-driven attacks on the financial sector reportedly surged 150% year-over-year (figure as reported, not independently verified)",
+          "source": "Help Net Security (INTERPOL Africa cybercrime trends, Aug 5 2026); Businessday NG; BISI report \"The Rising Threat of AI-Powered Cybercrime in Nigeria\"",
+          "source_url": "https://www.helpnetsecurity.com/2026/08/05/interpol-africa-cybercrime-trends/ ; https://businessday.ng/technology/article/nigeria-battles-1-6m-online-cyberattacks-in-h1-2026-as-ai-threats-escalate/ ; https://bisi.org.uk/reports/the-rising-threat-of-ai-powered-cybercrime-in-nigeria",
+          "confidence": "confirmed"
+        },
+        {
+          "domain": "neuropsychological/behavioral manipulation",
+          "year": "2025",
+          "description": "Retrospective clinical audit at J-Shalom Hospital (Ibadan, Nigeria primary-care/psychiatry clinic), 28 consecutive patients presenting with anxiety, depression or stress (April-Aug 2025): 67.9% reported technology stress, 42.9% identified AI-specific stressors (chatbot distress most common), and 3 patients (25.0% of the AI-stressor subgroup) reported worsening suicidal ideation associated with AI/chatbot use.",
+          "severity_note": "n=28 single-site retrospective audit; 3 patients with worsening suicidal ideation \u2014 small sample, needs replication before generalizing as population-level harm",
+          "source": "Research letter, \"AI-Related Stress and Suicidal Tendencies in a Primary Care\" clinic, Ibadan, Nigeria",
+          "source_url": "https://ojphi.jmir.org/2026/1/e84661/PDF",
+          "confidence": "confirmed"
+        },
+        {
+          "domain": "information integrity / election manipulation",
+          "year": "2023, 2026-2027 (ongoing)",
+          "description": "Nigeria's 2023 general election featured AI-generated/deepfake media used for campaigning, including a doctored video giving a manipulated voiceover to a Feb 2023 Nigerian Economic Summit Group Dialogue clip to mock candidate Bola Tinubu, plus fabricated celebrity-endorsement videos (Elon Musk, Donald Trump) for candidate Peter Obi. Nigeria's Data Protection Commission (NDPC) and researchers are now warning of \"AI swarms\" (coordinated bot/deepfake networks) as a live threat heading into the 2027 general election.",
+          "severity_note": "2023 incidents are documented as realized (occurred during the actual election cycle); 2027 material is prospective/warning-stage, not yet a realized event",
+          "source": "Dubawa; Legit.ng; Technology Times NG; Techpoint Africa",
+          "source_url": "https://dubawa.org/ai-generated-disinformation-looms-ahead-of-nigerias-2027-elections/ ; https://www.legit.ng/editorial/opinion/1700342-how-malicious-ai-swarms-threaten-nigerias-2027-elections/ ; https://technologytimes.ng/ndpc-ai-disinformation-threatens-2027-elections/",
+          "confidence": "confirmed"
+        }
+      ],
+      "negative_domains_checked": [
+        {
+          "domain": "biosecurity (AI-assisted pathogen/bioweapon incident)",
+          "search_summary": "Searched for Nigeria + AI + biosecurity/biological weapon/pathogen incidents. Found only general risk-landscape commentary (AI-biosecurity convergence papers, historical 1963-1977 Ibadan Virus Research Laboratory incidents predating AI) and no documented case of AI contributing to a realized biosecurity harm in Nigeria. Treated as a genuine, actively-searched absence, not an unchecked gap \u2014 though the domain is thin online and could hide non-public incidents."
+        }
+      ],
+      "domains_not_searched": [
+        "labor/economic displacement harms specifically attributed to AI in Nigeria",
+        "AI in critical infrastructure/industrial safety failures (oil & gas, power grid control systems) in Nigeria",
+        "AI-enabled human trafficking or child exploitation content in Nigeria",
+        "legal/judicial AI misuse (fabricated case citations, algorithmic bias in Nigerian courts or lending decisions)"
+      ]
+    },
+    "verdict": {
+      "country": "Nigeria",
+      "overall_risk": "medium",
+      "positive_event_audit": [
+        {
+          "description": "Terrorism/security: Juelich/Cambridge Boko Haram/ISWAP field study",
+          "citation_quality": "reject",
+          "note": "No checkable citation at all in this entry \u2014 source field literally says 'reused per task instructions, not re-derived' with no author names, publication venue, date, or URL. Flagged confidence 'reused_from_v5' is not a citation, it's a provenance stub pointing outside this document. This is exactly the pattern of an unverifiable claim riding on the credibility of an earlier, unseen pass. Should not enter a calibration dataset without the underlying study (authors, journal/preprint venue, date, URL) attached directly."
+        },
+        {
+          "description": "Financial/fraud: deepfake-driven investment scams, SEC Nigeria alarm, KYC bypass",
+          "citation_quality": "solid",
+          "note": "Named individuals with dated events (Awosika Jan 2026, Okonjo-Iweala Feb 2026, SEC Sept 2025), three named outlets each with a specific working URL. Appropriately hedges the \u20a63.29bn figure as broader fraud, not AI-specific."
+        },
+        {
+          "description": "Cyber: INTERPOL Africa cyberthreat assessment, BEC detections",
+          "citation_quality": "solid",
+          "note": "Specific dated report (Help Net Security, Aug 5 2026 write-up of INTERPOL assessment) plus two other named outlets with URLs and concrete stats. The 150% YoY figure is honestly flagged as reported-not-verified."
+        },
+        {
+          "description": "Neuropsychological: J-Shalom Hospital Ibadan clinical audit",
+          "citation_quality": "solid",
+          "note": "Specific single-site study with direct URL to what appears to be the actual research letter (ojphi.jmir.org). Small n=28 is disclosed as a limitation rather than hidden \u2014 good calibration practice."
+        },
+        {
+          "description": "Environmental: data-center water/power strain on Lagos",
+          "citation_quality": "weak_unpinned",
+          "note": "URLs are real and dated, but the entry's own severity_note admits no quantified Nigeria-specific harm figure exists in these sources \u2014 this is prospective risk/trend commentary, not a documented realized harm event. Citations are legitimate but don't support 'event' framing; should be downgraded or reclassified as a risk-trend note rather than a positive harm event."
+        },
+        {
+          "description": "Information integrity: 2023 election deepfakes + 2027 AI-swarm warnings",
+          "citation_quality": "solid",
+          "note": "Named fact-checking/tech outlets (Dubawa, Legit.ng, Technology Times, Techpoint) with URLs, specific dated 2023 incidents. Correctly separates realized 2023 events from prospective 2027 warnings rather than conflating them."
+        }
+      ],
+      "negative_label_audit": "Only one negative domain was actually checked (biosecurity) against a long list of four domains explicitly marked 'not searched' (labor/economic displacement, critical infrastructure/industrial safety, trafficking/child exploitation, legal/judicial AI misuse). For the one domain that was checked, the search_summary is a genuine search rather than a bare assertion \u2014 it names the search terms used, identifies what was actually found (risk-landscape papers, a pre-AI-era 1963-1977 incident), and explicitly flags the domain as 'thin online' with possible non-public incidents rather than declaring a confident null. That single entry meets the bar for a real check. However, the overall negative-domain coverage for this entry is very shallow: four plausible AI-harm domains for Nigeria were never searched at all, so the entry cannot support strong absence-of-evidence claims outside biosecurity, and the dataset should not treat unlisted domains as checked-and-clean."
+    }
+  },
+  {
+    "country": "Kenya",
+    "events": {
+      "country": "Kenya",
+      "positive_events": [
+        {
+          "domain": "financial/fraud",
+          "year": "2026",
+          "description": "A developer created and ran a fake 'AI investment fund' app that pulled in Sh34 million (~$260,000) from Kenyan investors; a suspect (surname Nyakango) was arrested May 4, 2026 at an I&M Bank branch on Kenyatta Avenue attempting to withdraw funds linked to the scheme.",
+          "source": "Business Daily Africa",
+          "source_url": "https://www.businessdailyafrica.com/bd/corporate/technology/app-developer-fake-ai-investment-fund-that-pulled-in-sh34m-5452124",
+          "confidence": "confirmed",
+          "severity_note": "Sh34 million (~$260,000 USD) defrauded from Kenyan investors"
+        },
+        {
+          "domain": "financial/fraud (deepfake/impersonation)",
+          "year": "2025-2026",
+          "description": "ESET's threat report on Kenya documents deepfake-driven fraud: a deepfake video impersonating a prominent Kenyan political figure promoted a fraudulent investment scheme; a deepfake of ODM leader Raila Odinga's X account posted fabricated crypto-promotion statements ('the Kenya token will soon launch'); and a Facebook deepfake used Safaricom CEO Peter Ndegwa's likeness/voice via a fake NTV anchor segment to promote a bogus M-Pesa project. Deepfake-related attacks now account for roughly 10% of tracked fraud attempts in Kenya.",
+          "source": "ESET Threat Report (reported via CIO Africa, Gadgets Africa, Biznakenya) and Kenyan Wall Street",
+          "source_url": "https://cioafrica.co/deepfake-scams-ai-malware-raise-cyber-risks-in-kenya/ ; https://kenyanwallstreet.com/deepfake-scam-raila-odinga-x-account-escalating-cryptocurrency-fraud/",
+          "confidence": "confirmed",
+          "severity_note": "~10% of tracked fraud attempts in Kenya now deepfake-related, per ESET; individual victim losses not itemized in these particular reports"
+        },
+        {
+          "domain": "cyber (AI-enabled phishing/social engineering)",
+          "year": "2024-2025",
+          "description": "Kenya's national CIRT (KE-CIRT/CC) reported a marked rise in AI-generated phishing attacks and deepfake scams making social-engineering harder to detect; identity-based attacks (phishing, credential theft, BEC) account for nearly half of Kenyan cyber incidents. Kenya lost approximately Ksh 29.9 billion to cybercrime in FY2024/2025 (AI cited as a contributing amplifier alongside non-AI cybercrime, not the sole cause of the total figure).",
+          "source": "allAfrica.com (KE-CIRT/CC reporting); AIpots cybersecurity report",
+          "source_url": "https://allafrica.com/stories/202503250591.html ; https://www.aipots.com/cybersecurity/kenya-ai-cybercrime-report-loss/",
+          "confidence": "confirmed",
+          "severity_note": "Ksh 29.9 billion (~$230M) total cybercrime loss Kenya FY2024/25 (AI-attributable share not isolated in source)",
+          "verification_reasoning": "Multiple independent Kenyan/African outlets (Kenya Times, Kenyan Wallstreet, TechTrends KE, GeoPoll, dawan.africa, Security Boulevard/Seceon) all report the same Ksh 29.9 billion cybercrime loss figure, sourced to the Africa Cybersecurity Report\u2014Kenya 2024/2025 by the Africa Cyber Immersion Centre (ACIC), not merely the single allAfrica.com article originally cited. Separately, CIO Africa and Techfolio KE independently report KE-CIRT/CC's own Q1 2025 finding of a sharp rise in AI-generated phishing and deepfake/voice-cloning scams (2.5 billion cyber threat events Jan-Mar 2025, a 201.85% increase), explicitly naming AI (deepfakes, voice cloning, AI-generated websites, fake reviews) as a documented contributing factor to social-engineering attacks, not merely speculative framing. The near-half identity-based-attack figure and AI-driven framing recur consistently across independent secondary sources converging on the same primary report/CIRT data, satisfying corroboration beyond the single originally-cited allAfrica article.",
+          "verified_primary_source": "Africa Cybersecurity Report\u2014Kenya 2024/2025 (Africa Cyber Immersion Centre/ACIC), reported via thekenyatimes.com, kenyanwallstreet.com, techtrendske.co.ke; plus KE-CIRT/CC Q1 2025 quarterly report (2.5bn cyber threat events, 201.85% increase) referenced by cioafrica.co and techfolio.co.ke",
+          "verified_primary_source_url": "https://thekenyatimes.com/sci-tech/cyber-security/report-exposes-how-kenya-lost-ksh29-9-billion-to-hackers/"
+        },
+        {
+          "domain": "environmental (AI-compute-siting strain on grid/water)",
+          "year": "2026",
+          "description": "Microsoft's proposed $1B Microsoft-G42 AI data centre in Olkaria near Lake Naivasha stalled in May 2026 over power-grid capacity concerns (Kenya's peak demand ~3,000MW is close to installed capacity); local reporting (Al Jazeera, Aug 24 2026) raises community concern over added water-abstraction pressure on Lake Naivasha, whose catchment already faces shortages amid agriculture/tourism/population growth demands. This is a projected/contested strain (project stalled, not yet operating), not a completed realized harm.",
+          "source": "Al Jazeera; TechRadar; Citizen Digital",
+          "source_url": "https://www.aljazeera.com/economy/2026/8/24/can-kenyas-ai-ambitions-coexist-with-naivashas-water-needs ; https://www.techradar.com/pro/microsofts-usd1-billion-kenya-ai-data-center-project-hits-a-major-hurdle-as-the-government-says-it-would-require-switching-off-half-the-country-to-meet-power-needs",
+          "confidence": "confirmed",
+          "severity_note": "Project scale up to 1GW proposed; power-grid strain cited as reason for stall (government said would require switching off half the country's power to meet needs) \u2014 a policy/planning constraint, not yet a realized harm event",
+          "verification_reasoning": "Multiple independent outlets (DataCenterDynamics, Khusoko, Tom's Hardware, Business Daily Africa, Techish Kenya, Winbuzzer) corroborate: the $1B Microsoft-G42 Azure/AI data centre planned at Olkaria near Lake Naivasha stalled in May 2026 specifically over power-grid capacity concerns, with President Ruto quoted saying Kenya would need to \"switch off power for half the country\" to run it. This is a direct AI-infrastructure siting event, not a speculative AI angle bolted onto an unrelated story \u2014 the project itself is an AI/cloud data center. The water-abstraction/Lake Naivasha community-concern angle is specifically covered by the Al Jazeera piece (the originally cited source), which is consistent with the grid-strain story found independently. No contradicting information found; the claim holds up well.",
+          "verified_primary_source": "DataCenterDynamics: \"Microsoft and G42 data center in Kenya stalled due to lack of power capacity\"",
+          "verified_primary_source_url": "https://www.datacenterdynamics.com/en/news/microsoft-and-g42-data-center-in-kenya-stalled-due-to-lack-of-power-capacity/"
+        },
+        {
+          "domain": "terrorism/security",
+          "year": "prior AFAIRI v5 pass",
+          "description": "CONFIRMED NEGATIVE (reused from prior pass): real Al-Shabaab cross-border terrorism activity exists in Kenya (GTI rank ~21) but no documented AI-tooling was found specifically implicated in that terrorism activity as of the v5 pass.",
+          "source": "AFAIRI v5 prior work product",
+          "source_url": "",
+          "confidence": "reused_from_v5",
+          "severity_note": ""
+        }
+      ],
+      "negative_domains_checked": [
+        {
+          "domain": "biosecurity / dual-use biotech (Kenya-specific)",
+          "search_summary": "Searched 'Kenya AI biosecurity dual-use biotech incident'; only found general global/regional governance commentary (PMC, Council on Strategic Risks, Foreign Affairs Forum) discussing biosecurity risk frameworks that mention Kenya's biotech sector abstractly. No specific realized AI-enabled biosecurity incident located in Kenya."
+        }
+      ],
+      "domains_not_searched": [
+        "election AI moderation (already covered in prior AFAIRI v4 pass per task instructions, not re-searched here)",
+        "neuropsychological/behavioral manipulation (e.g. AI-driven addictive app design, targeted radicalization via recommender systems) specific to Kenya",
+        "AI in Kenyan healthcare misdiagnosis/malpractice incidents",
+        "AI-enabled labor/gig-economy harms (e.g. content moderator exploitation, algorithmic management abuses) specific to Kenya despite Kenya being a major hub for this (Sama/OpenAI content moderator lawsuits) \u2014 this is a known, well-documented domain that was NOT searched in this pass and should not be treated as a negative",
+        "AI in agriculture/famine-prediction harms",
+        "military/defense AI use by Kenyan state actors"
+      ]
+    },
+    "verdict": {
+      "country": "Kenya",
+      "overall_risk": "medium",
+      "positive_event_audit": [
+        {
+          "description": "Fake AI investment fund app, Sh34M fraud, Business Daily Africa",
+          "citation_quality": "solid",
+          "note": "Named outlet, specific URL, specific arrest date (May 4 2026) and named suspect surname. Checkable single-article citation. This is the strongest entry in the set."
+        },
+        {
+          "description": "ESET deepfake fraud report (Odinga, Ndegwa impersonations)",
+          "citation_quality": "weak_unpinned",
+          "note": "Cites 'ESET Threat Report' but the actual links given are all secondary aggregators (CIO Africa, Kenyan Wall Street) summarizing it, not the primary ESET report itself (no report title/edition/date pinned). The '~10% of fraud attempts' stat is unsourced to a page number or table. Multiple distinct incidents (Odinga deepfake, Ndegwa/NTV deepfake) are bundled into one entry without individual dates, making each sub-claim hard to independently verify. Should be split and re-pinned to ESET's primary report before being trusted at 'confirmed' confidence -- the entry's own confidence field says 'confirmed' but the sourcing only supports 'weak_unpinned', an internal inconsistency worth flagging."
+        },
+        {
+          "description": "KE-CIRT/CC AI-phishing rise + Ksh29.9B cybercrime loss FY24/25",
+          "citation_quality": "weak_unpinned",
+          "note": "allAfrica.com is a re-syndication wire, not a primary source; no specific KE-CIRT/CC report title or publication date given. AIpots is a low-authority secondary aggregator. The entry itself is honest that the AI-attributable share of the Ksh29.9B is not isolated, and confidence is correctly downgraded to plausible_needs_verification -- but as written this should not be scored above weak_unpinned."
+        },
+        {
+          "description": "Microsoft-G42 Olkaria data centre stall, Lake Naivasha water strain",
+          "citation_quality": "solid",
+          "note": "Named outlets (Al Jazeera specific date Aug 24 2026, TechRadar) with working URLs; independently checkable. HOWEVER flag a categorization issue, not a citation issue: this is a projected/contested planning dispute about a not-yet-built facility, explicitly labeled by the entry itself as 'not yet a realized harm.' Including a non-realized, contested-strain event in a 'positive_events' (i.e., confirmed-harm) list for model calibration risks miscalibrating the model toward treating speculative infrastructure disputes as confirmed AI harms. Recommend either moving this to a separate 'anticipated/contested' bucket or clearly weighting it down in downstream calibration, distinct from citation quality which is fine."
+        },
+        {
+          "description": "Al-Shabaab terrorism, no AI tooling found (v5 reuse)",
+          "citation_quality": "reject",
+          "note": "This is not a positive (confirmed-harm) event at all -- it is a negative/null finding ('no documented AI-tooling was found'), mislabeled here as a positive_events entry. It also has no source_url and is a stale reuse from a prior pass with no re-verification date. This entry should be moved out of positive_events entirely (it belongs with negative_domains_checked or dropped), not counted toward Kenya's positive AI-harm event count."
+        }
+      ],
+      "negative_label_audit": "Mixed. The one item actually in negative_domains_checked (biosecurity/dual-use biotech) reflects a genuine search: it names the query string used, names the specific sources found (PMC, Council on Strategic Risks, Foreign Affairs Forum) and explains why they were judged insufficient (abstract/governance-level, not a realized incident). That is a real search, not an absence-of-search dressed as absence-of-evidence.\n\nHowever, the entry-set as a whole is thin on this front: only one domain was actually searched-and-cleared, while domains_not_searched lists five domains (gig-economy/content-moderator labor harms, neuropsych/behavioral manipulation, healthcare misdiagnosis, agriculture/famine-prediction, military/defense AI) that were NOT searched and are explicitly and correctly flagged as such rather than being silently folded into 'negative.' This disclosure is good practice and should be preserved -- but it means the dataset should NOT be read as having cleared Kenya across all AI-harm domains; it has only cleared one (biosecurity) and left several known-likely domains (esp. the Sama/OpenAI content-moderator labor-harm domain, which the entry itself flags as 'known, well-documented' and unsearched) genuinely open. Any downstream calibration use should treat Kenya's negative-domain coverage as sparse/incomplete, not as a clean sweep.\n\nAlso note the terrorism/security 'positive' entry (item 5 above) is functionally a second genuine negative-domain check (real Al-Shabaab activity, no AI-tooling implicated) but is filed in the wrong list, which understates the negative_domains_checked count and overstates positive_events."
+    }
+  },
+  {
+    "country": "South Africa",
+    "events": {
+      "country": "South Africa",
+      "positive_events": [
+        {
+          "domain": "financial/fraud",
+          "year": "2025",
+          "description": "TransUnion Africa reported a 1,200% year-over-year surge in deepfake-enabled fraud concentrated in South Africa's banking and fintech sector.",
+          "source": "TransUnion Africa, 2025 fraud report",
+          "confidence": "reused_from_v4",
+          "severity_note": "Already citation-audited in AFAIRI v4; this is the single strongest South Africa data point and should not be dropped even though this pass's agent focused its fresh search on other domains."
+        }
+      ],
+      "negative_domains_checked": [],
+      "domains_not_searched": []
+    },
+    "verdict": {
+      "country": "South Africa",
+      "overall_risk": "high",
+      "positive_event_audit": [],
+      "negative_label_audit": "The negative_domains_checked list is empty, so there is no genuine search evidence to evaluate \u2014 this is not a case of a well-documented absence-of-search, it is a total absence of any search record. Additionally domains_not_searched is also empty, which is itself a red flag: for a country as large and heavily covered as South Africa, claiming zero unsearched domains alongside zero checked domains and zero positive events strongly suggests this entry was never populated/researched at all rather than reflecting a genuine null result. This entry should be rejected/flagged for re-collection rather than treated as a validated \"no AI-harm events found\" record."
+    },
+    "note": "South Africa positive_events manually restored: the fresh-search agent focused on other domains per instructions and left this array empty rather than re-listing the already-established v4 case; that omission is corrected here."
+  },
+  {
+    "country": "Morocco",
+    "events": {
+      "country": "Morocco",
+      "positive_events": [],
+      "negative_domains_checked": [
+        {
+          "domain": "cybersecurity",
+          "search_summary": "Searched Morocco AI cyberattack incidents. Found the major 2025 CNSS social security data breach (attributed to JabaROOT/Algerian hackers, ~20.7M attack attempts H1 2025, 879 confirmed incidents) but this was a conventional hacking/political breach, not an incident where AI was documented as the causal harm mechanism. General mentions of 'AI-driven phishing' as a rising threat category exist but no specific realized AI-caused incident with a checkable date/outlet was found."
+        },
+        {
+          "domain": "neuropsychological/behavioral manipulation (chatbot harm)",
+          "search_summary": "Searched for Morocco-specific AI chatbot suicide/self-harm/psychosis incidents. Extensive global reporting exists (Character.AI, ChatGPT lawsuits, NPR Aug 2026 piece) but no Morocco-specific case was found."
+        },
+        {
+          "domain": "biosecurity",
+          "search_summary": "Searched Morocco AI bioweapon/biosecurity risk. Found only that Morocco's National Authority participated in an OPCW conference on AI in CWC implementation (governance discussion, not a realized harm event) and unrelated avian-influenza surveillance research. No realized incident found."
+        },
+        {
+          "domain": "environmental (AI compute siting strain on grid/water)",
+          "search_summary": "Searched Morocco AI data center water/electricity grid strain. Found large planned/under-construction projects (Iozera $500M Tetouan, Naver 500MW Tetouan) and general warnings that grid readiness may lag until 2035 and water use is a drought-related risk, but these are prospective/analytical concerns, not a documented realized grid failure, water shortage, or community harm event yet."
+        }
+      ],
+      "domains_not_searched": [
+        "governance/AFAIRI citation-quality issue (already flagged in prior work, not re-searched)",
+        "AI in policing/surveillance misuse",
+        "AI in healthcare misdiagnosis/patient harm",
+        "AI in labor/gig-economy algorithmic harm",
+        "AI in agriculture/water allocation algorithmic decisions",
+        "AI-enabled terrorism/attack planning specific to Morocco"
+      ]
+    },
+    "verdict": {
+      "country": "Morocco",
+      "overall_risk": "low",
+      "positive_event_audit": [],
+      "negative_label_audit": "The negative_domains_checked entries are genuine, differentiated searches rather than assertion-of-absence. Each entry names concrete adjacent facts found (CNSS breach with attribution and figures, OPCW conference participation, specific data center projects like Iozera/Naver with dollar amounts and MW), explicitly distinguishes them from a realized AI-causal harm event, and gives a specific reason for exclusion (conventional hacking not AI-caused; governance discussion not a harm event; prospective/analytical not a documented realized failure). This is the correct pattern for a negative label: it shows the search surfaced real, checkable near-misses and explains why each falls short of the positive-event bar, rather than a bare 'nothing found.' Weaknesses: none of the four summaries include specific outlet+date citations for the underlying facts they cite (e.g., the CNSS breach figures, the Iozera/Naver project details), so while the search process looks genuine, the entries themselves are not independently checkable from the text given \u2014 a spot-check against named sources is warranted before trusting the specifics. Also flagging that six domains are listed as not_searched at all (policing/surveillance, healthcare, labor/gig-economy, agriculture/water allocation, AI-enabled terrorism), which is honestly disclosed but means this entry is a partial negative-space audit, not a comprehensive one \u2014 the empty positive_events list should not be read as 'no AI harms in Morocco' but as 'no harms found in the four domains actually searched.'"
+    }
+  },
+  {
+    "country": "Tunisia",
+    "events": {
+      "country": "Tunisia",
+      "positive_events": [],
+      "negative_domains_checked": [
+        {
+          "domain": "terrorism/security (AFAIRI v5, reconfirmed)",
+          "search_summary": "Prior AFAIRI v5 pass found no documented incident. Fresh searches this pass (deepfake/election/surveillance queries) surfaced no realized terrorism/security AI-harm incident in Tunisia."
+        },
+        {
+          "domain": "financial/fraud",
+          "search_summary": "Searched Tunisia AI scam/fraud in English and French. Found general warnings: Tunisia's National Cybersecurity Agency (ANCS) issued a public alert (via RTCI/Tekiano, ~May 2026) about rising AI-enhanced phishing and social-engineering fraud targeting social media users, and a 26-person fraud/money-laundering ring was busted (La Presse de Tunisie, 2 May 2026) but that ring used fake accounts/hacking, not AI generation per the reporting. No specific named victim, loss figure, or single checkable AI-caused fraud incident was found \u2014 these are warnings/trend pieces, not a realized labeled event, so not counted as a positive."
+        },
+        {
+          "domain": "AI surveillance / facial recognition",
+          "search_summary": "Confirmed Tunis has deployed facial recognition surveillance (Security Vision wiki) and Tunisia's AI regulation framework discusses high-risk facial-recognition rules, but no documented harm incident (wrongful arrest, rights abuse tied to a specific case) was found in search results."
+        },
+        {
+          "domain": "election disinformation / deepfakes",
+          "search_summary": "Searched Tunisia 2024 election deepfake/Kais Saied AI-generated content. Sources (DFRLab, Arab Reform Initiative, Digital Action report) describe general disinformation dynamics and note AI-generated content was a 'growing threat' predominantly targeting women in the 2024 election season, but no single specific, dated, checkable deepfake incident with named target/outlet confirmation was pinned down in the snippets returned."
+        },
+        {
+          "domain": "voice cloning / impersonation scam",
+          "search_summary": "Searched for a Tunisia-specific named AI voice-clone scam case; results were all US/global examples (CNN, McAfee, BECU, CBS), none referencing Tunisia."
+        }
+      ],
+      "domains_not_searched": [
+        "biosecurity (AI-bio misuse)",
+        "neuropsychological/behavioral manipulation (targeted persuasion/mental-health harms)",
+        "environmental follow-up (Tunisia's July 2026 power crisis was found but no direct causal link to AI/data-center compute was established or searched further)",
+        "labor/algorithmic-management harms",
+        "healthcare/medical AI misdiagnosis incidents",
+        "autonomous vehicle/robotics incidents"
+      ]
+    },
+    "verdict": {
+      "country": "Tunisia",
+      "overall_risk": "low",
+      "positive_event_audit": [],
+      "negative_label_audit": "Mixed quality across the five negative domains. Terrorism/security: reconfirmation of a prior pass plus fresh targeted queries \u2014 acceptable, genuine search with a clear scope note. Financial/fraud: this is the strongest entry \u2014 it surfaces two concrete, dated, named sources (ANCS alert via RTCI/Tekiano ~May 2026; La Presse de Tunisie 2 May 2026 fraud-ring bust) and correctly reasons why neither qualifies as a labeled AI-caused incident (trend/warning piece, and a ring that used hacking/fake accounts rather than AI generation). That's genuine search with defensible negative reasoning, not bare assertion. AI surveillance/facial recognition: real evidence was found (Tunis facial-recognition deployment, AI regulatory framework) but the entry only asserts 'no documented harm incident' without describing what harm-specific queries were run (e.g., named wrongful-arrest cases, civil-society reports like Access Now/Article19 Tunisia trackers) \u2014 this reads as under-searched relative to the other domains; a stronger pass would show query terms and specific sources checked for harm, not just for deployment. Election disinformation/deepfakes: cites specific named outlets (DFRLab, Arab Reform Initiative, Digital Action) which is good, but concedes no single dated/checkable incident was pinned down \u2014 this is honestly reported as an unresolved trend claim rather than a confirmed negative, which is appropriately hedged but flags the domain as needing a follow-up pass rather than a clean absence. Voice cloning: genuine negative \u2014 specific Tunisia-targeted query returned only US/global cases, a real and checkable search, though shallow (only 4 English-language sources, no French-language query attempted despite Tunisia's French-language media ecosyston, unlike the fraud domain which explicitly went bilingual). Overall: the fraud and terrorism entries are credible searches; surveillance and voice-cloning are thinner (single-language, deployment-only for surveillance) but still represent genuine query attempts rather than pure assertion; disinformation is honestly flagged as inconclusive. The domains_not_searched list is transparently disclosed, which is a good practice and should be preserved as true gaps, not hidden as negatives."
+    }
+  },
+  {
+    "country": "Ghana",
+    "events": {
+      "country": "Ghana",
+      "positive_events": [
+        {
+          "domain": "financial/fraud (deepfake impersonation)",
+          "year": "2026",
+          "description": "Ghana Police Service's Cyber Vetting and Enforcement Team (CVET) arrested 11 suspects (5 Nigerian nationals, 6 Ghanaians) between May 1-4, 2026 across Sogakope, Dabala, Tongu, Akatsi and Aflao (Volta Region) for using AI-generated deepfake videos impersonating President John Dramani Mahama to defraud members of the public into sending money and disclosing sensitive information. Exhibits seized included 120 pre-registered SIM cards, laptops, routers, and a vehicle.",
+          "source": "Ghana News Agency, MyJoyOnline, Graphic Online, The Ghanaian Chronicle, OECD.AI incident tracker (entry 2026-05-07-b538)",
+          "source_url": "https://oecd.ai/en/incidents/2026-05-07-b538",
+          "severity_note": "Realized financial fraud harm to unspecified number of victims; no aggregate loss figure reported in sources found",
+          "confidence": "confirmed"
+        },
+        {
+          "domain": "information integrity / political disinformation",
+          "year": "2024-2025",
+          "description": "During Ghana's December 2024 general election, AI-generated content (text-to-image, text-to-audio, deepfakes, and branded 'news cards') was used to fuel political disinformation. Ghana's cybercrime unit logged 47 election-related cybercrime reports including 11 flagged as deepfake cases; three arrests were made though the prosecuted cases involved crude Photoshop rather than true AI-generated deepfakes, indicating the AI-labeled harm was real but partly unverified at the prosecution stage.",
+          "source": "WITNESS Blog (witness.org), Ghana Fact-Checking Coalition via CitiNewsroom, Media Foundation for West Africa (MFWA)",
+          "source_url": "https://blog.witness.org/2025/03/disinformation-ghana-2024-election/",
+          "severity_note": "47 cybercrime reports logged, 11 flagged as deepfake-related, 3 arrests (only low-sophistication cases confirmed prosecutable); no casualty/monetary figure",
+          "confidence": "confirmed"
+        },
+        {
+          "domain": "cybersecurity/financial fraud (AI-assisted, regional with Ghana-specific arrests)",
+          "year": "2025",
+          "description": "INTERPOL's African Cyberthreat Assessment reported AI now implicated in 55% of reported African cybercrime cases (automated phishing, deepfake-based identity fraud, synthetic identities bypassing KYC/biometric checks). Ghana-specific enforcement actions tied to this wave: 'Operation Contender 3.0' (28 Jul-11 Aug 2025) led to 68 arrests, 835 devices seized, 108 victims identified in Ghana; a separate raid on cybercrime centers at Tabora and Lashibi (Accra) by Cyber Security Authority, Ghana Police Service and Ghana Immigration Service arrested 141 suspects (mostly foreign nationals), seizing 38 laptops and 150 phones used in mobile money/wire fraud. Ghanaians lost an estimated $1.3 million to mobile money fraud (including SIM-swap) in Q1 2025 per INTERPOL.",
+          "source": "INTERPOL, OCCRP, NewsGhana, The Fourth Estate",
+          "source_url": "https://www.occrp.org/en/news/ai-fuels-55-of-african-cybercrimes-as-losses-top-480-million-interpol-warns",
+          "severity_note": "$1.3M lost in Ghana to mobile money fraud in Q1 2025 (INTERPOL); the AI-attribution is at the regional (55% of African cybercrime) level, not confirmed per-incident for every Ghana arrest, so treat the causal AI linkage for the domestic arrests as plausible/associative rather than confirmed per-case",
+          "confidence": "plausible_needs_verification",
+          "verification_reasoning": "Verified via INTERPOL's own site and multiple independent outlets that: (1) the AI-implicated-in-55%-of-African-cybercrime statistic is real, from INTERPOL's Africa Cyberthreat Assessment Report (4th edition), and (2) the Ghana-specific Operation Contender 3.0 numbers (68 arrests, 835 devices seized, 108 victims identified, ~$450k losses) are real and independently corroborated by INTERPOL and Ghanaian press (Graphic Online, The Ghanaian Chronicle). However, these are two separate INTERPOL actions/reports that the claim conflates. Operation Contender 3.0 (July 28-Aug 11, 2025) was a romance-scam/sextortion crackdown described across all sources as using \"fake profiles, forged identities and stolen images\" -- no source describes AI or deepfakes as the method in the Ghana Contender 3.0 cases specifically. The 55% AI statistic comes from a separate, later-published threat assessment report about the broader African cybercrime landscape in 2025, not from Contender 3.0 case data. Ghana does have a genuine AI-deepfake fraud case in this period (11 arrests for deepfake video impersonation of former President Mahama), but that is unrelated to Contender 3.0 and not mentioned in the claim. So the claim's factual components are each real, but the specific \"AI implicated in the Ghana Contender 3.0 arrests\" linkage is not supported by any source found -- it appears to be an inference/conflation rather than a documented fact. This falls short of \"confirmed\" (no source ties AI specifically to the Contender 3.0 Ghana cases) but is more than \"rejected\" (both underlying facts are real and well-sourced, just merged incorrectly).",
+          "verified_primary_source": "INTERPOL press releases: \"INTERPOL report finds AI linked to more than half of cybercrime in Africa\" and \"260 suspected scammers arrested in pan-African cybercrime operation\" (interpol.int), plus the actual INTERPOL Africa Cyberthreat Assessment Report 2025 PDF",
+          "verified_primary_source_url": "https://www.interpol.int/en/News-and-Events/News/2025/260-suspected-scammers-arrested-in-pan-African-cybercrime-operation"
+        }
+      ],
+      "negative_domains_checked": [
+        {
+          "domain": "AI chatbot / mental health / neuropsychological harm",
+          "search_summary": "Searched 'Ghana AI chatbot mental health harm incident' \u2014 results returned only global/US chatbot-harm literature (JMIR, Psychiatric Times, medRxiv); no Ghana-specific case surfaced. Genuine absence in what's indexed, but coverage of this domain in Ghana specifically is thin so treat as a weak negative."
+        },
+        {
+          "domain": "biosecurity (AI-enabled bio-risk)",
+          "search_summary": "Not directly searched with a Ghana-specific query this pass (only general domain sweep was planned); listed under domains_not_searched below rather than claimed as a checked negative."
+        }
+      ],
+      "domains_not_searched": [
+        "biosecurity (Ghana-specific AI-bio dual-use query not run)",
+        "environmental harm beyond data-center water/grid framing (e.g. AI-driven galamsey/illegal mining environmental damage, AI in agriculture/climate harm)",
+        "AI in healthcare misdiagnosis/clinical-deployment harm in Ghana",
+        "AI in judicial/policing bias or wrongful-arrest incidents in Ghana",
+        "AI-driven labor displacement/gig-economy harm incidents in Ghana"
+      ]
+    },
+    "verdict": {
+      "country": "Ghana",
+      "overall_risk": "medium",
+      "positive_event_audit": [
+        {
+          "description": "CVET deepfake-Mahama arrest, May 2026",
+          "citation_quality": "solid",
+          "note": "Specific dates (May 1-4 2026), named locations, arrest/exhibit counts, and a pinned OECD.AI incident-tracker entry ID (2026-05-07-b538) plus multiple named outlets. Checkable and specific."
+        },
+        {
+          "description": "2024 election AI disinformation",
+          "citation_quality": "solid",
+          "note": "Named source (WITNESS blog) with a specific dated URL, plus corroborating named orgs (MFWA, Ghana Fact-Checking Coalition). Concrete figures (47 reports, 11 flagged, 3 arrests) and honest caveat that prosecuted cases were low-sophistication Photoshop rather than confirmed AI-deepfakes \u2014 this caveat is a strength, not a weakness, since it prevents overclaiming."
+        },
+        {
+          "description": "2025 AI-assisted cybercrime, regional INTERPOL stat + Ghana operations",
+          "citation_quality": "weak_unpinned",
+          "note": "The regional 55%-of-African-cybercrime INTERPOL figure is pinned to a specific OCCRP article URL and is solid on its own. But the Ghana-specific operational details (Operation Contender 3.0: 68 arrests/835 devices/108 victims; Tabora/Lashibi raid: 141 arrests) are attributed only to generic outlet names (NewsGhana, The Fourth Estate) with no article-level pinning, and the entry itself flags the AI-causal link to these domestic arrests as 'plausible/associative rather than confirmed per-case.' The event conflates a solidly-sourced regional statistic with unpinned domestic incident details \u2014 downgrade to weak_unpinned and treat the Ghana-specific arrest numbers as needing verification before inclusion as a confirmed AI-harm incident."
+        }
+      ],
+      "negative_label_audit": "Mixed quality. The mental-health/chatbot negative is a genuine search: it names the actual query run, describes what came back (global-only literature, no Ghana-specific hit), and explicitly flags the finding as a weak negative given thin domain coverage rather than asserting confident absence \u2014 this is honest, well-calibrated negative evidence. The biosecurity entry, however, is not a real negative at all: its own search_summary admits no Ghana-specific query was run this pass ('Not directly searched... listed under domains_not_searched below rather than claimed as a checked negative'). It should not appear under negative_domains_checked in the first place \u2014 its presence there is self-correcting (it disclaims the checked-negative label) but structurally it is misfiled and duplicates the domains_not_searched list, which is itself a reasonable and honestly-scoped set of five unchecked domains (biosecurity, environmental/galamsey, healthcare misdiagnosis, judicial/policing bias, labor displacement) rather than absence dressed as evidence.</negative_label_audit>\n"
+    }
+  },
+  {
+    "country": "Senegal",
+    "events": {
+      "country": "Senegal",
+      "positive_events": [
+        {
+          "domain": "health misinformation / neuropsychological-behavioral (AI-generated deepfake used to spread false medical claims)",
+          "year": "2025 (October)",
+          "description": "A deepfake video circulated on social media in Senegal purporting to show renowned Senegalese doctor Dr. Abdoulaye Bousso being interviewed by journalist Papa Alioune Sarr, falsely claiming that diabetes is caused by a parasite. The journalist confirmed the video was AI-generated and not real; Africa Check's fact-check program flagged and debunked it as a manipulated/deepfake video spreading false health information.",
+          "source": "Africa Check (Meta third-party fact-check program)",
+          "source_url": "https://africacheck.org/fr/fact-checks/meta-programme-fact-checks/sante-diabete-dr-bousso-senegal-pape-alioune-sarr-journaliste-deepfake",
+          "confidence": "confirmed",
+          "severity_note": "No quantified casualty/financial figure available; harm is public-health misinformation exposure, scale of spread not quantified in source."
+        },
+        {
+          "domain": "disinformation / identity manipulation (secondary, lower-severity example from same fact-check program)",
+          "year": "2025",
+          "description": "A separate AI deepfake video circulated in Senegal purporting to show a Senegalese doctor engaged in a physical fight; also confirmed fabricated and debunked by Africa Check.",
+          "source": "Africa Check (Meta third-party fact-check program)",
+          "source_url": "https://africacheck.org/fr/fact-checks/meta-programme-fact-checks/video-medecin-senegalais-bagarre-deepfake",
+          "confidence": "confirmed",
+          "severity_note": "No documented real-world consequence (financial loss, violence, policy action) beyond reputational content; treat as low-severity/borderline for inclusion."
+        },
+        {
+          "domain": "regulatory/institutional response (context, not itself a harm event)",
+          "year": "2025 (October)",
+          "description": "Senegal's data protection authority (Commission de Protection des Donn\u00e9es Personnelles, CDP) issued a public warning about a rise in AI-generated deepfake videos/images depicting public figures, religious leaders, and ordinary citizens on social media, describing risks of opinion manipulation, reputational damage, identity theft, and threats to social cohesion. This is a regulator statement referencing a pattern, not a single documented, sourced incident with a named victim/date beyond the Bousso case above.",
+          "source": "AllAfrica / socialnetlink.org reporting on CDP statement",
+          "source_url": "https://fr.allafrica.com/stories/202510080510.html",
+          "confidence": "confirmed",
+          "severity_note": "Not a standalone quantifiable incident; provided as corroborating context for the deepfake domain, not a separate scored event."
+        }
+      ],
+      "negative_domains_checked": [
+        {
+          "domain": "Terrorism/security (AI-enabled)",
+          "search_summary": "Prior AFAIRI v5 pass found no documented incident; no new search performed this pass beyond general queries which surfaced nothing terrorism-specific for Senegal."
+        },
+        {
+          "domain": "Cybersecurity/AI-enabled cyberattack",
+          "search_summary": "Searched 'Senegal AI incident cybersecurity fraud deepfake 2024 2025' \u2014 results show Senegal is characterized as an emerging cybercrime target regionally (football visibility, oil/gas discovery, political transition) and Africa-wide AI-fraud loss figures ($192M 2024 to $484M 2025), but no specific named AI-enabled cyberattack incident tied to Senegal was found."
+        },
+        {
+          "domain": "Financial fraud (AI voice cloning/impersonation scams)",
+          "search_summary": "Searched 'Senegal AI voice cloning fraud victim money scam news' and French-language 'S\u00e9n\u00e9gal escroquerie intelligence artificielle arnaque deepfake' \u2014 found general global AI voice-scam trend coverage and Senegal CDP's general warning about identity-theft risk, but no specific reported Senegalese victim/incident with named source, date, and loss amount."
+        },
+        {
+          "domain": "Biosecurity (AI-enabled)",
+          "search_summary": "No dedicated search surfaced any Senegal-specific AI-biosecurity incident during this pass; general searches for AI harm in Senegal did not return any biosecurity-related results."
+        },
+        {
+          "domain": "Environmental (AI data center strain on grid/water)",
+          "search_summary": "Searched 'Senegal AI data center water electricity grid strain' \u2014 results confirm general African data-center water/grid concerns as a class of risk but explicitly state no Senegal-specific data-center incident or strain event was found in available sources; no AI data center facility in Senegal was identified as causing documented grid/water harm."
+        },
+        {
+          "domain": "Election disinformation (AI-generated, 2024 presidential election)",
+          "search_summary": "Searched 'Senegal deepfake election disinformation AI 2024' and fetched Digital Action's 'Tech Harms During Elections in Africa' report \u2014 Senegal is only mentioned as one of the 2024 African election countries; the report provides no Senegal-specific case study of AI/deepfake election harm (unlike Kenya, Nigeria, Zimbabwe, Uganda, DRC, Ethiopia which are detailed)."
+        }
+      ],
+      "domains_not_searched": [
+        "Neuropsychological/behavioral manipulation via AI beyond the health-misinformation deepfake found (e.g. AI chatbot-linked self-harm or radicalization cases specific to Senegal)",
+        "Labor/gig-economy AI harms (e.g. algorithmic management abuses in Senegalese app-based work)",
+        "AI in judicial/administrative decision-making harms (wrongful denial of benefits, biased scoring)",
+        "Agricultural/AI-driven environmental harm beyond data centers (e.g. AI-optimized resource extraction)",
+        "Deep, exhaustive French-language search of Senegalese press archives (Le Soleil, Seneweb, APS, Dakaractu) for AI-harm stories not indexed in the general web-search results returned"
+      ]
+    },
+    "verdict": {
+      "country": "Senegal",
+      "overall_risk": "medium",
+      "positive_event_audit": [
+        {
+          "description": "Deepfake video of Dr. Abdoulaye Bousso, diabetes/parasite claim",
+          "citation_quality": "solid",
+          "note": "Named outlet (Africa Check), specific event, checkable source_url, month/year given, journalist corroboration cited. This is a well-anchored, verifiable citation."
+        },
+        {
+          "description": "Deepfake video of a Senegalese doctor in a fight",
+          "citation_quality": "weak_unpinned",
+          "note": "Named outlet and a source_url are given, so it is not pure assertion, but the entry itself flags no documented real-world consequence and only a bare year (2025, no month), plus the description is thin (no named doctor, no context on spread/impact). Borderline: source_url looks specific enough to check, but content substance is too thin to carry real calibration weight; recommend downgrading its severity/inclusion weight rather than rejecting outright, consistent with the entry's own severity_note flagging it as low-severity/borderline."
+        },
+        {
+          "description": "CDP regulatory warning about deepfakes generally",
+          "citation_quality": "weak_unpinned",
+          "note": "Correctly self-labeled by the entry as context, not a standalone scored incident \u2014 a regulator statement about a general pattern, not a named-victim event. Should NOT be counted as a third positive event in any tally; it is appropriately corroborating context only if the dataset schema treats it as such. If the ingestion pipeline counts array length as event count, this needs a flag/field distinguishing it from true incidents."
+        }
+      ],
+      "negative_label_audit": "Mixed quality, most are genuine searches but two are weak. (1) Terrorism/security: explicitly says \"no new search performed this pass\" and relies on a prior pass's null result - this is stale-absence-of-evidence dressed as current search, should be re-run or flagged as unchecked-this-pass. (2) Cybersecurity: genuine search with specific query strings and specific contextual findings (regional fraud figures) even though the target domain was null - solid. (3) Financial fraud/voice cloning: genuine search, bilingual (English+French) queries specified, distinguishes general trend coverage from Senegal-specific absence - solid. (4) Biosecurity: weak - \"no dedicated search surfaced,\" no query terms given, reads as a cursory pass rather than a real search; should specify what was actually queried. (5) Environmental/data center: genuine search with specific query string and explicit statement that sources were checked and returned null for Senegal specifically - solid. (6) Election disinformation: genuine and strong - names the actual source fetched (Digital Action report) and explains comparatively why Senegal was absent (other countries got case studies, Senegal didn't) - this is the best-evidenced negative in the set. Overall: domains 2,3,5,6 show real search discipline with queries/sources named; domains 1 and 4 are weaker and should be re-run or explicitly marked as low-confidence/stale rather than presented at the same confidence level as the others. The domains_not_searched list is honest and appropriately disclosed rather than hidden."
+    }
+  },
+  {
+    "country": "Ethiopia",
+    "events": {
+      "country": "Ethiopia",
+      "positive_events": [
+        {
+          "domain": "behavioral/persuasion (information operations)",
+          "year": "2024-2025",
+          "description": "AI-generated images circulating on social media falsely depicted military dominance and humiliation of rival leaders during the Ethiopia-Eritrea/Tigray tension narratives, fueling real anger, fear and animosity amid a conflict that had already killed an estimated 600,000 people; Ethiopia's low Digital Skills Index ranking (112/149, WEF) was cited as compounding vulnerability to these AI-generated visuals.",
+          "source": "TRT Afrika; The Africa Report; Foreign Policy",
+          "source_url": "https://www.trtafrika.com/english/article/221068cf5c17 ; https://www.theafricareport.com/412306/ai-images-intensify-ethiopia-eritrea-war-narratives/ ; https://foreignpolicy.com/2024/06/21/adversarial-ai-deepfakes-africa-drc-ethiopia-war-disinformation-democracy/",
+          "confidence": "confirmed",
+          "severity_note": "No casualty/cost figure directly attributed to the AI-generated content itself; broader conflict death toll (~600,000, AU estimate) is cited as context, not as an AI-caused figure",
+          "verification_reasoning": "Multiple independent outlets (Addis Standard, TRT Afrika, The Standard Kenya, Global Voices, and an AFP Fact Check piece specifically) corroborate the same specific claim with concrete named examples: Ethiopian AI-generated images/videos showing tanks entering Assab port to cheering crowds and Ethiopia's army chief chasing Eritrean President Isaias Afwerki (created by a named individual, Eliyas Kebede Zemedkun, with 80,000+ Facebook followers), and retaliatory Eritrean-aligned AI content showing Abiy Ahmed being arrested or Ethiopian ships sinking. AFP Fact Check, a reputable independent verification desk, ran its own piece on this exact phenomenon (\"AI warfare: How digital battle is shaping Ethiopia-Eritrea war narratives\"), which functions as strong independent corroboration beyond the originally cited Africa Report source. The claim that these fabricated visuals were specifically documented (not merely speculated) as fueling anger/animosity is directly supported by named experts quoted across these pieces. This goes beyond a single-source claim and clears the bar for confirmed.",
+          "verified_primary_source": "AFP Fact Check article \"AI warfare: How digital battle is shaping Ethiopia-Eritrea war narratives\" plus independent corroboration from Addis Standard and Global Voices",
+          "verified_primary_source_url": "https://ethiopanorama.com/?p=300676"
+        },
+        {
+          "domain": "behavioral/persuasion (algorithmic amplification, adjacent to generative-AI)",
+          "year": "2023 (report), covering 2020-2022 conflict period",
+          "description": "Amnesty International report alleges Meta's recommendation/ranking algorithms 'supercharged' the spread of harmful, dehumanizing rhetoric against the Tigrayan community during the Tigray war, with content moderation systems failing to catch it in time.",
+          "source": "Amnesty International (as summarized by CFR and Annenberg/Milton Wolf Seminar)",
+          "source_url": "https://www.cfr.org/articles/facebooks-content-moderation-failures-ethiopia",
+          "confidence": "confirmed",
+          "severity_note": "Qualitative harm (contribution to atmosphere enabling human rights abuses); this is a recommender-system/content-moderation algorithm rather than a generative-AI model, so borderline for inclusion depending on the dataset's AI-system definition",
+          "verification_reasoning": "Found and reviewed the actual primary source: Amnesty International's October 2023 report itself (hosted on amnesty.org, plus corroborating Amnesty press release and independent coverage by TechCrunch and JURIST). The primary report explicitly states Facebook's content-shaping/recommendation algorithms \"supercharged\" the spread of harmful, dehumanizing content against Tigrayans, and cites internal Meta documents (e.g., a 2020 internal warning that \"current mitigation strategies are not enough\") showing Meta itself recognized the algorithmic amplification risk. This goes beyond a vague \"an event happened\" claim \u2014 the AI/algorithmic mechanism (engagement-maximizing ranking algorithms boosting inflammatory content) is the central, specifically documented claim in the primary source, not speculative. Independent outlets (TechCrunch, JURIST, Amnesty UK/Canada mirrors) corroborate the report's existence and core findings, and it has since driven an ongoing Kenya High Court lawsuit against Meta. The claim holds up as confirmed.",
+          "verified_primary_source": "Amnesty International, \"'A death sentence for my father': Meta's contribution to human rights abuses in northern Ethiopia\" (Oct 2023)",
+          "verified_primary_source_url": "https://www.amnesty.org/en/documents/afr25/7292/2023/en/"
+        }
+      ],
+      "negative_domains_checked": [
+        {
+          "domain": "cybersecurity (AI-enabled voice cloning / deepfake bank fraud)",
+          "search_summary": "Searched for Ethiopia-specific AI voice cloning or deepfake fraud targeting banks; results returned only global/regional (UAE, general Africa) incidents with no Ethiopia-specific confirmed case."
+        },
+        {
+          "domain": "financial fraud / deepfake scams generally",
+          "search_summary": "Searched 'Ethiopia deepfake fraud scam 2025 2026'; found general African cybercrime loss statistics (Ethiopia ~8% of Africa's $484M losses, led world in malware detections 2024) but no specific documented AI-deepfake fraud incident/case tied to Ethiopia by name, date, and outlet."
+        },
+        {
+          "domain": "neuropsychological / AI chatbot mental health harm",
+          "search_summary": "Searched for Ethiopia AI chatbot mental-health harm incidents; only found general/global chatbot self-harm cases (US-focused), nothing Ethiopia-specific."
+        },
+        {
+          "domain": "environmental (AI data center water/grid strain)",
+          "search_summary": "Searched Ethiopia AI data center water/grid strain; found only a general academic water-efficiency modeling study (CMU/arXiv) estimating Ethiopia's climate would drive higher-than-average AI data center water consumption, not a realized documented harm event (no incident, just a projection/dataset paper)."
+        },
+        {
+          "domain": "AI-directed lethal weapons targeting (drone strikes)",
+          "search_summary": "Searched Ethiopia AI drone Tigray/Amhara targeting; found extensive documentation of Ethiopian government drone strikes killing civilians (including a UN-reported 20+ civilian deaths from strikes on a school and bus station in Amhara), but no source establishes AI-based autonomous targeting or AI decision-making in these strikes \u2014 treated as conventional drone warfare, not an AI-harm event, absent that specific claim."
+        }
+      ],
+      "domains_not_searched": [
+        "biosecurity (AI-assisted bio threat)",
+        "healthcare diagnostic AI errors",
+        "AI in hiring/credit-scoring discrimination",
+        "election-specific AI interference (beyond general conflict disinformation)",
+        "AI-enabled critical infrastructure/industrial control attacks"
+      ]
+    },
+    "verdict": {
+      "country": "Ethiopia",
+      "overall_risk": "medium",
+      "positive_event_audit": [
+        {
+          "description": "AI-generated images distorting Ethiopia-Eritrea/Tigray conflict narratives (TRT Afrika, Africa Report, Foreign Policy)",
+          "citation_quality": "solid",
+          "note": "Three independent named outlets each with a specific, checkable article URL (FP URL even embeds the date 2024/06/21). This is a real event with real citations, not a fabrication. However the entry itself correctly flags that the 600,000 death toll is conflict-wide context, not an AI-attributable harm figure - severity should not be conflated with the death toll in downstream scoring. Recommend keeping citation_quality=solid but decoupling the casualty number from this event's severity field entirely, since it belongs to the war, not to the AI content."
+        },
+        {
+          "description": "Meta recommendation-algorithm amplification of anti-Tigrayan rhetoric (Amnesty International, via CFR)",
+          "citation_quality": "weak_unpinned",
+          "note": "Only one usable URL (CFR summary) is given; the actual Amnesty International report is named as the primary source but has no title, publication date, or direct link, so it cannot be independently checked - it is cited at one remove. Also a genuine categorical problem the entry already flags: a recommender/ranking and content-moderation system is not a generative-AI model. Unless the dataset's definition of 'AI harm' explicitly includes ranking/recommendation algorithms, this event should probably be excluded rather than merely down-weighted; if included, it needs the primary Amnesty report pinned (title + date) before being upgraded past weak_unpinned."
+        }
+      ],
+      "negative_label_audit": "The five negative_domains_checked entries are genuine search summaries, not bare absence assertions: each states a specific query construction, what was searched, and what was found (e.g., specific adjacent statistics like the 8%-of-Africa's-$484M fraud loss figure, the CMU/arXiv water study, the UN-reported Amhara drone strike deaths) alongside the explicit reasoning for why it didn't qualify as an AI-harm event (no AI-specific attribution, only conventional/global analogues found). This is the correct pattern - evidence of a real search plus a stated reason for exclusion - rather than \"not found\" as a rhetorical placeholder. The drone-strike entry is particularly well-handled: it surfaces a real, severe, well-documented harm (UN-reported 20+ civilian deaths) and correctly declines to label it AI-related absent an explicit AI-targeting claim, rather than either suppressing the finding or misclassifying it. One caveat: none of the five summaries name specific dates, outlets, or search tools/engines used, so a downstream auditor cannot independently reproduce the negative search - the summaries are plausible but not independently verifiable as executed. The domains_not_searched list is honestly disclosed as unsearched rather than silently treated as negative, which is good practice and should be preserved.</negative_label_audit>\n"
+    }
+  },
+  {
+    "country": "Tanzania",
+    "events": {
+      "country": "Tanzania",
+      "positive_events": [
+        {
+          "domain": "behavioral/persuasion (election disinformation, AI-generated media)",
+          "year": "2025",
+          "description": "During Tanzania's October 29, 2025 general election, Africa Check identified and debunked a specific AI-generated video circulating on social media that falsely depicted a Tanzanian police officer 'burning' President Samia Suluhu Hassan's campaign poster, presented as fabricated evidence that security officers had turned against the government. The election period saw broader documented AI-enabled disinformation: a JamiiCheck audit (Jan-Jun 2025) found 67% of 192 fact-checked claims false and 22% misleading, and Cyabra reported a coordinated inauthentic network (42% fake accounts) reaching 3.3 million people around the election, which was marred by violence and deaths and which the African Union election monitoring team said failed to meet democratic standards.",
+          "source": "Africa Check (Meta third-party fact-check program); JamiiCheck; Cyabra election report",
+          "source_url": "https://africacheck.org/fact-checks/meta-programme-fact-checks/ai-generated-video-falsely-shows-tanzanian-officer-burning",
+          "confidence": "confirmed",
+          "severity_note": "Coordinated network reached an estimated 3.3 million people (Cyabra); election marred by violence, vandalism, and deaths (multiple outlets); this is a documented AI-generated-media incident, though direct causal attribution of the unrest to this specific video (vs. the broader disinformation environment) is not established in a single source."
+        }
+      ],
+      "negative_domains_checked": [
+        {
+          "domain": "financial/fraud (AI voice-cloning, deepfake scams)",
+          "search_summary": "Searched for Tanzania-specific AI voice-cloning/deepfake fraud victims and losses. Found extensive global and pan-African coverage (Africa cybercrime losses $192M->$484M 2024-2025, Tanzania cited as having Africa's highest fraud rate at 5.0% in 2025) but no specific, named, checkable Tanzania incident with a victim, date, and loss amount tied to AI."
+        },
+        {
+          "domain": "environmental (AI data center compute siting, grid/water strain)",
+          "search_summary": "Searched for Tanzania-specific data center water/electricity strain from AI compute. Found only general African-continent research (CMU/ACM water efficiency dataset covering 41 African countries) with no Tanzania-specific documented incident of realized grid or water strain."
+        },
+        {
+          "domain": "biosecurity",
+          "search_summary": "No search specifically targeted at Tanzania AI-biosecurity incidents returned results in this pass (implicitly covered by absence in general searches); no positive evidence found and this domain was not separately deep-searched \u2014 treat with caution, see domains_not_searched note below for the honest caveat."
+        }
+      ],
+      "domains_not_searched": [
+        "biosecurity (dedicated targeted search not run \u2014 only surfaced incidentally; recommend a dedicated query e.g. 'Tanzania AI bioweapon biosecurity incident' before treating as a genuine negative)",
+        "neuropsychological/behavioral manipulation beyond election disinformation (e.g. AI companion-app harms, self-harm/mental-health chatbot incidents in Tanzania \u2014 not searched)",
+        "terrorism/security use of AI in Tanzania (not searched this pass; prior AFAIRI v5 pass reportedly found nothing, but not re-verified fresh here)",
+        "labor/economic displacement harms attributed to AI in Tanzania (not searched)",
+        "healthcare/medical AI misdiagnosis or algorithmic-bias harm in Tanzania (not searched)"
+      ]
+    },
+    "verdict": {
+      "country": "Tanzania",
+      "overall_risk": "medium",
+      "positive_event_audit": [
+        {
+          "description": "Election disinformation / AI-generated video (Africa Check + JamiiCheck + Cyabra), 2025",
+          "citation_quality": "solid",
+          "note": "Named outlet (Africa Check, Meta third-party fact-check program) with a specific, checkable article URL describing one concrete AI-generated video and its content. Corroborating JamiiCheck and Cyabra figures are also named/dated (Jan-Jun 2025 audit; election-period report) even though their own source URLs aren't given here. The core claim (the AI-generated police-officer video) is independently checkable via the linked article, so this clears the solid bar. Caveat correctly flagged by the entry itself: causal link between this specific video and the broader election violence is not established, so severity language should stay hedged as written."
+        },
+        {
+          "description": "May 2025 government social media account hacks (police, tax authority) / X blocked nationwide",
+          "citation_quality": "weak_unpinned",
+          "note": "The underlying incident is well-sourced as a cyber event (AllAfrica article with URL, named minister, specific date/month), so as a factual citation it is closer to solid. But it fails as an AI-harm citation specifically: no source ties AI to the attack method, and the entry's own severity_note admits this ('likely should NOT be counted as an AI-harm event without further evidence of AI involvement'). Downgrading to weak_unpinned for THIS dataset's purpose (AI-harm labeling) is correct \u2014 recommend excluding from the positive AI-harm count entirely unless a source surfaces establishing AI involvement, rather than including it as a hedged positive."
+        }
+      ],
+      "negative_label_audit": "Mixed quality across the three negative domains. (1) Financial fraud/deepfake voice-cloning: genuine search \u2014 cites specific pan-African fraud-rate statistics (Africa cybercrime losses $192M->$484M, Tanzania's 5.0% fraud rate) and explicitly states no Tanzania-specific named victim/date/loss was found; this is a real negative, evidenced by what WAS found (context) plus explicit absence of the specific thing being checked. (2) Environmental/data-center strain: also a genuine search \u2014 names a specific dataset (CMU/ACM 41-country water-efficiency study) it checked and found no Tanzania-specific incident in. (3) Biosecurity: NOT a genuine search \u2014 the search_summary itself admits 'No search specifically targeted... returned results in this pass (implicitly covered by absence in general searches)... not separately deep-searched.' This is absence-of-search dressed as absence-of-evidence, and the entry is honest enough to flag it as such and duplicate the caveat in domains_not_searched. This negative label should not be trusted as a true negative \u2014 it should be reclassified as 'not searched' rather than left in negative_domains_checked, since its presence there implies a check occurred when none did. The domains_not_searched list overall is appropriately honest (5 domains explicitly disclosed as unchecked, including a redundant re-flagging of biosecurity), which is good practice, but the biosecurity entry straddles both lists inconsistently and should be moved out of negative_domains_checked entirely."
+    }
+  },
+  {
+    "country": "Zambia",
+    "events": {
+      "country": "Zambia",
+      "positive_events": [
+        {
+          "domain": "neuropsychological/behavioral manipulation - state surveillance",
+          "year": "2019 (reported Aug 2019, activity from ~2018)",
+          "description": "Wall Street Journal investigation found Huawei technicians embedded in a cyber-surveillance unit at Zambia's telecom regulator used AI-assisted data/device forensics to locate opposition bloggers running a news site critical of then-President Edgar Lungu; police used the technicians' location data to track and arrest the bloggers in Solwezi. Zambian government and Huawei denied the allegations.",
+          "source": "Wall Street Journal (Aug 2019), corroborated by Lusaka Times, Axios, CNBC, Democracy Now",
+          "source_url": "https://www.lusakatimes.com/2019/08/15/huawei-technicians-helped-zambian-and-ugandan-governments-spy-on-political-opponents/",
+          "confidence": "confirmed",
+          "severity_note": "Led to arrest of opposition bloggers; degree of AI-specificity (vs. manual surveillance) not fully detailed in reporting -- underlying tech is described as cyber-surveillance/device-forensics tooling, not explicitly branded 'AI' in original WSJ text"
+        },
+        {
+          "domain": "cybersecurity/fraud - deepfake identity fraud (trend indicator, not single incident)",
+          "year": "2025-2026",
+          "description": "Sumsub Identity Fraud Report (2025-2026) recorded a 967% year-over-year surge in deepfake fraud attempts in Zambia, the highest rate measured on the continent, reflecting a documented rise in AI-generated synthetic media used against Zambian identity-verification and financial systems.",
+          "source": "Sumsub Identity Fraud Report via Businessday NG",
+          "source_url": "https://businessday.ng/technology/article/africa-enters-high-skill-fraud-era-as-deepfakes-surge-967-in-zambia-367-in-drc/",
+          "confidence": "confirmed",
+          "severity_note": "This is an aggregate fraud-attempt statistic (detection-side telemetry), not a single named realized-harm incident with an identified victim/loss amount"
+        }
+      ],
+      "negative_domains_checked": [
+        {
+          "domain": "biosecurity (AI-designed pathogens, bio-weapon uplift, lab misuse)",
+          "search_summary": "No dedicated search executed beyond general domain scan; no incident surfaced in any of the four broad queries run. Given zero hits across adjacent queries and no Zambia-specific biosecurity/AI news presence, treating as a probable but not rigorously confirmed negative -- recommend one dedicated biosecurity query before finalizing calibration use."
+        },
+        {
+          "domain": "environmental - AI data-center compute siting strain on grid/water",
+          "search_summary": "Searched directly for Zambia AI data center water/electricity strain. Found only general African-continent research (CMU/arXiv Water Efficiency Dataset for African Data Centers, covering 41 countries) and one Zambian op-ed ('The water behind AI - Zambia', News Diggers, Aug 2026) discussing the topic conceptually. No documented realized-harm incident (e.g. a specific water shortage, blackout, or community conflict tied to an actual AI data center sited in Zambia) was found -- Zambia does not appear to host a major hyperscale AI data center as of this search, so this reads as a genuine current negative rather than an unsearched gap."
+        }
+      ],
+      "domains_not_searched": [
+        "Biosecurity: only indirectly covered; no dedicated 'Zambia AI biosecurity pathogen lab' query run",
+        "Environmental/health beyond data centers: no search on AI-driven agriculture, mining, or wildlife-management systems causing harm in Zambia",
+        "Election integrity / disinformation: no dedicated search on AI-generated disinformation around Zambian elections (e.g. 2021 or upcoming 2026 general election)",
+        "Critical infrastructure (AI in Zambian power grid/ZESCO, water utilities) failure incidents",
+        "Labor/gig-economy AI harms (algorithmic management, AI-driven hiring discrimination) in Zambia",
+        "Healthcare AI misdiagnosis or medical-AI harm incidents in Zambian hospitals/clinics"
+      ]
+    },
+    "verdict": {
+      "country": "Zambia",
+      "overall_risk": "medium",
+      "positive_event_audit": [
+        {
+          "description": "WSJ Huawei/ZICTA surveillance-of-bloggers story (2019)",
+          "citation_quality": "solid",
+          "note": "Named primary source (WSJ, Aug 2019) with a checkable corroborating URL (Lusaka Times) and multiple independent secondary outlets (Axios, CNBC, Democracy Now). Entry itself is honest that the original WSJ reporting does not explicitly brand the forensics tooling 'AI' \u2014 that caveat should be preserved, and the event is arguably mislabeled as an AI-harm incident rather than a general surveillance/censorship incident. Citation mechanics are solid; the AI-attribution is the weak part, not the sourcing."
+        },
+        {
+          "description": "Operation Serengeti 2.0 / Golden Top Support Services scam network (2024-2025)",
+          "citation_quality": "weak_unpinned",
+          "note": "Sources are named outlets (ITWeb Africa, DarkReading, Bitdefender, Business AM Live) but no specific article title/date is pinned per claim, and the single provided URL corresponds only to the 77-arrest Golden Top case, not to the $300M/60,000-victim deepfake/synthetic-identity claim, which is a regional (not Zambia-specific) Interpol figure being loosely draped over the Zambia case. The entry's own confidence label ('plausible_needs_verification') and severity_note both concede the AI-specificity is unconfirmed for the actual Zambia arrests \u2014 this is two distinct events conflated into one, and the AI-harm framing rests on the weaker, unpinned half. Should be split, or downgraded to reject unless a Zambia-specific deepfake claim with a named victim/loss is pinned down."
+        },
+        {
+          "description": "Sumsub deepfake fraud surge stat (2025-2026)",
+          "citation_quality": "solid",
+          "note": "Named source (Sumsub Identity Fraud Report) with a specific, checkable secondary URL (Businessday NG) and a concrete figure (967% YoY). Citation mechanics are solid. However this is a detection-telemetry aggregate stat, not a realized-harm incident with an identified victim \u2014 flag for the calibration schema as a trend indicator, not equivalent in kind to events 1-2."
+        }
+      ],
+      "negative_label_audit": "The two negative_domains_checked entries are not equivalent in rigor and the entry is honest about that gap, which is good practice but means the label itself is currently unreliable for one domain. Biosecurity: the search_summary explicitly admits 'No dedicated search executed beyond general domain scan' \u2014 this is absence-of-search dressed as a tentative negative, and the entry correctly hedges it ('probable but not rigorously confirmed') and recommends a follow-up query. It should not be treated as a confirmed negative in calibration data as-is; either run the dedicated query before finalizing or relabel confidence as 'unchecked' rather than folding it into negative_domains_checked. Environmental/data-center: this one is a genuine search \u2014 specific queries described, specific sources found and characterized (CMU/arXiv dataset, a named Zambian op-ed), and a reasoned basis for why the negative likely holds (no hyperscale AI data center in Zambia). This one is legitimate absence-of-evidence. Recommendation: move biosecurity out of negative_domains_checked into domains_not_searched (where it substantively belongs, given the entry's own admission) until a dedicated query is actually run."
+    }
+  },
+  {
+    "country": "Zimbabwe",
+    "events": {
+      "country": "Zimbabwe",
+      "positive_events": [],
+      "negative_domains_checked": [
+        {
+          "domain": "financial/fraud (EcoCash mobile money)",
+          "search_summary": "Searched directly for the AFAIRI v5 $30M/40% phishing-surge figures. Found the likely underlying story: Techzim, 'ZRP Issues Red Alert on EcoCash Scams' (21 Jan 2026, https://www.techzim.co.zw/2026/01/zrp-issues-red-alert-on-ecocash-scams-are-warnings-enough-to-stop-the-phishing-wave/). Fetched full text: ZRP explicitly had NOT released official loss/docket statistics; figures are described as anecdotal; article does not mention AI as a tool used by scammers. Also found a separate unrelated claim ('nearly $100 million lost') on a low-quality aggregator (zigoats.com) with no primary sourcing, and older SIM-swap/hacking stories (myzimbabwe.co.zw) that are pre-AI social-engineering, not AI-enabled. CONCLUSION: the $30M/40% figures could not be pinned to any checkable primary source, and no article found ties EcoCash fraud to AI specifically (voice cloning, generative phishing, etc.). Remains unverified, not a positive label."
+        },
+        {
+          "domain": "cybersecurity / AI voice cloning & deepfake fraud",
+          "search_summary": "Searched for Zimbabwe-specific AI voice-cloning or deepfake fraud incidents. Found only forward-looking policy commentary: Zimbabwe Independent op-ed 'Protecting Zim from AI voice scams' arguing FIU/police SHOULD classify AI voice cloning as aggravated fraud (i.e., framed as an emerging risk, not a reported realized incident with victims/losses), and general coverage of Zimbabwe's National AI Strategy 2026-2030 / 'AI Cyber Shield' programme as a defensive/preventive initiative. No specific dated incident, victim, or loss figure found. No genuine positive event to report."
+        },
+        {
+          "domain": "environmental (AI data-center power/water strain)",
+          "search_summary": "Found an allAfrica.com/Herald (Harare) piece (12 Aug 2026) headlined about AI's volatile power demand 'damaging its own data centres' with Zimbabwe framing, but fetched full text shows the substantive content (equipment failures, gas turbine cracks, battery replacements) is entirely about US/EU facilities (e.g. xAI Colossus in Memphis); no Zimbabwe-specific damage, cost, or incident figures appear despite the headline. Not a checkable Zimbabwe event. Separately found real coverage of a planned 100MW solar-powered data-center hub near Robert Mugabe Intl Airport (proposed infrastructure, not a harm event) and Zimbabwe's constrained 1500MW national generation capacity (context, not an AI-attributed incident)."
+        },
+        {
+          "domain": "biosecurity",
+          "search_summary": "No Zimbabwe-specific search performed beyond general awareness; treated as a domain requiring dedicated search, but time/tool budget in this pass went to the domains above. See domains_not_searched \u2014 listing there rather than falsely marking this searched-and-clean."
+        },
+        {
+          "domain": "CSAM / AI-generated child exploitation material",
+          "search_summary": "Searched for Zimbabwe AI-generated CSAM arrests. Global hits only (Europol Operation Cumberland, US arrests); no Zimbabwe-specific case found in this search. Not confirmed as a genuine negative given only one query was run \u2014 flagging as thin coverage rather than a confident clean domain."
+        },
+        {
+          "domain": "election disinformation / behavioral manipulation",
+          "search_summary": "Searched for Zimbabwe AI chatbot/election misinformation. Results were generic global commentary (Brennan Center, AlgorithmWatch, Munich Security Conference) plus general Zimbabwe media-literacy pieces predating or not specific to an AI-attributed incident. No specific dated Zimbabwe AI-driven disinformation event with a checkable source found."
+        }
+      ],
+      "domains_not_searched": [
+        "biosecurity (dedicated deep search not run)",
+        "neuropsychological/behavioral manipulation beyond election-disinformation angle (e.g. AI-driven gambling/betting-app addiction mechanics, AI companion-app harms) \u2014 not searched",
+        "healthcare/medical AI harm (diagnostic errors, AI-prescribed treatment harm) \u2014 not searched",
+        "AI-enabled labor/gig-economy harm (algorithmic wage theft, surveillance) \u2014 not searched",
+        "physical/robotics safety incidents \u2014 not searched",
+        "supply-chain/agriculture AI harm (e.g. AI-driven crop-advisory failures) \u2014 not searched"
+      ]
+    },
+    "verdict": {
+      "country": "Zimbabwe",
+      "overall_risk": "low",
+      "positive_event_audit": [],
+      "negative_label_audit": "Overall this negative-domain list reflects genuine search, not assertion dressed as absence. Evidence of real work: (1) EcoCash/financial fraud \u2014 a specific claimed figure (AFAIRI v5 $30M/40%) was traced to a likely source article (Techzim, dated, URL given), full text fetched, and the figure explicitly disconfirmed as unofficial/anecdotal with no AI linkage; a low-quality aggregator claim was also checked and rejected. This is a real verification chain, not laziness. (2) AI voice cloning/deepfake \u2014 search distinguished forward-looking policy commentary (an op-ed arguing law SHOULD treat AI voice cloning as fraud) from a realized incident with victims, correctly concluding no genuine positive event rather than mistaking advocacy writing for evidence. (3) Environmental/data-center strain \u2014 caught a headline-body mismatch (Herald/allAfrica headline implied Zimbabwe damage, but fetched full text was entirely about US/EU facilities) \u2014 this is exactly the kind of check that prevents a false positive from slipping in via a misleading headline; solar hub and grid-capacity context were correctly filed as non-events. (4) Election disinformation \u2014 checked and found only generic global commentary, correctly rejected as non-Zimbabwe-specific. (5) Biosecurity \u2014 honestly flagged as NOT searched (moved to domains_not_searched) rather than falsely claimed clean; this is the correct behavior and should not be miscounted as a checked negative. (6) CSAM \u2014 one query run, appropriately hedged as 'thin coverage' rather than confidently asserted clean. The domains_not_searched list itself is a good transparency signal: it separates genuinely-covered negatives from real search-budget gaps (healthcare AI harm, labor/gig surveillance, robotics safety, agri-AI) rather than silently omitting them. No fabricated citations, no unpinned claims presented as findings, no absence-of-search masquerading as absence-of-evidence. The one caution: CSAM and (obviously) biosecurity should be treated as unresolved/needs-more-search rather than confirmed-negative when this entry is used for calibration, since coverage there is thin or nonexistent."
+    }
+  },
+  {
+    "country": "Somalia",
+    "events": {
+      "country": "Somalia",
+      "positive_events": [
+        {
+          "domain": "neuropsychological/behavioral manipulation - incitement disinformation",
+          "year": "2025-12",
+          "description": "An AI-generated deepfake audio clip falsely purporting to be Somali Senator Abdirahman Mohamed Faroole circulated on Facebook, created using AI voice-cloning technology manipulated from phrases of a real speech, sparking a false call for violence. Journalists at the Somali Journalists Syndicate reported they could not detect it was fake, raising alarm ahead of Somalia's 2026 electoral process.",
+          "source": "Somali Journalists Syndicate",
+          "source_url": "https://sjsyndicate.org/2025/12/21/deepfake-ai-audio-clip-sparks-false-call-for-violence-in-somalia-journalists-could-not-detect-it/",
+          "confidence": "confirmed",
+          "severity_note": "No casualty/cost figure reported; harm is incitement-to-violence risk and erosion of information integrity ahead of elections."
+        },
+        {
+          "domain": "terrorism/security - AI-enabled propaganda",
+          "year": "2025-07",
+          "description": "UN Security Council monitoring report stated that al-Shabaab (al-Qaida's Somali affiliate) used AI tools to translate its messaging/propaganda into several languages, expanding reach beyond Somali-speaking audiences.",
+          "source": "UN Security Council monitoring report, cited via The Conversation / Asia Times coverage",
+          "source_url": "https://theconversation.com/al-qaida-and-the-islamic-state-are-both-adopting-ai-but-differ-in-how-they-think-about-the-technology-287663",
+          "confidence": "confirmed",
+          "severity_note": "No quantified casualty/cost figure; capability-adoption item (translation/propaganda reach) rather than a single discrete attack event. Recommend pulling the primary UN report before final inclusion, since this was relayed via secondary press coverage.",
+          "verification_reasoning": "I located and directly read the primary UN document cited by The Conversation article: S/2025/482, dated 24 July 2025 (symbol n2517600.pdf on documents.un.org, doc number 25-10785). I extracted the full text via PyPDF2 and confirmed paragraph 6 states verbatim: \"Groups also continued to experiment with artificial intelligence (AI), mostly for radicalization and recruitment, and to amplify or enhance propaganda. For example, Al-Shabaab released a series of messages that were translated into various languages using AI tools.\" This directly and specifically supports the claim \u2014 it is not a secondary paraphrase, it's the actual monitoring report language, sourced to Member State reporting to the 1267/1988/1989 Monitoring Team. The claim as described (AI used to translate al-Shabaab messaging into several languages, expanding reach beyond Somali-speaking audiences) matches the primary source closely, though the \"expanding reach beyond Somali audiences\" framing is an inference/elaboration not explicitly stated in the report itself (the report just says messages were translated into various languages via AI). The core AI-translation fact is confirmed at the primary-source level.",
+          "verified_primary_source": "UN Security Council document S/2025/482 (24 July 2025) \u2014 Twenty-second report of the Analytical Support and Sanctions Monitoring Team (ISIL/Da'esh, Al-Qaida sanctions regime)",
+          "verified_primary_source_url": "https://documents.un.org/doc/undoc/gen/n25/176/00/pdf/n2517600.pdf"
+        }
+      ],
+      "negative_domains_checked": [
+        {
+          "domain": "cybersecurity",
+          "search_summary": "Searched for Somalia AI cyberattack incidents. Found the Nov 2025 e-visa system breach (\"The Digital Heist\", ~35,000 records exposed) but multiple sources (US Embassy alert, Al Jazeera, Ecofin, Saxafi Media) describe hackers as unidentified/unattributed with no mention of AI tooling used in the intrusion itself. No AI-specific cyber incident found for Somalia."
+        },
+        {
+          "domain": "financial/fraud",
+          "search_summary": "Searched Somalia AI-generated fraud, banking, mobile money scams. Found regional Africa-wide reporting (Tech With Africa, Apr 2026) on AI-driven fraud costing the continent's mobile money sector ~$4B, and general SIM-swap fraud patterns in Kenya/Uganda, but no Somalia-specific documented AI-fraud case."
+        },
+        {
+          "domain": "biosecurity",
+          "search_summary": "No dedicated search returned Somalia-specific AI-biosecurity results in this pass; general domain knowledge suggests no documented case, but this should be treated as a thin search rather than a confirmed clean domain (see domains_not_searched)."
+        },
+        {
+          "domain": "environmental (AI compute/grid/water strain)",
+          "search_summary": "Searched Somalia AI data center water/grid strain. Global data-center water-strain reporting (UN, SciDev.Net, Time) and regional examples (Mexico, Uruguay, MENA) returned, but explicitly no Somalia-specific data center or AI-compute infrastructure found \u2014 Somalia does not appear to host documented AI data-center facilities to date."
+        },
+        {
+          "domain": "AI voice-cloning virtual kidnapping/extortion scams",
+          "search_summary": "Searched for Somalia-specific AI voice-cloning kidnapping/extortion scams; only general/global examples (US-focused cases, FBI IC3 statistics) returned, no Somalia-attributed incident found."
+        }
+      ],
+      "domains_not_searched": [
+        "biosecurity (only a shallow/no-dedicated-query pass was done; a targeted search for Somalia AI-bio dual-use, protein design, or livestock/agricultural bio incidents was not run)",
+        "autonomous weapons systems / lethal drone AI targeting specifically (searched general Al-Shabaab drone use, but did not run a targeted search for AI-guided/autonomous targeting claims in Somalia strikes)",
+        "AI in humanitarian/aid targeting errors (e.g., AI-assisted famine/aid allocation systems causing misallocation harm)",
+        "labor/gig-economy AI harms (e.g., AI-managed platform work exploitation in Somalia)",
+        "health-sector AI misdiagnosis or clinical AI harm cases in Somalia"
+      ]
+    },
+    "verdict": {
+      "country": "Somalia",
+      "overall_risk": "medium",
+      "positive_event_audit": [
+        {
+          "description": "Deepfake AI voice-clone audio of Senator Faroole sparking false call for violence (2025-12)",
+          "citation_quality": "solid",
+          "note": "Named source (Somali Journalists Syndicate) with direct dated article URL that is specific and checkable; confidence appropriately marked 'confirmed'."
+        },
+        {
+          "description": "UN Security Council monitoring report: al-Shabaab using AI for translation/propaganda reach (2025-07)",
+          "citation_quality": "weak_unpinned",
+          "note": "Cited only via secondary press (The Conversation) referencing an unnamed UN monitoring report; no report number, date, or direct link to the primary document is given, so it cannot be independently checked as-is. The entry itself flags this and recommends pulling the primary source before inclusion \u2014 that self-flagging is appropriate and should be preserved, but the entry should not be upgraded to 'solid' until the primary UN document is located and cited."
+        }
+      ],
+      "negative_label_audit": "Mixed quality. Four of five negative_domains_checked entries (cybersecurity, financial/fraud, environmental, AI voice-cloning kidnapping) describe genuine searches: each names specific search terms, lists the actual sources/results found (including near-misses like the e-visa breach or Africa-wide fraud figures), and explains why those results don't qualify as Somalia-specific AI harms. That is real absence-of-evidence, not just an assertion. The biosecurity entry, however, is not a genuine search \u2014 its own text admits 'no dedicated search returned' and 'general domain knowledge suggests no documented case,' i.e., it's a placeholder/assertion rather than a checked absence. It is correctly self-labeled as thin and cross-referenced in domains_not_searched, which is good practice, but as it stands the biosecurity 'negative' should not be treated as equivalent in strength to the other four. The domains_not_searched list is honest about scope gaps (biosecurity, autonomous weapons/AI targeting, humanitarian/aid AI misallocation, labor/gig AI harms, health-sector AI misdiagnosis) \u2014 this transparency is a strength of the entry, not a weakness, but it does mean the overall coverage of the negative space is incomplete rather than exhaustive."
+    }
+  },
+  {
+    "country": "Iraq",
+    "events": {
+      "country": "Iraq",
+      "positive_events": [
+        {
+          "domain": "cyber",
+          "year": "2026 (campaign detected/reported Feb-Mar 2026)",
+          "description": "Iran-nexus APT group 'Dust Specter' targeted Iraqi government officials (impersonating Iraq's Ministry of Foreign Affairs via Arabic-language phishing surveys and a fake Cisco Webex ClickFix lure) with malware including a .NET dropper (SPLITDROP) and RATs (TWINTASK, TWINTALK, GHOSTFORM). Zscaler ThreatLabz found indicators that generative AI was used in developing the malware itself (AI-generated code placeholder artifacts, e.g. seed 0xABCDEF, typical of AI code-gen tooling), making this a genuine AI-assisted-tooling case rather than merely AI-themed targeting.",
+          "source": "Zscaler ThreatLabz blog; corroborated by The Hacker News, SecurityAffairs, Infosecurity Magazine, CyberSecurityNews, GBHackers, CyberPress",
+          "source_url": "https://www.zscaler.com/blogs/security-research/dust-specter-apt-targets-government-officials-iraq",
+          "severity_note": "Targeted campaign against multiple Iraqi government officials; no public casualty/financial-loss figure disclosed in reporting reviewed",
+          "confidence": "confirmed"
+        }
+      ],
+      "negative_domains_checked": [
+        {
+          "domain": "financial/fraud (AI-specific)",
+          "search_summary": "Searched 'Iraq deepfake fraud scam AI-generated 2024 2025'. Found Iraq has very high overall fraud/ID-forgery rates (Sumsub report, Nov 2025: highest fraud rate in Middle East at 9.7%, worst ID-card forgery worldwide) but no specific documented case where generative AI/deepfake tooling was the mechanism of a realized fraud incident in Iraq."
+        },
+        {
+          "domain": "biosecurity",
+          "search_summary": "Searched 'Iraq AI biosecurity biological weapons risk'. Found only historical (pre-2003) Iraqi bioweapons program background and general literature on AI lowering barriers to bioweapons risk broadly; no realized AI-enabled biosecurity incident tied to Iraq."
+        },
+        {
+          "domain": "disinformation/election manipulation",
+          "search_summary": "Searched 'Iraq generative AI misinformation election disinformation 2025'. Found only a 2021-era UN/UNAMI general misinformation-countering effort predating generative AI tools, and general global literature; no documented generative-AI-specific disinformation incident in Iraq."
+        }
+      ],
+      "domains_not_searched": [
+        "environmental (AI-compute-siting grid/water strain) \u2014 search attempt hit a rate-limit error and was not completed or retried",
+        "neuropsychological/behavioral manipulation (AI-driven) \u2014 not explicitly searched beyond general disinformation query",
+        "drone/UAV AI-autonomy specifics (whether 2024-2025 Iraq drone attacks used AI-enabled targeting/autonomy vs. standard Shahed-style remote/preprogrammed UAVs) \u2014 searched general drone attack activity but did not find a source confirming or denying an AI-autonomy component"
+      ]
+    },
+    "verdict": {
+      "country": "Iraq",
+      "overall_risk": "medium",
+      "positive_event_audit": [
+        {
+          "description": "Dust Specter APT / Iran-nexus phishing campaign targeting Iraqi MFA officials (Feb-Mar 2026)",
+          "citation_quality": "solid",
+          "note": "Named primary source (Zscaler ThreatLabz) with a specific, checkable blog URL, plus multiple named corroborating outlets. The AI-relevance claim (AI-generated code artifacts like seed 0xABCDEF) is itself sourced to the primary vendor report rather than asserted independently, which is the right standard of evidence. Confidence label 'confirmed' is appropriately supported."
+        },
+        {
+          "description": "Iran-backed militia cyber team claim of attack on Israeli-American AI project (2024-06-07)",
+          "citation_quality": "weak_unpinned",
+          "note": "Source is named (MEMRI Cyber & Jihad Lab) with a specific date and a working URL, so procedurally it looks checkable. But downgrade for two reasons: (1) the underlying claim is a self-reported militia assertion relayed by a monitoring org, not independently verified -- entry itself flags 'unverified independently' and 'confidence: plausible_needs_verification', so it should not be treated as equivalent-strength evidence to event 1 despite superficially similar sourcing; (2) the AI-harm relevance is thin -- an AI company/project was the *target* of a claimed attack, not a case of AI being used as a harm vector or AI tooling being implicated. This is closer to 'AI-adjacent target' than an 'AI harm event' and should probably be flagged for exclusion or re-scoping rather than counted at equal weight to event 1 in calibration."
+        }
+      ],
+      "negative_label_audit": "The three negative_domains_checked entries reflect genuine searches, not bare assertions of absence: each names a specific query string, and each returns a substantive counter-finding rather than silence -- e.g. the financial/fraud entry surfaces a concrete Sumsub Nov-2025 statistic (9.7% fraud rate, worst ID-forgery rate) and explicitly distinguishes 'high overall fraud' from 'no documented AI-specific fraud mechanism,' which is a meaningful and falsifiable distinction rather than a shrug. The biosecurity and disinformation entries similarly report what WAS found (pre-2003 program background; a 2021 pre-genAI UNAMI effort) and explain why it doesn't count, rather than just declaring nothing exists. This is good practice: absence-of-evidence claims are grounded in what the search actually surfaced. The domains_not_searched list is also handled honestly -- it discloses an incomplete search (rate-limit failure on environmental/compute-siting) and two under-searched domains (neuropsychological manipulation, drone AI-autonomy) rather than silently omitting them or misrepresenting them as checked-negative. This transparency is a positive signal for dataset quality, though the entry-set would be improved by actually retrying the rate-limited environmental search before finalizing rather than leaving it as a permanent gap."
+    }
+  },
+  {
+    "country": "Syria",
+    "events": {
+      "country": "Syria",
+      "positive_events": [
+        {
+          "domain": "neuropsychological/behavioral manipulation (AI-generated disinformation fueling sectarian violence)",
+          "year": "2025",
+          "description": "Following the fall of the Assad regime, a wave of sectarian violence on Syria's coast (Latakia/Tartous/Homs, early March 2025, 1,000+ killed) was documented as amplified by coordinated disinformation campaigns that used generative-AI-manipulated images and audio (fabricated victim photos, AI-altered visuals recycled from past conflicts) to inflame fear and incite retaliatory attacks against and by the Alawite minority. Independent fact-checkers (Verify-Sy) traced parts of the network to Iran-linked accounts including Iraq/Lebanon affiliates.",
+          "source": "Chronicle AI (\"AI-fueled disinformation inflames violence in post-Assad Syria\"); Misbar; DAWN (Democracy for the Arab World Now); DISA; Atlantic Council MENASource; ARK",
+          "source_url": "https://chronicleai.org/article/ai-fueled-disinformation-inflames-violence-in-post-assad-syria",
+          "confidence": "confirmed",
+          "severity_note": "High severity if confirmed: AI-generated content is described as a contributing amplifier to an already-underway mass-casualty sectarian conflict, not the sole cause; degree of causal contribution (vs. non-AI recycled footage and bot amplification) is not precisely quantified in these secondary sources and would need primary-source (Verify-Sy dataset) verification for a calibration-grade label.",
+          "verification_reasoning": "Searched independently for corroboration beyond Chronicle AI. Found DISA's dedicated article on the March 2025 Syria coast violence, which independently and explicitly states: \"The disinformation campaign employed increasingly sophisticated tactics, leveraging generative artificial intelligence to manipulate images and audio.\" This is a specific, direct claim about AI involvement, not merely generic disinformation. DAWN (dawnmena.org) separately reports \"AI-generated fake news and manipulated images circulating online\" fueling the same coastal violence. ARK's \"Syria's Digital War\" piece also covers disinformation/FIMI dynamics in the same episode. The underlying violent event itself (1000+ killed on Syria's coast, March 2025) is extremely well documented by UN OHCHR, Wikipedia, Arab Center DC, and Syrians for Truth and Justice, confirming the base event is real. The specific AI-manipulation angle is corroborated by at least two independent organizations (DISA and DAWN) beyond the originally cited Chronicle AI piece, satisfying the bar for \"confirmed\" \u2014 a primary/independent source specifically documents AI as a contributing factor, not just that the event happened.",
+          "verified_primary_source": "DISA (Disinformation Situational Awareness) - \"The Role of Disinformation in Escalating Violence in Syria (March 2025)\"",
+          "verified_primary_source_url": "https://disa.org/the-role-of-disinformation-in-escalating-violence-in-syria-march-2025/"
+        },
+        {
+          "domain": "terrorism/security (AI-assisted lethal targeting)",
+          "year": "2024",
+          "description": "U.S. military reported using AI/machine-learning systems (Project Maven-derived targeting pipelines) to help identify and select targets for airstrikes in Syria (and Yemen) against ISIS-linked and Iran-aligned militia targets, per U.S. defense officials cited in reporting from February 2024.",
+          "source": "The National (UAE), \"US used AI to find targets for strikes on Syria and Yemen\"",
+          "source_url": "https://www.thenationalnews.com/world/us-news/2024/02/26/us-ai-syria-yemen/",
+          "confidence": "confirmed",
+          "severity_note": "State/counter-terrorism use of AI-assisted targeting, not a civilian-harm-labeled incident in this source; relevant primarily to the terrorism/security-response domain rather than as a harm caused by malicious AI use. Would need corroboration (e.g., DoD statements, casualty reporting tied to specific AI-flagged strikes) before treating as a confirmed harm event rather than a capability report.",
+          "verification_reasoning": "Independently corroborated. Bloomberg's Feb 26, 2024 article directly quotes Schuyler Moore, CENTCOM's Chief Technology Officer, publicly confirming that machine-learning algorithms (Project Maven) helped narrow down targets for the Feb 2-3, 2024 strikes against Iran-aligned militia and ISIS-linked targets in Iraq, Syria, and Yemen \u2014 described as the first public on-record confirmation from the US military of AI involvement in specific strikes. This is corroborated by The Register's coverage and Wikipedia's \"February 2024 United States airstrikes in Iraq and Syria\" article, both citing the same CENTCOM statement. This is not speculative: it's a named official's on-record, attributed statement about the specific AI system and its role (target identification/narrowing, not autonomous engagement \u2014 human confirmation still required before strikes). The original cited source (The National, UAE) covers the same story and is consistent with Bloomberg's independent reporting.",
+          "verified_primary_source": "Bloomberg: \"US Used AI to Help Find Middle East Targets for Airstrikes\" (Feb 26, 2024), quoting CENTCOM CTO Schuyler Moore on-record confirming Project Maven machine-learning algorithms helped identify targets for the Feb 2-3, 2024 strikes on 85+ targets in Iraq, Syria, and Yemen",
+          "verified_primary_source_url": "https://www.bloomberg.com/news/articles/2024-02-26/us-says-it-used-ai-to-help-find-targets-it-hit-in-iraq-syria-and-yemen"
+        }
+      ],
+      "negative_domains_checked": [
+        {
+          "domain": "financial/fraud (AI-specific scams targeting Syrians)",
+          "search_summary": "Searched \"Syria AI scam fraud cybersecurity incident\". Found only generic/global AI-fraud trend reporting (FBI IC3, WEF) and Syria-specific but non-AI incidents: 2023 Turkey-Syria earthquake relief phishing/fake-charity scams (WEF) and the historical (pre-AI, 2011-2016) Syrian Electronic Army hacking conspiracy (DOJ). No incident found where generative AI/ML was a documented contributing tool in a financial fraud scheme specifically targeting or originating from Syria."
+        },
+        {
+          "domain": "biosecurity",
+          "search_summary": "No dedicated search returned results in the queries run; general knowledge review found no documented case of AI-assisted bio-risk (e.g., AI-aided pathogen design, bio-threat planning) tied to Syria. Flagged under domains_not_searched below rather than claimed clean, since a dedicated query was not run."
+        },
+        {
+          "domain": "environmental (AI-compute-siting strain on grid/water)",
+          "search_summary": "Searched \"Syria AI compute data center electricity water strain 2025\". Results were entirely about global/US/EU data-center water and power trends; no source indicated Syria hosts, plans, or has been strained by AI compute infrastructure siting. Syria's electricity grid is severely degraded from war damage (per Wikipedia \"Electricity in Syria\"), but no source ties this to AI workloads specifically. Genuine absence for this specific mechanism, though Syria's general infrastructure fragility means an AI-siting event there in the near future is plausible and worth re-checking periodically."
+        },
+        {
+          "domain": "cybersecurity (AI-enabled hacking/intrusion specifically in/against Syria)",
+          "search_summary": "Searched \"Syria AI scam fraud cybersecurity incident\"; found only the pre-AI-era Syrian Electronic Army case (2011-2016, no ML/AI tooling) and generic global AI-cyberattack trend pieces with no Syria-specific tie. No AI-attributed cyber-intrusion event located for Syria."
+        }
+      ],
+      "domains_not_searched": [
+        "biosecurity (dedicated Syria-specific query not run beyond general knowledge check)",
+        "AI-enabled autonomous weapons/loitering munitions used by non-state actors (ISIL/HTS/other factions) in Syria specifically \u2014 only the U.S. state-actor Project Maven targeting angle was searched; non-state AI-drone use in Syria (distinct from the well-documented 2023 explosive-drone attack, which per initial search had no confirmed AI-guidance element) was not separately verified",
+        "AI-generated child sexual abuse material / exploitation cases tied to Syria",
+        "election-related AI disinformation (not applicable in the search window \u2014 no Syrian national election occurred in the period reviewed)",
+        "labor/gig-economy AI harms (e.g., AI-driven content moderation or data-labeling exploitation of Syrian refugee workers) \u2014 a domain documented elsewhere in the region (e.g., refugee data-labor markets) but not specifically searched for Syria in this pass"
+      ],
+      "search_methodology_note": "Used WebSearch (Claude's live web search tool) with five targeted queries run in two batches: (1) \"Syria AI-generated disinformation deepfake 2024 2025\", (2) \"Syria drone AI targeting ISIS attack artificial intelligence\", (3) \"Syria AI scam fraud cybersecurity incident\", (4) \"\\\"AI\\\" Syria coastal violence Alawite March 2025 disinformation fake videos sectarian\" (follow-up drill-down on the strongest lead from query 1), and (5) \"Syria AI compute data center electricity water strain 2025\" for the environmental domain. Prioritized named-outlet and NGO/fact-checking-org sources (Chronicle AI, Misbar, DAWN, Atlantic Council, DISA, ARK, The National) over aggregator/blog content, and cross-checked the top disinformation lead across multiple independent outlets before including it. Did not use specialized threat-intel, GDELT/ACLED event databases, or Arabic-language primary sources (e.g., direct Verify-Sy reports) \u2014 a reproducing researcher should additionally query in Arabic and consult Verify-Sy's own published dataset directly, plus run a dedicated biosecurity query and an ACLED/GDELT structured search for AI-tagged events in Syria, which this pass did not do."
+    },
+    "verdict": {
+      "country": "Syria",
+      "overall_risk": "medium",
+      "positive_event_audit": [
+        {
+          "description": "AI-manipulated disinfo amplifying March 2025 coastal sectarian violence",
+          "citation_quality": "weak_unpinned",
+          "note": "Only one of six named sources (Chronicle AI) has an actual source_url; Misbar, DAWN, DISA, Atlantic Council MENASource, and ARK are named but not linked, so the 'cross-checked across multiple independent outlets' claim cannot be independently verified from this entry. Chronicle AI is a lesser-known outlet whose citation practices are unverified. The entry appropriately self-flags as plausible_needs_verification and honestly notes the AI-causal-contribution fraction is unquantified, which is good calibration, but as-is this is not a citation a downstream user could pin/audit without redoing the search."
+        },
+        {
+          "description": "US Project Maven AI-assisted targeting for Syria/Yemen airstrikes (2024)",
+          "citation_quality": "solid",
+          "note": "Single named outlet (The National, UAE) with a working, specific source_url and a clear date; citation itself is fine. However this is a capability/policy report (state AI-assisted targeting), not a documented civilian-harm incident, and the entry's own severity_note correctly flags this mismatch, risking inflation of the positive-event count with a non-harm data point."
+        }
+      ],
+      "negative_label_audit": "Financial/fraud and cybersecurity entries show genuine search evidence: specific query strings, specific named sources actually found (FBI IC3, WEF, DOJ Syrian Electronic Army case) and a specific falsifiable reason for exclusion (pre-AI-era tooling, no Syria-specific AI tie) -- real negative results, not placeholders. The environmental entry is similarly genuine, with a useful caveat that the grid's degradation is not AI-linked but is worth periodic re-checking. The biosecurity entry is structurally inconsistent: it sits inside negative_domains_checked (implying a check was performed and came back clean) but its own text admits no dedicated query was run and defers to domains_not_searched -- a self-contradiction that should be resolved by moving it entirely into domains_not_searched.",
+      "reproducibility_check": "Largely reproducible: the note lists five literal query strings and names the tool (Claude's WebSearch), letting an independent researcher rerun essentially the same searches and likely surface the same top disinfo lead. Two gaps limit exact reproducibility: no search date/timestamp is recorded even though web-search indices drift over time, so results should be expected to be comparable rather than identical; and the note itself lists known coverage gaps (no Arabic-language queries, no direct Verify-Sy dataset pull, no ACLED/GDELT structured search, no dedicated biosecurity query) that a reproducer would need to add for full coverage. This transparency about limitations is a strength, but means the described approach alone reproduces the top-line finding, not full domain completeness."
+    }
+  },
+  {
+    "country": "Saudi Arabia",
+    "events": {
+      "country": "Saudi Arabia",
+      "positive_events": [
+        {
+          "domain": "financial/fraud (cyber-enabled)",
+          "year": "2024",
+          "description": "Multiple secondary sources (Saudi Shopper, Conflict Advisory Group, Origami.sa) cite a claim that AI/deepfake-enabled fraud incidents in Saudi Arabia rose approximately 600% in Q1 2024 versus the prior year, and that 52% of surveyed UAE/Saudi employees admit vulnerability to deepfake-based social engineering. This is an aggregate trend statistic repeated across marketing/consultancy blog posts, not a single named, dated, checkable incident with a specific victim, company, or law-enforcement record; I could not trace it to an original primary source (e.g., SAMA, NCA, or a named audit firm report) during this search.",
+          "source": "Saudi Shopper / Conflict Advisory Group / Origami.sa blog posts (secondary, unverified primary source)",
+          "source_url": "https://saudishopper.com.sa/en/deepfake-fraud-surge-organizations-unprepared/",
+          "confidence": "confirmed",
+          "verification_reasoning": "The secondary sources cited (Saudi Shopper, Origami.sa, Conflict Advisory Group) all trace back to a common origin: Sumsub, an identity-verification firm. I found and fetched Sumsub's original press release (distributed via PR Newswire and also hosted on Sumsub's own newsroom at sumsub.com/newsroom), which explicitly states Saudi Arabia saw a 600% YoY increase in deepfake incidents in Q1 2024 vs Q1 2023. The methodology is disclosed: this is based on Sumsub's own platform data (millions of verification checks across 2,000+ clients in fintech/crypto/e-commerce/gaming, aggregated and anonymized), not a speculative or unconfirmed attribution \u2014 Sumsub is a fraud-detection company reporting on deepfake-specific verification attempts, so the AI/deepfake angle is the core of their own methodology, not an add-on inference. This is a legitimate primary source (the originating research entity), and it specifically and directly supports the claimed figure, alongside comparable figures for Iraq (900%), Iran (350%), Israel (250%), Yemen (200%), consistent across multiple independent write-ups (PR Newswire, Sumsub newsroom, Infosecurity Magazine). One caveat: Sumsub is a private vendor with a commercial interest in publicizing fraud/deepfake growth (they sell identity verification services), so this is an industry self-reported statistic rather than a government/regulatory/law-enforcement report \u2014 but it is a genuine primary source with disclosed methodology, not a fabricated or misattributed number.",
+          "verified_primary_source": "Sumsub press release / newsroom report \"Deepfake Cases Surge in Countries Holding 2024 Elections, Sumsub Research Shows\" (also distributed via PR Newswire), based on Sumsub's own platform verification data",
+          "verified_primary_source_url": "https://www.prnewswire.com/ae/news-releases/sumsub-data-shows-surge-in-deepfakes-in-the-middle-east-and-in-countries-with-2024-elections-302158940.html"
+        }
+      ],
+      "negative_domains_checked": [
+        {
+          "domain": "terrorism/security",
+          "search_summary": "Prior context establishes Saudi Arabia has low GTI relative to regional peers; no AI-enabled terrorism/attack-planning incident found in this or prior searches."
+        },
+        {
+          "domain": "cybersecurity (AI-enabled attacks/breaches)",
+          "search_summary": "Searched 'Saudi Arabia AI harm incident cybersecurity fraud deepfake' and related terms. Found only general trend/marketing coverage of rising deepfake fraud risk and NCA/SDAIA regulatory responses ($3.5B cybersecurity investment); no single named, dated breach or attack incident attributable to AI as a documented contributing factor."
+        },
+        {
+          "domain": "financial/fraud (named incident)",
+          "search_summary": "Searched for a specific named/dated AI voice-clone or deepfake fraud case in Saudi Arabia (arrest, victim, monetary loss). Found comparable cases from Iraq (Sulaymaniyah, $17k) and the US/UK, but no specific pinned Saudi Arabia case; only the aggregate 600% Q1 2024 statistic (listed above as plausible, unverified)."
+        },
+        {
+          "domain": "biosecurity",
+          "search_summary": "No search specifically returned AI-biosecurity harm in Saudi Arabia; general knowledge and adjacent searches (health chatbot, misinformation) surfaced no biosecurity-specific incident. Treated as checked via the health/chatbot search which returned no incident of this type."
+        },
+        {
+          "domain": "neuropsychological/behavioral manipulation (chatbot mental health harm)",
+          "search_summary": "Searched 'Saudi Arabia AI chatbot self-harm suicide misinformation health advice incident'. Found only general commentary on Saudis increasingly using AI for first-line health/symptom queries (Arab News) and global (non-Saudi-specific) chatbot self-harm research (RAND, Northeastern, Psychiatric Times); no documented realized harm case tied to a specific Saudi individual or incident."
+        },
+        {
+          "domain": "environmental (AI-compute siting: grid/water strain)",
+          "search_summary": "Searched 'NEOM AI compute data center water grid strain criticism environmental'. Found NEOM/DataVolt $5bn hyperscale datacenter project framed as a renewable 'green-AI' initiative with no documented realized environmental harm (grid failure, water shortage, community impact) yet reported; strain findings in the search were specific to the US, not Saudi Arabia."
+        },
+        {
+          "domain": "surveillance/civil-rights (AI-enabled repression)",
+          "search_summary": "Searched 'Saudi Arabia AI surveillance human rights harm report'. Found academic/advocacy framing (The Conversation, ADHRB, Arab Center DC) characterizing Saudi AI/smart-city surveillance as a governance risk and 'digital authoritarian tool' in general terms, but no single documented, dated, named realized-harm incident (e.g., a specific wrongful detention or targeting event attributable to an AI system) with a checkable source."
+        },
+        {
+          "domain": "employment/algorithmic discrimination",
+          "search_summary": "Searched 'Saudi Arabia AI recruitment bias algorithm discrimination incident'. Found academic papers proposing fairness fixes (HITHIRE model) and a general trade-press claim that AI hiring tools caused local graduates to 'disappear from shortlists' due to Arabic CV parsing errors, but this was unattributed/anecdotal in a blog post, not a named company or dated, checkable incident."
+        }
+      ],
+      "domains_not_searched": [
+        "disinformation/election manipulation specific to Saudi Arabia",
+        "autonomous weapons/military AI use",
+        "AI in judicial/legal decision-making harms",
+        "critical infrastructure (oil/gas, water treatment) AI-control-system incidents",
+        "AI-driven labor displacement/gig-worker harms"
+      ],
+      "search_methodology_note": "Used WebSearch (Google-backed) with 7 targeted queries run in two batches on 2026-08-24: (1) \"Saudi Arabia AI harm incident cybersecurity fraud deepfake 2025 2026\", (2) \"Saudi Arabia AI deepfake scam financial fraud news\", (3) \"NEOM AI compute data center water grid strain criticism environmental\", (4) \"Saudi Arabia AI surveillance human rights harm report Smart PLM chatbot misinformation\", (5) \"\\\"Saudi Arabia\\\" AI voice clone scam victim case reported arrested\", (6) \"Saudi Arabia AI recruitment bias algorithm discrimination incident\", (7) \"Saudi Arabia AI chatbot self-harm suicide misinformation health advice incident\". Prioritized primary/named sources (national news outlets like Arab News, Gulf News, Khaleej Times; regulator statements from NCA/SDAIA; named law-enforcement/court cases) over secondary marketing or consultancy blog restatements, and explicitly attempted to trace any aggregate statistic (e.g., the widely-repeated \"600% deepfake fraud surge Q1 2024\" figure) back to an original report; was unable to locate the primary source, so it is flagged plausible_needs_verification rather than counted as a confirmed incident. No incident met the bar of a specific, dated, named, checkable realized-harm event with AI as a documented contributing factor, consistent with Saudi Arabia's profile as a well-resourced, high-governance-capacity state with an active national AI regulatory apparatus (SDAIA, NCA) and no confirmed documented AI-harm incident as of this search date."
+    },
+    "verdict": {
+      "country": "Saudi Arabia",
+      "overall_risk": "medium",
+      "positive_event_audit": [
+        {
+          "description": "600% Q1 2024 deepfake fraud surge + 52% employee vulnerability stat",
+          "citation_quality": "weak_unpinned",
+          "note": "Sourced only to marketing/consultancy blogs (Saudi Shopper, Conflict Advisory Group, Origami.sa) restating an aggregate statistic; no primary source (SAMA, NCA, named audit firm) located. The entry itself correctly flags this as plausible_needs_verification rather than confirmed, and is honest that it could not trace the figure to origin. This is the right epistemic posture, but the entry should NOT be counted as a confirmed/checkable incident in calibration scoring - it is a single aggregate marketing statistic, not a named, dated, checkable event with an identifiable victim or record. Recommend downweighting to 'unverified trend claim' tier, distinct from a true positive incident."
+        }
+      ],
+      "negative_label_audit": "The 8 negative_domains_checked entries show genuine search effort: each cites specific query terms, names what was actually found (even if tangential - e.g., NEOM/DataVolt project, HITHIRE fairness paper, Iraq $17k voice-clone case as a near-miss comparator), and distinguishes 'no incident found' from 'not searched.' This is stronger than boilerplate null-reporting. One weak spot: the biosecurity entry admits \"No search specifically returned AI-biosecurity harm... treated as checked via the health/chatbot search\" - this is a soft/indirect check being counted as a full negative-domain clearance, which slightly overstates coverage for that domain. The domains_not_searched list (election disinfo, autonomous weapons, judicial AI, critical infrastructure, labor displacement) is a good honesty signal - it explicitly bounds what wasn't covered rather than implicitly claiming exhaustiveness.",
+      "reproducibility_check": "Mostly reproducible. The note gives 7 verbatim query strings, batch structure, and a date (2026-08-24), which is enough for an independent researcher to rerun the same WebSearch queries and land on comparable top results (the same blog posts, the same NEOM coverage, the same Iraq case). It is not fully reproducible in the strict sense because: (1) WebSearch/Google results drift over time and by geography/personalization, so \"comparable\" rather than \"identical\" results should be expected; (2) the note doesn't specify how many results per query were reviewed or a cutoff/stopping rule, so scope of review is not fully pinned down; (3) some domain searches (biosecurity) are described as inferred/piggybacked on other queries rather than run directly, which a literal reproduction of the note's 7 listed queries would not surface. Overall: good-faith and specific enough for close reproduction, but not a fully deterministic protocol."
+    }
+  },
+  {
+    "country": "Jordan",
+    "events": {
+      "country": "Jordan",
+      "positive_events": [],
+      "negative_domains_checked": [
+        {
+          "domain": "financial/fraud (AI-enabled banking fraud, AI phishing targeting Jordanian banks)",
+          "search_summary": "Searched for AI-powered cyberattacks/fraud against Jordanian banks. Found only defensive-side coverage: Bank al Etihad deploying NetGuardians AI fraud-prevention tech (FinTech Futures, Financial IT), and an Association of Banks in Jordan report on AI adoption in banking. No report of a realized AI-enabled fraud/cyberattack incident against a Jordanian bank or financial institution."
+        },
+        {
+          "domain": "AI voice-cloning/deepfake financial scams",
+          "search_summary": "Searched broadly for AI deepfake and voice-cloning fraud cases; results returned only global/US-centric statistics (FBI, sumsub, McAfee, FCC) and no Jordan-specific victim case or reported incident."
+        },
+        {
+          "domain": "disinformation/incitement via AI-generated content",
+          "search_summary": "Searched for AI-generated fake news, incitement, or riot-related content tied to Jordan. Found extensive documentation of Jordan's 2023 Cybercrimes Law being used to prosecute online 'fake news' and incitement speech (HRW, Amnesty, Freedom House, NCHR data on 3,170 2024 prosecutions), but no case in these reports specifies AI-generated content (deepfake/genAI) as the mechanism -- prosecutions appear to target ordinary online speech/journalism (e.g., journalist Hiba Abu Taha), not AI-manufactured content causing harm."
+        },
+        {
+          "domain": "environmental (AI-compute data-center strain on grid/water)",
+          "search_summary": "Searched for AI/hyperscale data-center investment and associated water/electricity strain in Jordan specifically. Found no evidence of an AI data center being built or operating in Jordan (unlike UAE, where Microsoft/G42 have announced major buildouts); no grid or water strain incident tied to AI infrastructure in Jordan was found."
+        },
+        {
+          "domain": "terrorism/security (AI-assisted attack planning or AI-enabled security incident)",
+          "search_summary": "General search for AI-linked incitement/violence content in Jordan surfaced no incident where AI tools were reported as a contributing factor to a realized terrorism or security event in Jordan; results were dominated by non-AI cybercrime-law prosecutions."
+        }
+      ],
+      "domains_not_searched": [
+        "biosecurity (AI-assisted bio design/synthesis misuse specific to Jordan)",
+        "neuropsychological/behavioral manipulation (AI-driven radicalization, addictive algorithmic targeting, mental-health harm specific to Jordanian users)",
+        "healthcare AI misdiagnosis/malpractice incidents in Jordan",
+        "AI-enabled labor market/gig-worker harms in Jordan",
+        "Arabic-language local press (Al Ghad, Jordan Times, Roya News, Ammon News) -- searches were run in English via general web search only; Arabic-language local outlets were not separately queried and could carry incidents not indexed in English-language results"
+      ],
+      "search_methodology_note": "Used WebSearch (English-language, Google-backed) with a sequence of targeted queries per risk domain: (1) \"Jordan AI deepfake fraud scam 2025 2026\"; (2) \"Jordan AI-generated disinformation phone scam voice cloning\"; (3) \"Jordan cyberattack AI-powered financial fraud bank\"; (4) \"Jordan data center AI compute water grid strain\"; (5) \"\\\"Jordan\\\" AI-generated content incitement violence riot fake news arrest\"; (6) \"Jordan AI data center Amazon Microsoft investment water electricity 2025\". Prioritized named-outlet news coverage, human-rights org reports (HRW, Amnesty, Freedom House), fintech/industry trade press, and official/NGO documentation over blogs. Each query was reviewed for any result specifically naming Jordan (not just regional/global trend pieces) and specifically attributing a realized harm to an AI system as contributing factor, as opposed to general cybercrime, general fraud, or AI being used defensively/beneficially. No incident meeting both criteria (Jordan-specific + AI-causal + realized harm) was found in any domain searched. A reproducing researcher should expect largely the same negative result via these queries, run in English; Arabic-language local press was not separately searched and is flagged as a gap, along with biosecurity and neuropsychological/behavioral-manipulation domains that were not directly queried in this pass."
+    },
+    "verdict": {
+      "country": "Jordan",
+      "overall_risk": "medium",
+      "positive_event_audit": [],
+      "negative_label_audit": "positive_events is empty, so there are no positive citations to check. The negative_domains_checked entries reflect genuine, non-boilerplate search: each summary names specific sources (FinTech Futures, Financial IT, Bank al Etihad/NetGuardians, HRW, Amnesty, Freedom House, NCHR's 3,170-prosecution 2024 figure) and correctly distinguishes AI-defensive deployments from AI-enabled harm, and correctly separates Jordan's Cybercrimes Law speech prosecutions (real, well-documented) from AI-generated-content harm specifically (not found) rather than conflating the two into a false positive. That precision is a mark of real search rather than a rubber-stamped null. The main residual risk is coverage, not fabrication: domains_not_searched lists five real gaps, most importantly that no Arabic-language local outlets (Al Ghad, Jordan Times, Roya News, Ammon News) were queried at all, only English-language Google-backed web search was used. For a country where the primary press language is Arabic, that is a material blind spot that could hide a real incident never picked up in English coverage. This gap is disclosed, which is good practice, but it means the five negative-domain conclusions should be read as \"not found in English-language search\" rather than \"did not occur.\"",
+      "reproducibility_check": "Yes, reasonably reproducible. search_methodology_note gives the literal query strings used (six numbered queries), names the tool/engine (WebSearch, English-language, Google-backed), states the source-prioritization order (named news > human-rights orgs > trade press > NGO docs > blogs), and states the explicit inclusion test applied to each result (Jordan-specific AND AI-causal AND realized harm, as opposed to global/regional trend pieces or defensive AI use). An independent researcher running the same six queries in English would very likely reach the same null result for the five checked domains, since search-engine result drift for niche, low-volume topics like these is usually small over a short interval. The note also proactively flags what would NOT reproduce cleanly or wasn't attempted at all: Arabic-language local press, biosecurity, and neuropsychological/behavioral-manipulation domains, which is exactly the kind of disclosure that makes an audit trail trustworthy rather than a black box. The main reproducibility weakness is that raw query dates/timestamps and exact result counts/URLs aren't logged, so a strict bit-for-bit reproduction isn't possible, but the described approach is specific enough for a comparable (not identical) result."
+    }
+  },
+  {
+    "country": "Yemen",
+    "events": {
+      "country": "Yemen",
+      "region": "Middle East",
+      "positive_events": [
+        {
+          "domain": "terrorism/security - AI-assisted military targeting",
+          "year": "2024",
+          "description": "US CENTCOM confirmed that machine-learning/computer-vision algorithms developed under the Pentagon's Project Maven were used to help identify targets in Yemen, including rocket launchers, several of which were then destroyed in US weapons strikes. CENTCOM CTO Schuyler Moore stated the same AI systems helped narrow targets for over 85 US airstrikes on facilities in Iraq/Syria in early Feb 2024, with AI also used against Yemeni and Red Sea targets amid the Houthi-Red Sea campaign.",
+          "source": "The National (UAE), Feb 26 2024; corroborated by Bloomberg, The Register, Engadget, The Defense Post",
+          "source_url": "https://www.thenationalnews.com/world/us-news/2024/02/26/us-ai-syria-yemen/",
+          "confidence": "confirmed",
+          "severity_note": "AI directly implicated in lethal military target selection in an active war zone; part of a documented pattern (Project Maven) where AI-assisted airstrikes have separately been linked to at least one officially acknowledged wrongful civilian death (that specific acknowledged case was in Iraq, not Yemen -- see note)."
+        },
+        {
+          "domain": "terrorism/security - adjacent finding, NOT Yemen (flagged for accuracy)",
+          "year": "2026",
+          "description": "A March 2026 Airwars/The Independent joint investigation (reporters Namir Shabibi and Alex Croft) found the US military's first official acknowledgment of a civilian killed in an AI-assisted airstrike: 20-year-old student Abdul-Rahman al-Rawi, killed in February 2024. This case occurred in Iraq, not Yemen -- included here only as directly relevant methodological context to the Yemen Project Maven finding above (same AI targeting program, same conflict period), not as a Yemen event itself.",
+          "source": "Airwars / The Independent",
+          "source_url": "https://airwars.org/the-first-civilian-confirmed-killed-in-an-ai-assisted-strike/",
+          "confidence": "confirmed",
+          "severity_note": "Not counted as a Yemen-domain event; flagged to prevent conflation since search results initially suggested a Yemen connection."
+        }
+      ],
+      "negative_domains_checked": [
+        {
+          "domain": "Cybersecurity / AI-enabled fraud and phishing targeting Yemeni banks or citizens specifically",
+          "search_summary": "Searched 'Yemen cybersecurity AI phishing scam fraud attack banks' and 'Yemen chatbot scam AI voice cloning fraud money'. Results returned only global/generic AI-fraud trend pieces (US banks, UAE, Southeast Asia scam centers, WEF/FTC/CNN coverage) with zero Yemen-specific incidents, victims, or reporting. Yemen's collapsed banking sector and low digital-payment penetration likely reduce its attractiveness as a target/reporting subject relative to wealthier Gulf states."
+        },
+        {
+          "domain": "Biosecurity / AI-assisted bioweapon or pathogen-related risk in Yemen",
+          "search_summary": "Searched 'Yemen biosecurity AI bioweapon risk'. All results were general global biosecurity-AI risk literature (CNAS, Belfer Center, Nature, Science, arXiv reports on AI-designed toxins/bioweapons) with no Yemen-specific mention beyond satellite-internet tangents. No evidence found of any realized or documented AI-biosecurity incident tied to Yemen."
+        },
+        {
+          "domain": "Environmental / AI-compute-siting strain (data centers, water, electricity) in Yemen",
+          "search_summary": "Searched 'Yemen data center AI compute electricity water strain environment'. Results were global/MENA-Gulf-regional (UAE, Saudi, Gulf water-stressed datacenter buildout) with no Yemen-specific data center or AI-compute infrastructure identified. Consistent with Yemen's collapsed electricity grid and active civil war making it an implausible site for AI compute infrastructure at this time -- this is a genuine negative finding, not a search gap."
+        },
+        {
+          "domain": "Neuropsychological/behavioral manipulation - deepfakes/disinformation specifically attributed to Yemen (as opposed to broader Middle East/Iran-Israel conflict)",
+          "search_summary": "Searched 'Yemen deepfake disinformation AI generated propaganda'. Results were dominated by Iran-Israel conflict deepfake coverage (OECD.AI incident tracker, Frontiers, various outlets) and India-election deepfakes; no Yemen-specific deepfake incident (e.g., fabricated Houthi statements, fake battlefield footage attributed to Yemen conflict specifically) was surfaced despite the high-salience Houthi-Red Sea conflict, suggesting either underreporting or genuine absence of a documented, named incident."
+        }
+      ],
+      "domains_not_searched": [
+        "Financial markets/algorithmic trading harms in Yemen (not searched -- Yemen's financial system is largely outside formal/algorithmic markets, judged very low prior)",
+        "AI in Yemeni humanitarian aid targeting/allocation errors (not searched -- plausible domain given heavy WFP/UN operations in Yemen, but not covered in this pass)",
+        "AI-enabled human trafficking or migrant smuggling routes through Yemen (not searched -- Yemen is a known transit country for East African migrants; AI's role unexamined here)",
+        "Houthi-specific AI use for missile/drone guidance systems verified via primary defense-technical sources (e.g. Conflict Armament Research reports) -- only secondary journalism was searched"
+      ],
+      "search_methodology_note": "Ran 8 WebSearch queries via the WebSearch tool, combining Yemen + domain-specific keywords: (1) \"Yemen Houthi AI drone targeting attack 2024 2025\", (2) \"Yemen deepfake disinformation AI generated propaganda\", (3) \"Yemen AI facial recognition surveillance targeted killing\", (4) '\"The National\" US AI Syria Yemen strikes CENTCOM machine learning target identification February 2024' (follow-up drill-down), (5) \"Yemen cybersecurity AI phishing scam fraud attack banks\", (6) \"Yemen chatbot scam AI voice cloning fraud money\", (7) \"Airwars first civilian confirmed killed AI-assisted strike Yemen Houthi\" plus follow-up \"Airwars Independent Namir Shabibi Alex Croft AI strike civilian killed Yemen March 2026 details\" (to verify country attribution, which corrected an initial false-positive from Yemen to Iraq), (8) \"AQAP al-Qaeda Yemen artificial intelligence generative AI recruitment propaganda\", (9) \"Yemen biosecurity AI bioweapon risk\", (10) \"Yemen data center AI compute electricity water strain environment\". Prioritized named outlets/investigative journalism (The National/UAE, Bloomberg, Airwars, The Independent, Atlantic Council, ICCT, MEMRI, Tech Against Terrorism) over aggregator/SEO content, and cross-checked the highest-value finding (Airwars AI-strike civilian death claim) with a second targeted query specifically to verify it was Yemen and not another CENTCOM theater -- this check caught that the acknowledged civilian death (al-Rawi) was actually in Iraq, not Yemen, preventing a false attribution; it is retained in the output only as flagged context, not as a Yemen positive_event. The one confirmed, Yemen-specific, high-confidence finding is the Feb 2024 CENTCOM/Project Maven disclosure that AI/ML systems helped identify rocket-launcher and vessel targets in Yemen and the Red Sea for subsequent strikes. All negative-domain findings (cyber-fraud, biosecurity, environmental/compute-siting) reflect genuine absence of Yemen-specific results across multiple phrasings, not un-attempted searches -- each is annotated with a plausible structural reason (collapsed banking/grid, war conditions) for the absence."
+    },
+    "verdict": {
+      "country": "Yemen",
+      "overall_risk": "low",
+      "reproducibility_check": "Independently re-ran two searches: (1) CENTCOM/Project Maven/Yemen claim \u2014 reproduced exactly (Schuyler Moore, The National Feb 26 2024, 85+ strikes Iraq/Syria plus Yemen rocket-launcher/Red Sea vessel AI targeting, corroborated by Engadget/Register/Business Standard as claimed). (2) Airwars/Independent al-Rawi case \u2014 reproduced exactly, confirming the entry's own correction that this death occurred in Iraq, not Yemen, and that the DoD acknowledgment letter is dated Jan 2025 with the investigation reported ~March 2026. Both citations are real, dated, and match the entry's characterization. This is not reproducible-by-template; it required an actual multi-hop search-and-correct trail.",
+      "is_real_data": true,
+      "positive_event_audit": [
+        {
+          "description": "CENTCOM/Project Maven AI target ID in Yemen (rocket launchers) + Red Sea vessels, Feb 2024",
+          "citation_quality": "solid",
+          "note": "Verified via independent WebSearch: matches The National Feb 26 2024 article and Schuyler Moore quote almost verbatim; multi-outlet corroboration (Engadget, Register, Business Standard) confirmed."
+        },
+        {
+          "description": "Airwars/Independent al-Rawi AI-strike civilian death, flagged as Iraq not Yemen",
+          "citation_quality": "solid",
+          "note": "Verified: al-Rawi was indeed killed in Iraq, not Yemen. Entry correctly excludes it as a Yemen positive_event and retains it only as context, which is analytically correct behavior, not padding."
+        },
+        {
+          "description": "Houthi drone systems w/ possible autonomous guidance evading Iron Dome",
+          "citation_quality": "weak_unpinned",
+          "note": "Honestly labeled plausible_needs_verification; no primary-source AI/ML attribution found, appropriately hedged rather than overclaimed."
+        },
+        {
+          "description": "AQAP Inspire magazine + generative AI use by jihadist groups generally",
+          "citation_quality": "weak_unpinned",
+          "note": "Non-AI propaganda activity is real and dated; AI-specific component is only documented at movement level (mostly ISIS), correctly flagged as unconfirmed for AQAP specifically."
+        },
+        {
+          "description": "Facial recognition/biometrics enabling male-guardianship enforcement in Yemen",
+          "citation_quality": "reject",
+          "note": "No named system, vendor, date, or primary source; correctly self-flagged as low-specificity and not a standalone confirmed event. Should probably not count toward positive-event totals in scoring."
+        }
+      ],
+      "negative_label_audit": "Negative domains (cyber-fraud/phishing, biosecurity, environmental/compute-siting) each include a structural rationale (collapsed banking sector, war-torn electrical grid, implausibility of AI compute infrastructure) rather than a bare 'nothing found,' which is the correct standard for a genuine negative finding vs. an unattempted search. The deepfake/disinformation negative similarly notes the search was dominated by Iran-Israel content, an honest signal of either underreporting or genuine absence rather than a fabricated null. No red flags of template-style negative padding."
+    }
+  },
+  {
+    "country": "Lebanon",
+    "events": {
+      "country": "Lebanon",
+      "region": "Middle East",
+      "positive_events": [
+        {
+          "domain": "terrorism/security (AI-assisted lethal targeting)",
+          "year": "2024-2026",
+          "description": "Israel's military reportedly used an AI-fusion targeting system (drawing on smartphone data, security/traffic cameras, Wi-Fi signals, drone feeds, government databases, social media, voice/facial recognition) to track and target Hezbollah operatives in Lebanon, in a program described as analogous to the 'Lavender' system used in Gaza; this followed the September 2024 supply-chain pager/walkie-talkie explosive attack on Hezbollah members.",
+          "source": "The Spokesman-Review (citing investigative reporting); The Dial; Peoples World",
+          "source_url": "https://www.spokesman.com/stories/2026/may/09/inside-israels-ai-targeting-system-how-data-from-a/",
+          "confidence": "confirmed",
+          "severity_note": "High-severity if confirmed: AI-assisted system implicated in life-and-death targeting decisions in an active conflict; sourcing is investigative/journalistic (not an official military disclosure or court finding), so treat as plausible pending independent corroboration.",
+          "verification_reasoning": "Found The Dial's original article (thedial.world/articles/news/israel-drone-warfare-lebanon), which is the primary investigative source the Spokesman-Review piece syndicates from. It details a specific AI-fusion targeting system in Lebanon: drones using voice/facial recognition, cell-site simulator \"stingrays,\" combined with smartphone data, traffic/security cameras, Wi-Fi signals, government databases (mobile subscriber and vehicle registration records accessible to Israel for two decades), and social media, all processed by AI analysis in Tel Aviv. The reporting includes a specific named case study (Hezbollah liaison Ahmad Turmus) that Israel itself acknowledged targeting, which is a strong corroboration point (not just anonymous sourcing). Independent secondary coverage in Jerusalem Post (same investigation) and Peoples World (\"Israel turns Lebanon into testing ground for high-tech 'remote occupation' tools,\" describing drones feeding data into AI programs \"similar to the Lavender system\") corroborate the AI-fusion angle, not just that strikes/killings happened. This is a serious investigative journalism piece with named sources and an acknowledged case, going beyond speculation \u2014 it explicitly documents AI as the analytical layer fusing multi-source surveillance data, satisfying the bar for \"AI specifically documented as a contributing factor.\" The Lavender-analogy is explicitly drawn by multiple outlets, though it's worth noting this is investigative journalism (multiple corroborating outlets) rather than an official military/UN document, so it sits at high-but-not-official-primary-source tier.",
+          "verified_primary_source": "The Dial's original investigative report \"Israel's Digital Occupation\" (republished/syndicated by The Spokesman-Review and covered independently by Jerusalem Post and Peoples World)",
+          "verified_primary_source_url": "https://www.thedial.world/articles/news/israel-drone-warfare-lebanon"
+        },
+        {
+          "domain": "security/military - AI-assisted lethal targeting",
+          "year": "2024",
+          "description": "Israeli military intelligence used an AI-fused targeting pipeline (smartphone data, security/traffic cameras, Wi-Fi signals, drone feeds, license-plate tracking, social media, reportedly built on architecture similar to the \"Lavender\" system used in Gaza) to track and target Hezbollah personnel throughout Lebanon. Reporting ties this AI-driven tracking capability to the operational picture that preceded and accompanied the September 2024 supply-chain pager and walkie-talkie explosion attacks, which killed and injured thousands in Lebanon, including civilians.",
+          "source": "Jerusalem Post / Spokesman-Review syndicated investigation \"Inside Israel's AI targeting system: How data from a phone become a death sentence\"; corroborated by The Dial (\"Israel's Digital Occupation\") and People's World (\"Israel turns Lebanon into testing ground for high-tech 'remote occupation' tools\")",
+          "source_url": "https://www.jpost.com/defense-and-tech/article-895697",
+          "confidence": "confirmed",
+          "severity_note": "Realized mass-casualty harm (Sept 2024 device explosions) is not in dispute; the specific causal claim that an AI targeting system drove the operation rests on investigative/analytical reporting rather than an official military disclosure, so treat the AI-causal link as well-sourced but reconstructed, not government-confirmed."
+        },
+        {
+          "domain": "information integrity - AI-generated political disinformation",
+          "year": "2026",
+          "description": "An AI-generated deepfake video falsely depicting Lebanese Prime Minister Nawaf Salam making statements about Iran and Israel circulated online and caused public confusion; the Lebanese government issued a statement confirming the video was fabricated and urged citizens to rely on official sources.",
+          "source": "OECD.AI AI Incidents Monitor, incident logged 2026-06-08",
+          "source_url": "https://oecd.ai/en/incidents/2026-06-08-a1e0",
+          "confidence": "confirmed",
+          "severity_note": "Harm is realized (documented public disinformation event with official government rebuttal) but is a moderate-severity information-integrity incident, not physical harm; single-incident entry in the OECD AI Incidents Monitor."
+        }
+      ],
+      "negative_domains_checked": [
+        {
+          "domain": "financial fraud/collapse specifically involving AI (e.g., AI-driven trading, AI-enabled Ponzi/bank-run mechanics, AI voice-cloning/remittance scams targeting Lebanese diaspora)",
+          "search_summary": "Searched 'Lebanon AI fraud deepfake scam 2025 2026', 'Lebanon deepfake financial scam currency crisis', and '\"Lebanon\" AI voice cloning scam remittance diaspora'. Found extensive documentation of Lebanon's 2019+ financial collapse (Ponzi-scheme-like bank practices, bank robberies by depositors, currency devaluation) and extensive documentation of AI voice-cloning/deepfake fraud as a global 2025-2026 trend, but no source connecting the two -- no documented AI-specific fraud or deepfake incident tied to Lebanon's financial crisis or targeting the Lebanese diaspora specifically was found."
+        },
+        {
+          "domain": "cybersecurity (AI-enabled attacks on Lebanese banking/critical infrastructure)",
+          "search_summary": "Searched 'Lebanon AI cybersecurity attack bank hack 2025'. Found a SOCRadar 2025 threat landscape report documenting DDoS attacks, ransomware (Stormous, FunkSec), government breaches (Meteorological Dept website, Traffic Management Center), and dark-web targeting of Lebanon, plus the 2024 pager/device attacks and a Lebanon-based hacking group targeting Israel -- but no report specifically attributed any of these to AI-enabled tooling or characterized them as AI-driven attacks."
+        },
+        {
+          "domain": "biosecurity (AI-enabled bio-risk in Lebanon)",
+          "search_summary": "Not found via the searches run; no dedicated search query for this domain was executed (see domains_not_searched)."
+        },
+        {
+          "domain": "environmental (AI-compute-siting strain on Lebanese grid/water)",
+          "search_summary": "Searched 'Lebanon data center AI compute electricity water strain'. Results returned only Lebanon, Indiana (USA) data-center water-strain coverage plus generic global AI-data-center water/power articles; no results concerning Lebanon (the country) hosting AI compute infrastructure or AI-driven grid/water strain -- consistent with Lebanon's ongoing national electricity-generation crisis being a pre-existing, non-AI-driven structural problem, not one attributable to AI compute siting."
+        },
+        {
+          "domain": "financial fraud / capital flight / remittance fraud tied to the currency crisis",
+          "search_summary": "Searched for AI-enabled financial fraud, deepfake bank scams, and remittance fraud specifically in Lebanon given the 2019-ongoing currency collapse. Found extensive documentation of the banking crisis itself (illegal capital controls, $8B central bank loans to 15 banks, informal cash-based remittance workarounds worth ~$6.3B/yr) and general discussion of AI adoption in Lebanese banking/fintech for fraud detection, but no documented case of AI (deepfake, generative fraud tooling, AI-driven money-mule/remittance scam) being used to perpetrate financial crime or facilitate capital flight specific to Lebanon. Global 2024-2025 deepfake CEO-fraud cases (e.g. the $25.6M Arup Hong Kong case) were found but none tied to Lebanon."
+        },
+        {
+          "domain": "cybersecurity - AI-powered malware/phishing against Lebanese targets",
+          "search_summary": "Searched for AI-driven cyberattacks against Lebanon. Found well-documented non-AI cyber campaigns (Dark Caracal government-linked espionage malware, spear-phishing of Egyptian/Lebanese journalists targeting Apple/Microsoft/Google accounts 2026, an Israeli-claimed hack of a Lebanese water utility, and the pager-attack telecom angle) but no evidence any of these specifically used AI/ML techniques (as opposed to conventional phishing/malware). One adjacent hit (Iranian APT35 using AI-powered phishing) targeted Israeli tech experts, not Lebanese targets."
+        },
+        {
+          "domain": "biosecurity - AI-enabled bio-risk in Lebanon",
+          "search_summary": "No search targeted this domain with a dedicated query beyond general scanning; no incidental hits surfaced any Lebanon-specific AI-biosecurity event in the searches run (targeting, disinformation, financial, cyber, environmental). Domain appears to have no documented signal for Lebanon in the sources surveyed; would need a dedicated query (e.g. \"Lebanon AI bioweapon biosecurity risk\") to fully rule out before treating as confirmed-absent."
+        },
+        {
+          "domain": "environmental / AI-compute-siting strain",
+          "search_summary": "Searched explicitly for AI data center water/electricity strain in Lebanon. All top results referred to Lebanon, Indiana, USA (Meta's 1,500-acre data center) \u2014 a false-positive homonym, not Lebanon the Middle Eastern country. No evidence of AI-compute infrastructure or data-center siting strain in Lebanon (Middle East); the country's severe pre-existing electricity/fuel crisis is well documented but not linked in any source found to AI-compute demand specifically."
+        },
+        {
+          "domain": "neuropsychological / behavioral manipulation via AI (targeted influence ops, addictive algorithmic content)",
+          "search_summary": "No dedicated query run for this domain; only incidental coverage from the disinformation search (the deepfake PM video) surfaced, which is better classified under information-integrity than neuropsychological manipulation proper. No Lebanon-specific documented case of AI-driven behavioral/psychological manipulation campaigns (e.g. targeted algorithmic radicalization, AI-personalized propaganda at scale) was found; would need a dedicated query (e.g. \"Lebanon AI propaganda targeted psychological operations Hezbollah Israel\") to rule out."
+        }
+      ],
+      "domains_not_searched": [
+        "Dedicated biosecurity query (e.g. 'Lebanon AI bioweapon dual-use research biosecurity') was not separately run; covered only incidentally.",
+        "Dedicated neuropsychological/behavioral-manipulation query (e.g. 'Lebanon AI propaganda psychological operations targeted influence') was not separately run; covered only incidentally via the disinformation search.",
+        "Arabic-language and local Lebanese outlet searches (e.g. An-Nahar, L'Orient-Le Jour, Al-Akhbar) were not performed; all searches were English-language via WebSearch, which may under-represent domestically reported incidents (e.g. local AI-enabled scam reports, local fintech fraud cases) not picked up by international outlets."
+      ],
+      "search_methodology_note": "Ran 6 WebSearch queries via the WebSearch tool (2026-08-24): (1) \"Lebanon AI deepfake fraud scam 2024 2025\" \u2014 general/global, no Lebanon-specific fraud hits; (2) \"Lebanon AI Hezbollah Israel targeting drone artificial intelligence\" \u2014 surfaced the primary confirmed finding (AI-fused targeting system linked to pager attacks) plus the lower-confidence Hezbollah-AI-drone claim; (3) \"Lebanon AI financial fraud banking crisis remittance\" \u2014 surfaced banking-crisis background but no AI-fraud nexus; (4) \"Lebanon deepfake disinformation election 2026 AI generated\" \u2014 surfaced the OECD.AI-logged PM deepfake incident; (5) \"Lebanon cyberattack AI malware phishing campaign\" \u2014 surfaced cyber campaigns against Lebanon but none confirmed as AI-driven; (6) \"Lebanon data center AI water electricity crisis\" \u2014 ruled out environmental/compute-siting domain (all hits were the Lebanon, Indiana homonym). Source types prioritized in this order: (a) established international outlets and syndicated investigative reporting (Jerusalem Post, The Dial, CyberScoop, SecurityWeek), (b) structured incident trackers (OECD.AI AI Incidents Monitor), (c) NGO/press-freedom orgs (CPJ, SMEX, TIMEP) for cyber/financial context, (d) state-linked/single-source outlets (IRNA) flagged explicitly as lower-confidence rather than excluded outright. An independent researcher could reproduce this by running the same six query strings through a general web search engine and cross-checking any Hezbollah/Israel AI-targeting claim against the OECD.AI incidents database and at least two independent outlets before treating it as confirmed, given the high propaganda/information-warfare density of Lebanon-Israel-Hezbollah coverage."
+    },
+    "verdict": {
+      "country": "Lebanon",
+      "overall_risk": "low",
+      "reproducibility_check": "Search methodology is concrete and reproducible: 6 named WebSearch query strings, source-priority tiering, and explicit domain-by-domain search summaries rather than generic boilerplate. I independently fetched two of the three positive-event source URLs. (1) jpost.com/defense-and-tech/article-895697 loads and is confirmed on-topic: it is specifically about Israel's AI-fused targeting system against Hezbollah in Lebanon, explicitly references the September 2024 pager attacks as context, and even names a specific case (Ahmad Turmus). This matches the entry's description closely and is a real, current article. (2) oecd.ai/en/incidents/2026-06-08-a1e0 loads and confirms the exact incident described: an AI-generated deepfake video of Lebanese PM Nawaf Salam re Iran/Israel, with government rebuttal. This is a genuine OECD AI Incidents Monitor entry, correctly cited. (3) globalsecurity.org/military/library/news/2024/06/mil-240615-irna03.htm returned HTTP 403 on fetch (could not independently confirm content), but this is the one claim the entry itself already labels \"confidence: plausible_needs_verification\" / single-source state-media-originated -- i.e., the audit-worthy caveat is already disclosed in the entry rather than concealed, which is exactly the correct epistemic handling of a shaky source.",
+      "is_real_data": true,
+      "positive_event_audit": [
+        {
+          "description": "Israeli AI-fused targeting of Hezbollah personnel, tied to Sept 2024 pager attacks",
+          "citation_quality": "solid",
+          "note": "Independently fetched jpost.com/defense-and-tech/article-895697; confirmed live, on-topic, matches description in detail (references pager attacks, AI data fusion, specific casualty case). Entry correctly labels the AI-causal link as reconstructed/investigative rather than officially confirmed -- appropriately hedged severity_note."
+        },
+        {
+          "description": "Hezbollah AI-assisted drone evasion claim (IRNA)",
+          "citation_quality": "weak_unpinned",
+          "note": "Could not independently load globalsecurity.org URL (403 Forbidden on fetch), so content unverified directly. However the entry itself already flags this as single-source, state-media-originated, low-confidence, and explicitly labels it 'plausible_needs_verification' rather than confirmed -- correct self-aware handling even though I couldn't cross-check the page."
+        },
+        {
+          "description": "AI deepfake video of Lebanese PM Nawaf Salam (OECD.AI incident)",
+          "citation_quality": "solid",
+          "note": "Independently fetched oecd.ai/en/incidents/2026-06-08-a1e0; confirmed live and content matches the entry's description almost verbatim (fabricated PM statements on Iran/Israel, government rebuttal)."
+        }
+      ],
+      "negative_label_audit": "Negative-domain checks read as genuine rather than templated: each of the 5 domains has a specific, differentiated search_summary with concrete findings (not generic \"no results found\" boilerplate) -- e.g. correctly identifying and discarding the Lebanon-Indiana homonym false-positive for the data-center domain, citing specific real background facts (the $8B central bank loan figure, the Arup Hong Kong $25.6M deepfake fraud case as a global comparator), and distinguishing \"no AI nexus found\" from \"not searched.\" The entry is honest about incomplete coverage (biosecurity and neuropsychological domains flagged as only incidentally covered, not dedicated queries) and explicitly discloses the English-language-only limitation missing Arabic-language local outlets (An-Nahar, L'Orient-Le Jour, Al-Akhbar). This kind of granular self-critique is a strong signal of genuine research rather than a placeholder."
+    },
+    "note": "Merged from two independent passes: MENA-resume run (security/targeting domain) + forced retry (financial-crisis domain, after first attempt returned placeholder)."
+  },
+  {
+    "country": "United Arab Emirates",
+    "events": {
+      "country": "United Arab Emirates",
+      "region": "Middle East",
+      "positive_events": [
+        {
+          "domain": "financial/fraud",
+          "year": "2020 (reported publicly 2021)",
+          "description": "A Dubai-based bank branch manager was deceived by AI voice-cloning software mimicking a company director's voice (combined with fabricated supporting emails from a lawyer), authorizing transfers totaling roughly  million as part of a coordinated fraud scheme. UAE authorities sought U.S. assistance tracing about ,000 of the stolen funds that reached U.S. accounts. Widely cited as one of the first major deepfake-audio bank fraud cases.",
+          "source": "Forbes, 'Fraudsters Cloned Company Director's Voice In  Million Bank Heist' (Thomas Brewster), Oct 14 2021",
+          "source_url": "https://www.forbes.com/sites/thomasbrewster/2021/10/14/huge-bank-fraud-uses-deep-fake-voice-tech-to-steal-millions/",
+          "confidence": "confirmed",
+          "severity_note": "Large realized financial loss ($35M) with documented law-enforcement follow-up. Predates UAE's AI governance buildout (Minister of AI role created 2017); best read as a pre-governance baseline data point. No comparably specific 2023-2026 incident found despite a documented regional deepfake-fraud surge."
+        }
+      ],
+      "negative_domains_checked": [
+        {
+          "domain": "cybersecurity",
+          "search_summary": "Found extensive AI-driven attack VOLUME reporting (DDoS up 862% 2019-2024 per Help AG/CPX; AI-generated malware/phishing cited in CPX State of UAE Cybersecurity Report 2025) but no single well-sourced, specifically-attributed discrete incident meeting the citation bar; one candidate incident (University of Sharjah breach claim) traced only to a low-tier aggregator and was excluded as unpinned."
+        },
+        {
+          "domain": "neuropsychological/behavioral manipulation",
+          "search_summary": "Found global chatbot-harm literature and one UAE medical-student wellbeing survey, but no UAE-specific documented harm incident tied to an AI system."
+        },
+        {
+          "domain": "environmental (compute/grid/water strain)",
+          "search_summary": "Found substantial documented strain and projections (UAE AI sector projected to need ~61 billion liters/year of water by 2030; Stargate UAE and Microsoft's .2B Abu Dhabi buildout projected to double data-center power demand by 2030) but these are forward-looking projections, not a documented realized-harm event as of the search date -- flagged as an emerging risk, not counted as a positive."
+        }
+      ],
+      "domains_not_searched": [
+        "biosecurity (no dedicated targeted pass conducted)",
+        "terrorism/security (treated as a known-low-risk contrast case per prior GTI data, not independently re-searched this session)"
+      ],
+      "search_methodology_note": "Searched 'UAE AI voice cloning bank fraud', 'UAE AI cybersecurity incident attack 2024 2025', 'UAE AI chatbot misinformation harm mental health incident', 'UAE AI data center water electricity strain grid 2025'. Prioritized named outlets (Forbes) and industry reports (CPX, Help AG) with cross-corroboration; excluded low-tier aggregator claims lacking primary-source confirmation."
+    },
+    "verdict": {
+      "country": "United Arab Emirates",
+      "overall_risk": "medium",
+      "positive_event_audit": [
+        {
+          "description": "$35M Dubai voice-cloning bank fraud",
+          "citation_quality": "solid",
+          "note": "Named outlet (Forbes), specific date, specific amount, corroborated by law-enforcement follow-up detail. This is the single most solid financial-fraud citation in the entire MENA batch."
+        }
+      ],
+      "negative_label_audit": "Genuine search descriptions with named queries and named sources checked, correctly distinguishing risk/projection findings (environmental) from realized-harm findings, and correctly excluding an unpinned candidate incident (Sharjah) rather than force-including it.",
+      "reproducibility_check": "search_methodology_note lists the actual query strings used and the source-prioritization logic; reproducible by an independent researcher.",
+      "is_real_data": true
+    },
+    "note": "Manually restored from the first-pass workflow output after a resume run replayed this entry as a degenerate placeholder despite the original real data existing; original full data verified present in the session's own tool-result record."
+  }
+]
