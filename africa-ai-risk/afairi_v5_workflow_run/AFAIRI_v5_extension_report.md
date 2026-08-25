@@ -181,3 +181,17 @@ countries per the verifier audits.
   infrastructural_fragility figures are generally better-sourced (named
   datasets, specific indicators) and safer to cite as-is, with the specific
   flagged exceptions noted per country.
+
+---
+
+## Update: the scoped pilot experiment, three passes
+
+After this report, the rubric fix above was applied and the resulting
+governance_deficit-vs-event-count relationship was tested three times
+(n=13, n=13 post-verification, n=23 after expanding coverage), including
+a real model-selection catch (naive Poisson regression looked significant;
+the statistically correct negative-binomial model, accounting for real
+overdispersion in the data, did not). None of the three passes found a
+significant effect, and the direction was consistently backwards from the
+framework's prediction. Full writeup:
+`labeled_event_set/PILOT_EXPERIMENT_FINAL.md`.

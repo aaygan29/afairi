@@ -1337,5 +1337,768 @@
       "is_real_data": true
     },
     "note": "Manually restored from the first-pass workflow output after a resume run replayed this entry as a degenerate placeholder despite the original real data existing; original full data verified present in the session's own tool-result record."
+  },
+  {
+    "country": "Algeria",
+    "events": {
+      "country": "Algeria",
+      "region": "North Africa",
+      "positive_events": [],
+      "negative_domains_checked": [
+        {
+          "domain": "terrorism/security AI misuse",
+          "search_summary": "No documented AI-specific terrorism harm event found for Algeria; only general GTI score (2.42, 2024) and residual counter-terrorism/border-security context via US State Dept Country Reports on Terrorism 2024 exist. No AI-attribution located."
+        },
+        {
+          "domain": "cyber / financial fraud",
+          "search_summary": "Strongest domain found. Confirmed: Algerian cybercrime unit handled 2,700 cases in first 10 months of 2024 (mostly fraud/stalking/hacking, AI-attribution not specified in source); 140,000-attack phishing ring dismantled by Algerian authorities; Algerian national 'SPOX' (Abdellah Belmili) extradited to US June 2026 for running market0day.com stolen-credential marketplace; INTERPOL Africa Cyberthreat Assessment 2025/2026 attributes >55% of African cybercrime to AI tooling (continental figure, not Algeria-specific)."
+        },
+        {
+          "domain": "biosecurity",
+          "search_summary": "Not searched in depth for Algeria specifically; no evidence surfaced in general searches, no dedicated query run. Flagged as a gap."
+        },
+        {
+          "domain": "neuropsychological/behavioral manipulation",
+          "search_summary": "No Algeria-specific documented incidents found; general searches on AI disinformation in Algeria surfaced only Ministry of Communication anti-fake-news training (2024) and academic commentary on AI as a countermeasure tool, not documented harm events."
+        },
+        {
+          "domain": "environmental",
+          "search_summary": "Not searched; no query run for AI-linked environmental harm in Algeria. Flagged as a gap."
+        }
+      ],
+      "domains_not_searched": [
+        "biosecurity (no dedicated Algeria query run)",
+        "environmental (no dedicated Algeria query run)",
+        "confirmed individual AI-harm court cases with named victims/dates beyond the SPOX cybercrime case"
+      ],
+      "risk_vectors": [
+        "cyber/financial fraud (AI-enabled phishing, banking credential theft)",
+        "terrorism/security (residual Sahel-border spillover, low-moderate current level)",
+        "state/social-media disinformation and fake-news amplification",
+        "cybercrime-as-a-service infrastructure exploitation"
+      ]
+    },
+    "verdict": {
+      "country": "Algeria",
+      "overall_risk": "medium",
+      "wgi_gti_sanity_check": "Mixed. The WGI government-effectiveness (27.36 percentile, 2023) and control-of-corruption (30.19 percentile, 2023) figures are specific, plausible, and consistent with Algeria's known governance profile (low-moderate percentile, well below MENA oil-exporter peers like UAE/Qatar but not failed-state territory) \u2014 these read as real pulled numbers, not fabrications, though the entry itself flags a year discrepancy (page header says 2022, body says 2023) that should be resolved against databank.worldbank.org before use. The WGI rule-of-law figure is explicitly NOT reported as a percentile rank \u2014 the entry correctly refuses to substitute the -0.70 raw score or the 32.21% confidence-interval upper bound for an actual point estimate, which is honest rather than vague; this is a gap correctly flagged as a gap, not a fabricated number. The GTI score (2.42/10, 2024) is specific and directionally consistent with Algeria's known residual-terrorism profile (post-insurgency, low-moderate current level, Sahel border spillover) but the country RANK among 163 scored countries is explicitly stated as unconfirmed \u2014 again an honest gap, not an invented rank. Net: no invented precision found; every soft spot is self-flagged with a recommended verification path (databank.worldbank.org, visionofhumanity.org), which is the correct behavior. Weakest point is susceptibility (44%), which is NOT an Algeria-specific Global Findex figure at all \u2014 it is a MENA regional proxy (43% 2014 / 53% 2024) inexpertly averaged/asserted as ~44% without a real Algeria-specific source; this should be flagged more strongly or downgraded rather than presented as a single clean value in the JSON.",
+      "events_to_downgrade_or_reject": [
+        {
+          "description": "positive_events array is empty",
+          "verdict": "confirmed",
+          "reasoning": "No positive events were asserted, so there is nothing to refute \u2014 this is the correct/safe state rather than an omission, since the entry's own negative_domains_checked log shows real search effort was made (SPOX cybercrime case, 140k-attack phishing ring, INTERPOL Africa assessment) and no countervailing positive AI-governance wins were found or fabricated to pad the record."
+        },
+        {
+          "description": "Susceptibility value of 44% presented as an Algeria metric",
+          "verdict": "rejected",
+          "reasoning": "This is not an Algeria-specific figure \u2014 the entry's own metric field admits it is a MENA regional Global Findex proxy (43%\u201353% range across 2014\u20132024) with no Algeria-specific 2021 data located. Presenting a single point value of 44% in the structured field overstates precision the source doesn't support; should be flagged as low-confidence/regional-proxy in any downstream scoring rather than treated as a direct country statistic."
+        },
+        {
+          "description": "Governance_deficit tier placement (62, 'published strategy, no binding law')",
+          "verdict": "confirmed",
+          "reasoning": "This is well-supported: Digital Policy Alert is a credible tracker, the Dec 8 2024 National AI Strategy date is specific and checkable, and the reasoning for the 55-65 band (strategy adopted but no binding AI law, only a proposed expansion of the Personal Data Protection Agency's mandate) is logically consistent and appropriately conservative rather than inflated."
+        }
+      ],
+      "citation_issues": [
+        "Susceptibility source_url points to a global Findex 2021 chapter brief, not an Algeria-specific dataset page \u2014 the entry should link directly to the Algeria country profile in the Global Findex database (or omit a numeric value entirely and mark N/A) rather than deriving 44% from a MENA regional range.",
+        "GTI source is TradingEconomics (a secondary aggregator) rather than the primary Institute for Economics & Peace / Vision of Humanity GTI report or dataset \u2014 the entry correctly recommends cross-checking visionofhumanity.org but the primary figure should ideally be pulled from there, not a third-party mirror.",
+        "WGI government-effectiveness and control-of-corruption sources are also TradingEconomics mirrors of World Bank WGI rather than the primary databank.worldbank.org WGI source; entry appropriately flags this and recommends the primary source, which is good practice but means the two percentile figures are not yet independently verified against the authoritative dataset.",
+        "Infrastructural_fragility uses a 100% headline electricity-access figure while citing a World Bank blog acknowledging reliability gaps behind that number \u2014 the entry handles this reasonably by noting the caveat inline, but a raw 100 value risks being read as 'zero infrastructural fragility' by downstream consumers unless the qualitative caveat is actually incorporated into scoring, not just prose.",
+        "Interpol source URL contains a future date (2026) for an African cybercrime report cited as supporting a >55% AI-attribution continental figure \u2014 given today's date is 2026-08-24 this is plausible/recent but should be double-checked that the URL and publication date are correctly matched and not a placeholder/typo, since it is doing real evidentiary work for the strongest domain (cyber/financial fraud)."
+      ]
+    },
+    "wgi": {
+      "rule_of_law": "Not confirmed as a specific percentile-rank number. The World Bank's raw Rule of Law index score (-2.5 weak to +2.5 strong) for Algeria was -0.70 in 2024 per TheGlobalEconomy.com (sourced from WGI), but repeated attempts to retrieve the corresponding 0-100 percentile rank from TradingEconomics and Google returned 404s or non-data pages. One older data point found: the upper-bound-of-90%-CI percentile rank was 32.21% in 2021 (TradingEconomics), which is a confidence-interval bound, not the point estimate \u2014 do not treat as the actual percentile rank. Recommend direct pull from databank.worldbank.org/source/worldwide-governance-indicators for the authoritative current-year point estimate.",
+      "government_effectiveness": "27.36 percentile rank, 2023 (source: TradingEconomics, citing World Bank WGI collection of development indicators \u2014 note the page's own header says \"2022 Data\" while body text states 2023, so treat year as approximate/needs cross-check against databank.worldbank.org)",
+      "control_of_corruption": "30.19 percentile rank, 2023 (source: TradingEconomics, citing World Bank WGI collection of development indicators)",
+      "gti_score": "Algeria's Terrorism Index (Vision of Humanity / Global Terrorism Index methodology, as reported via TradingEconomics) was 2.42 (0-10 scale, lower = less impact) in 2024. Algeria's specific numerical country rank among the 163 GTI-scored countries in the 2024 or 2025 edition could not be confirmed from available search results; only the score was locatable, sourced via https://www.tradingeconomics.com/algeria/terrorism-index (which itself draws on the Institute for Economics & Peace Global Terrorism Index). Recommend verifying directly against visionofhumanity.org/maps/global-terrorism-index/ for the authoritative rank."
+    }
+  },
+  {
+    "country": "Libya",
+    "events": {
+      "country": "Libya",
+      "region": "North Africa (MENA)",
+      "positive_events": [],
+      "negative_domains_checked": [
+        {
+          "domain": "terrorism/security - autonomous weapons",
+          "search_summary": "CONFIRMED, high-quality source: UN Panel of Experts on Libya (March 2021 report to UN Security Council) documented that Turkish-made STM Kargu-2 loitering munitions, capable of autonomous machine-learning-based target classification and engagement without operator data-link ('fire, forget and find'), were used by GNA-affiliated forces (with Turkish support) against Haftar-affiliated forces near Tripoli in March 2020. The report stopped short of confirming autonomous-mode fatalities. Widely covered by Bulletin of the Atomic Scientists, NPR, Live Science, ICRC casebook, and tracked in the AI Incident Database (reports #2104, #2106)."
+        },
+        {
+          "domain": "cyber",
+          "search_summary": "No Libya-specific documented AI-enabled cyberattack found in available search results."
+        },
+        {
+          "domain": "financial/fraud",
+          "search_summary": "No Libya-specific AI/deepfake financial fraud incident found; global deepfake-fraud trend data (3,000% surge in 2024, Arup deepfake CFO fraud, Malaysia deepfake investment scams) located but none tie to Libya specifically."
+        },
+        {
+          "domain": "biosecurity",
+          "search_summary": "No Libya-specific AI-biosecurity incident found in search."
+        },
+        {
+          "domain": "neuropsychological/behavioral (disinformation, deepfakes of political figures)",
+          "search_summary": "Searched specifically for deepfakes of Haftar/Dbeibah or election-related AI content in Libya; no confirmed incident found in available search results despite Libya's documented high disinformation/instability environment (Freedom House Freedom on the Net 2024 flags Libya's information environment generally, but no specific AI-generated deepfake event was located)."
+        },
+        {
+          "domain": "environmental",
+          "search_summary": "No Libya-specific AI-environmental-harm event found in search results."
+        }
+      ],
+      "domains_not_searched": [],
+      "risk_vectors": [
+        "security/terrorism - lingering armed-group presence, low but non-zero terrorism incidents",
+        "autonomous weapons/military AI - documented use of AI-enabled loitering munition in civil conflict",
+        "governance vacuum - dual/competing governments (GNU Tripoli vs GNS/HoR-aligned east) with no unified binding AI law",
+        "critical infrastructure fragility - collapsing electricity grid limits safe AI deployment and increases cascading-failure risk",
+        "state-capacity gap for AI oversight despite a newly adopted national AI strategy (2025-2030) that is not yet binding law",
+        "financial-sector fragmentation increasing susceptibility to AI-enabled fraud though inclusion data itself is unverified"
+      ]
+    },
+    "verdict": {
+      "country": "Libya",
+      "overall_risk": "medium",
+      "wgi_gti_sanity_check": "WGI figures (rule of law, government effectiveness, control of corruption) are explicitly reported as \"NOT FOUND via search\" rather than invented \u2014 this is the correct, honest behavior and should be preserved as-is rather than backfilled with a guessed number. However, the entry should not leave \"value\": 0 sitting in the susceptibility field even with a caveat string attached \u2014 a downstream consumer that reads .value will silently ingest 0 as if it were a real 0% financial-inclusion figure. Recommend either dropping the field or using null/None instead of 0. The GTI entry is internally inconsistent and should be treated with suspicion: it claims Libya ranked 39th on the 2024 Global Terrorism Index while simultaneously recording zero terrorism incidents and zero terrorism deaths for the first time since 2010. GTI ranks are ordered by composite score (incidents + deaths + injuries + hostages, weighted, with a 5-year decay), and countries with a genuine zero-incident year in the reporting period cluster far down the ranked list (typically outside the top ~90, often unranked/tied at the bottom), not at 39. A rank of 39 is far more consistent with Libya having had a non-trivial, non-zero incident count in 2024 (which matches the reality of continued periodic clashes/security incidents in Libya through 2023-2024). This pairing looks like two separately-scraped facts (an old or mismatched rank, and a \"record improvement\" claim) glued together without reconciliation \u2014 likely a hallucinated or misattributed combination rather than a directly checkable single figure, and should be re-verified against the actual GTI 2024 report/Vision of Humanity country page before use, or reported with only one of the two claims and a confidence caveat.",
+      "citation_issues": [
+        "gti_score: rank ('39th') and 'zero incidents/zero deaths' claims are logically inconsistent with how GTI computes rank from incident/death/injury/hostage counts \u2014 likely a hallucinated or mismatched pairing, not verified from a single primary source screenshot/table",
+        "wgi_rule_of_law / wgi_government_effectiveness / wgi_control_of_corruption: all three are 'NOT FOUND' placeholders, correctly not fabricated, but this means the entry has NO actual WGI percentile data despite WGI being named as if it were a data source elsewhere in the schema \u2014 the entry should be understood as WGI-data-free, not WGI-verified",
+        "susceptibility.value is literally 0 despite the metric description saying the real percentage 'was NOT retrievable' \u2014 a numeric 0 in a value field is dangerous for any consumer that doesn't read the string caveat; should be null, not 0",
+        "GIA.gov.ly announcement dated '2026-06-02' and Libya Herald piece dated 'Oct 2025' are both plausible given the stated current date (2026-08-24) but were not independently re-fetched/read in this verification pass, only cross-checked for internal date plausibility",
+        "the AI-Incident-Database report numbers (#2104, #2106) and the 'stopped short of confirming autonomous-mode fatalities' nuance are correctly hedged and match the well-documented consensus (UN Panel of Experts March 2021 report on Kargu-2 in Libya) \u2014 this is the one figure in the entry that reads as genuinely checkable and specific, not vague"
+      ],
+      "events_to_downgrade_or_reject": [
+        {
+          "description": "Kargu-2 autonomous loitering munition use near Tripoli, March 2020 (UN Panel of Experts report)",
+          "verdict": "confirmed",
+          "reasoning": "Multiply corroborated by independent, credible sources (UN Panel of Experts report itself, Bulletin of the Atomic Scientists, NPR, ICRC casebook, AI Incident Database). The entry correctly hedges that the report does not confirm autonomous-mode fatalities, which matches the actual limits of the primary source. This is the strongest-sourced claim in the whole entry."
+        },
+        {
+          "description": "GTI 2024: Libya ranked 39th AND recorded zero terrorism incidents/deaths for first time since 2010",
+          "verdict": "rejected",
+          "reasoning": "Internally contradictory: a country with a genuine zero-incident/zero-death year in the GTI scoring window would rank far below 39th under GTI's score-based ordering, not at 39. This pairing should be treated as unverified/likely erroneous until the exact GTI 2024 table is pulled directly rather than reconstructed from search snippets; do not present both numbers together as fact."
+        },
+        {
+          "description": "National AI Strategy 2025-2030 with Ethics Charter, National AI Authority, Chief AI Officer role (governance_deficit rationale)",
+          "verdict": "confirmed",
+          "reasoning": "Sourced to OECD.AI Policy Navigator, GIA.gov.ly official announcement, and Libya Herald \u2014 three independent, plausible, checkable sources describing a real government strategy document; the tier score (60, mid-tier, non-binding) is a defensible qualitative judgment call rather than a fabricated number, and the dual-government caveat is a reasonable, disclosed rationale rather than an invented fact."
+        },
+        {
+          "description": "Chronic ~10 hrs/day power cuts in Tripoli, summer 2026, cited via Al Jazeera and Libya Observer",
+          "verdict": "confirmed",
+          "reasoning": "Specific, dated, plausible given Libya's well-documented recurring grid crisis; correctly reported as a qualitative hours-of-outage figure rather than dressed up as a fabricated standardized reliability index, and the entry explicitly flags that no standardized index was found \u2014 appropriately hedged rather than invented."
+        }
+      ]
+    },
+    "wgi": {
+      "rule_of_law": "NOT FOUND via search - could not retrieve exact World Bank WGI percentile rank figure despite multiple targeted queries against databank.worldbank.org and tradingeconomics.com. Only proxy/qualitative data surfaced: IMF Article IV 2024 states Libya ranks below MENA regional averages in rule of law, regulatory quality, control of corruption, and voice and accountability (no numeric percentile given); V-Dem project score for 2023 rule of law = -2.42 (regional avg -0.17, global avg 0.58, different scale from WGI 0-100 percentile). Recommend the user pull the exact percentile directly from databank.worldbank.org/source/worldwide-governance-indicators by selecting Libya + Rule of Law + most recent year, since it requires interactive database query rather than surfacing in search snippets.",
+      "government_effectiveness": "NOT FOUND via search - same limitation as Rule of Law above. TradingEconomics hosts a Libya-specific page (government-effectiveness-percentile-rank-wb-data.html pattern) but the numeric value did not appear in search snippets and was not fetched.",
+      "control_of_corruption": "NOT FOUND via search - same limitation. Transparency International's Corruption Perceptions Index (a related but distinct instrument) has a Libya country page (transparency.org/en/countries/libya) that could supply a proxy figure, but this was not the WGI Control of Corruption percentile specifically requested, so it is not reported as if it were.",
+      "gti_score": "Libya ranked 39th (2024 Global Terrorism Index, published by Institute for Economics & Peace/Vision of Humanity). Notably, Libya recorded zero terrorism incidents and zero terrorism deaths in the GTI 2024 reporting period for the first time since 2010 - a major improvement from its earlier post-2011 civil-war-era terrorism burden. Exact numeric GTI score (the index runs roughly 0-10) was not retrievable from search snippets, only the rank and the zero-incident finding."
+    }
+  },
+  {
+    "country": "Mali",
+    "events": {
+      "country": "Mali",
+      "region": "West Africa (Sahel)",
+      "positive_events": [],
+      "negative_domains_checked": [
+        {
+          "domain": "terrorism/security",
+          "search_summary": "Confirmed via GTI 2024/2025: Mali GTI score 7.998 (2024, ranked 3rd globally), 7.907 (2025 report, ranked 4th); 604 deaths from 201 attacks in 2024 (a 21% YoY reduction). No AI-specific attack-planning/targeting incident found beyond general insurgent activity; AI's role here (if any) is unconfirmed and not separately documented."
+        },
+        {
+          "domain": "cyber",
+          "search_summary": "No Mali-specific confirmed cyber-incident case study found; broader INTERPOL Africa reporting (2026) states AI now powers 'more than half' of reported African cybercrime and continental losses rose from $192M (2024) to $484M, with Mali named among countries seeing AI-generated deepfake/sextortion cases targeting youth, but no Mali-specific incident count or dollar figure was found."
+        },
+        {
+          "domain": "financial/fraud",
+          "search_summary": "GSMA and INTERPOL reporting confirm AI-enabled mobile money fraud (SIM-swap, fake AI-generated identities, deepfake voice scams) as a rising West/East Africa-wide pattern; no Mali-specific documented case with a source was found, only inclusion in regional country lists."
+        },
+        {
+          "domain": "biosecurity",
+          "search_summary": "No documented AI-related biosecurity harm event found for Mali."
+        },
+        {
+          "domain": "neuropsychological/behavioral",
+          "search_summary": "No documented AI-specific neuropsychological/behavioral manipulation harm event found for Mali beyond the disinformation/information-operations category (recorded separately below); INTERPOL's deepfake/sextortion-of-youth finding is the closest confirmed adjacent case."
+        },
+        {
+          "domain": "environmental",
+          "search_summary": "No documented AI-related environmental harm event found for Mali."
+        }
+      ],
+      "domains_not_searched": [],
+      "risk_vectors": [
+        "terrorism/security - Sahel-wide extremist insurgency (JNIM/ISGS) plus Wagner/Russian PMC operations",
+        "disinformation - state-aligned and Russian-linked AI-assisted/coordinated inauthentic campaigns amplifying anti-MINUSMA, anti-French, pro-junta narratives",
+        "financial fraud - AI-enabled mobile money fraud, SIM-swap, and deepfake voice scams reported across West Africa including Mali",
+        "deepfake/sextortion - INTERPOL-flagged AI-generated deepfake and sextortion cases targeting youth",
+        "governance/institutional collapse - post-coup junta (2020, 2021) with no elections since, weak judicial independence, high corruption"
+      ]
+    },
+    "verdict": {
+      "country": "Mali",
+      "overall_risk": "medium",
+      "wgi_gti_sanity_check": "GTI figures are real, specific, and checkable: confirmed via independent search that Mali's GTI 2025 score is 7.907, ranked 4th globally, with 604 deaths from 201 attacks in 2024 (a 21% YoY reduction) \u2014 matches the entry exactly, citing Vision of Humanity/IEP as a traceable primary source. The WGI figures are weaker: the entry itself already flags them as derived/approximate rather than the Bank's own published percentile-rank series (it could not retrieve RL.PER.RNK, GE.PER.RNK, or CC.PER.RNK point estimates directly and instead triangulated from TheGlobalEconomy.com raw-score rankings and Trading Economics CI-bound series). This self-flagging is good practice, but it means two of the three WGI figures (rule of law ~18th percentile, government effectiveness ~6.7th percentile derived from rank) are back-calculated approximations, not primary-sourced numbers, and the two CI-bound/rank-derived figures for government effectiveness (22.17 vs ~6.7) are explicitly acknowledged as non-comparable statistics rather than presented as a single confident number. Only Control of Corruption (21.23%, 2023, Trading Economics/WGI CC.PER.RNK) is a direct, specific, checkable percentile-rank figure. Net: figures are specific and traceable but partially derived/approximated rather than uniformly primary-sourced \u2014 entry is honest about this rather than concealing it.",
+      "events_to_downgrade_or_reject": [
+        {
+          "description": "positive_events list is empty \u2014 nothing to refute",
+          "verdict": "confirmed",
+          "reasoning": "No positive events were claimed, so there is nothing to adversarially test; this is the correct behavior for a country with no located AI-governance progress or AI-positive developments. One gap: independent search surfaced that Malian authorities have announced plans for an 'AI and Robotics Center' and a digitalization campaign for government operations (per aiworld.eu/geo/mali), which the entry did not surface in its governance_deficit rationale or elsewhere. This is announced infrastructure/intent, not enacted policy or regulation, so it would not qualify as a strong positive_event, but the governance_deficit tier-90 rationale's claim of finding 'only an April 2024 grassroots AI&T community group, not a state policy' is incomplete \u2014 it should also acknowledge these announced (unbuilt, non-binding) government AI initiatives rather than implying literally nothing beyond the grassroots group was found."
+        }
+      ],
+      "citation_issues": [
+        "governance_deficit rationale is incomplete: search turned up Malian government announcements of an AI and Robotics Center and a digitalize-government campaign (source: aiworld.eu/geo/mali) that are not mentioned or weighed in the tier-90 rationale; these don't overturn the 'no binding AI law/strategy' conclusion but should be acknowledged as adjacent signal.",
+        "wgi_rule_of_law and wgi_government_effectiveness are honestly flagged by the entry itself as derived/approximate rather than the Bank's own primary percentile-rank series (RL.PER.RNK, GE.PER.RNK) \u2014 this is a real limitation, not a fabrication, but downstream users of this entry should treat those two figures as lower-confidence than the GTI and Control-of-Corruption figures.",
+        "exposure metric mixes two different-year, different-source internet-penetration figures (35.1% Jan 2025 DataReportal vs 36.8% 2024 World Bank/ITU) in a single field without picking one as canonical \u2014 should be resolved to one number with the other noted as a cross-check, not left ambiguous.",
+        "infrastructural_fragility uses electricity access as a proxy with no grid-reliability/outage metric, which the entry itself flags \u2014 appropriate caveat, but this weakens the metric's fit to 'infrastructural fragility' for AI-risk purposes (electricity access \u2260 grid stability for compute/connectivity)."
+      ]
+    },
+    "wgi": {
+      "rule_of_law": "Percentile rank not directly retrievable from World Bank's own percentile series (RL.PER.RNK) via search; derived from TheGlobalEconomy.com's ranking table, which places Mali 159th of 194 countries on the WGI Rule of Law raw estimate (-1.09, 2024) \u2014 implying an approximate percentile rank of ~18 (calculated as (194-159)/194\u00d7100). Flagging this as a derived/approximate figure, not the Bank's own published percentile-rank series value, since I could not load that series directly. Source: https://www.theglobaleconomy.com/rankings/wb_ruleoflaw/ (World Bank WGI data, 2024)",
+      "government_effectiveness": "Government Effectiveness percentile rank, upper bound of 90% CI, was 22.17% in 2023 per Trading Economics (World Bank WGI series GE.PER.RNK.UPPER). Separately, TheGlobalEconomy.com's 2024 ranking table places Mali 180th of 193 countries on the raw GE estimate (-1.29), implying an approximate percentile rank of ~6.7. These two figures (22.17 upper-bound-CI for 2023 vs. ~6.7 derived-from-rank for 2024) are not the same statistic and should not be treated as interchangeable \u2014 I could not retrieve the Bank's central GE.PER.RNK point estimate directly. Sources: https://tradingeconomics.com/mali/government-effectiveness-percentile-rank-upper-bound-of-90percent-confidence-interval-wb-data.html and https://www.theglobaleconomy.com/rankings/wb_government_effectiveness/",
+      "control_of_corruption": "Control of Corruption: Percentile Rank was 21.23% in 2023, per World Bank data as cited by Trading Economics (indicator CC.PER.RNK). This is the most directly confirmed WGI percentile-rank figure obtained for Mali in this research. Source: https://tradingeconomics.com/mali/control-of-corruption-percentile-rank-wb-data.html (citing World Bank WGI)",
+      "gti_score": "GTI 2024 report: score 7.998, ranked 3rd of all countries (behind Burkina Faso 8.571 and Israel 8.143). GTI 2025 report (released March 2025, covering 2024 data): score 7.907, ranked 4th (behind Burkina Faso, Pakistan, Syria); 604 deaths from 201 attacks in 2024 (down 21% year-on-year). Source: Institute for Economics and Peace, https://www.economicsandpeace.org/wp-content/uploads/2024/02/GTI-2024-web-290224.pdf and https://www.visionofhumanity.org/sahel-dominates-top-10-countries-most-impacted-by-terrorism/"
+    }
+  },
+  {
+    "country": "Niger",
+    "events": {
+      "country": "Niger",
+      "region": "West Africa (Sahel)",
+      "positive_events": [],
+      "negative_domains_checked": [
+        {
+          "domain": "Terrorism/security",
+          "search_summary": "Confirmed: Islamic State-Sahel (ISGS) deployed an FPV (first-person-view) armed drone in an attack in Tillab\u00e9ri region, Niger, May 2025 - part of a documented region-wide trend of jihadist groups in the Sahel adopting commercial drone and AI-adjacent targeting technology. Also documented: closest-ever jihadist attack on Niamey (capital) hit the military base at Niamey international airport, with analysts suggesting a drone may have been used by ISSP."
+        },
+        {
+          "domain": "Cyber/disinformation",
+          "search_summary": "Confirmed: Niger became a hub of coordinated disinformation after the July 26, 2023 coup, with fabricated videos, manipulated audio, and networks linked to Wagner/Russian state media pushing pro- and anti-coup narratives; analysts noted the campaign was not highly centrally coordinated. Did not find AI-generation (deepfake) specifically attributed to Niger content, as distinct from Nigeria's 2023 election deepfakes, which is a separate country and was excluded."
+        },
+        {
+          "domain": "Financial/fraud",
+          "search_summary": "No documented AI-specific financial fraud/scam incident located for Niger specifically. Search results returned Nigeria (different country, high AI-scam volume, N12.5bn in telecom fraud losses) which were excluded as not applicable to Niger. Niger's very low account ownership (14%) and internet penetration (23%) likely limit realized AI-fraud incident volume to date, though this could also reflect under-reporting/under-detection rather than absence of risk."
+        },
+        {
+          "domain": "Biosecurity",
+          "search_summary": "No documented AI-related biosecurity incident found for Niger. Not deeply searched beyond a general scan; absence of evidence, not evidence of absence."
+        },
+        {
+          "domain": "Neuropsychological/behavioral",
+          "search_summary": "No documented AI-driven neuropsychological/behavioral-manipulation incident specific to Niger found. Coup-period disinformation (above) has behavioral-influence characteristics but is not confirmed AI-generated/AI-enabled specifically."
+        },
+        {
+          "domain": "Environmental",
+          "search_summary": "No documented AI-related environmental-harm incident found for Niger in search."
+        }
+      ],
+      "domains_not_searched": [
+        "Deep dedicated biosecurity-incident search for Niger specifically",
+        "Environmental/AI harm dedicated search beyond one general query",
+        "Verification that Niger's 2017 data-protection ordinance remains in force post-coup"
+      ],
+      "risk_vectors": [
+        "Terrorism/security (jihadist insurgency - ISWAP, ISGS/Islamic State-Sahel, JNIM active in Tillab\u00e9ri/Diffa regions)",
+        "Cyber/disinformation (coordinated coup-related disinformation campaigns, Wagner-linked networks, 2023)",
+        "Financial/fraud (low financial-system digitization limits scale but mobile-money fraud risk rising with penetration)",
+        "Infrastructural (near-total grid unreliability compounds any AI-dependent security or financial system failure)"
+      ]
+    },
+    "verdict": {
+      "country": "Niger",
+      "overall_risk": "medium",
+      "wgi_gti_sanity_check": "Mixed. GTI figure (7.776, 5th globally, 930 fatalities, +94% YoY, GTI 2025/2024 data) is specific, dated, and internally consistent with the well-documented 2024-2025 surge in Sahel jihadist violence (Niger, Burkina Faso, Mali dominating GTI top ranks) \u2014 plausible and checkable against visionofhumanity.org, though the exact decimal score should still be independently confirmed rather than taken on faith. WGI rule_of_law is correctly marked NOT FOUND rather than fabricated \u2014 good practice. WGI government_effectiveness (28.77) and control_of_corruption (31.6) are specific, dated (2023) percentile-rank numbers, but sourced only to tradingeconomics.com, a secondary scraper of World Bank data, not the primary databank.worldbank.org portal; the entry itself flags this caveat honestly. These two numbers should be treated as PLAUSIBLE, not CONFIRMED, until cross-checked against the primary WGI source \u2014 tradingeconomics has previously been observed to lag or mis-map WGI vintages for smaller countries.",
+      "events_to_downgrade_or_reject": [
+        {
+          "description": "ISGS FPV drone attack in Tillab\u00e9ri, May 2025, and 'closest-ever' jihadist attack on Niamey international airport military base possibly involving a drone",
+          "verdict": "confirmed",
+          "reasoning": "Consistent with well-documented, widely-reported 2025 trend of Sahel jihadist groups (JNIM, ISGS/IS-Sahel) adopting commercial/FPV drones for attacks; sourced to Al Jazeera and a Yahoo syndication of a drones-in-Sahel piece, which is a reasonable secondary source. The entry appropriately hedges the Niamey claim as 'analysts suggesting' rather than confirmed, which is the correct level of certainty \u2014 this should remain flagged as attributed/suggested, not stated as fact in any downstream product."
+        },
+        {
+          "description": "Post-coup (July 2023) coordinated disinformation campaign in Niger with Wagner/Russian-state-media links, fabricated video/audio",
+          "verdict": "confirmed",
+          "reasoning": "Well-established via multiple contemporaneous outlets (Al Jazeera cited here is consistent with broader 2023 reporting on Wagner-linked disinformation networks activating around Sahel coups). The entry correctly notes the campaign was 'not highly centrally coordinated,' avoiding overclaiming a single orchestrated operation, and correctly declines to claim AI-generated (deepfake) content specifically for Niger, distinguishing it from Nigeria's unrelated 2023 election deepfakes \u2014 this Niger/Nigeria conflation risk is well-managed here."
+        },
+        {
+          "description": "Financial/fraud, biosecurity, neuropsychological, and environmental domains: 'no documented incident found'",
+          "verdict": "confirmed",
+          "reasoning": "These are honest absence-of-evidence statements, not fabricated positive findings \u2014 appropriately caveated as under-searched/under-detected rather than proven safe. No refutation needed since nothing is being asserted as a confirmed incident."
+        }
+      ],
+      "citation_issues": [
+        "WGI government_effectiveness and control_of_corruption values are sourced only to tradingeconomics.com (a secondary aggregator) rather than the primary World Bank databank.worldbank.org WGI source; the entry self-flags this but the numbers should still be labeled 'unverified against primary source' rather than used as final figures in any published index/regression without independent confirmation.",
+        "GTI score (7.776) is attributed to 'Vision of Humanity GTI 2025 coverage' generically rather than a specific report page/PDF with a retrievable page number \u2014 recommend pinning to the exact GTI 2025 report PDF page for the Niger country profile.",
+        "wgi_rule_of_law is correctly left blank/NOT FOUND rather than estimated \u2014 this is good practice and should not be 'filled in' with a guessed or interpolated value downstream.",
+        "governance_deficit score (75) is a qualitative judgment call (not a scraped number) \u2014 reasoning is transparent and defensible given the post-coup constitutional suspension context, but should be labeled as an analyst estimate, not treated as equivalent in reliability to the quantitative WGI/GTI/World Bank figures elsewhere in the entry.",
+        "Niger vs. Nigeria conflation risk is explicitly and correctly managed throughout the entry (financial fraud, disinformation, governance strategy sections all explicitly exclude Nigeria results) \u2014 worth noting as a positive control, since this is the most common failure mode for this kind of entry."
+      ]
+    },
+    "wgi": {
+      "rule_of_law": "\"NOT RELIABLY FOUND. Multiple attempts to retrieve Niger's WGI Rule of Law percentile rank (via tradingeconomics.com/niger/rule-of-law-percentile-rank-wb-data.html and general search of databank.worldbank.org) failed - the tradingeconomics page returned a content-unavailable error and databank.worldbank.org is not fetchable via automated tools (interactive JS portal). Do not treat any figure for this indicator as established; a manual pull from https://databank.worldbank.org/source/worldwide-governance-indicators filtered to Niger is needed.\"",
+      "government_effectiveness": "\"28.77 percentile rank, 2023 (most recent year reported on the page consulted). Source: tradingeconomics.com/niger/government-effectiveness-percentile-rank-wb-data.html, citing World Bank WGI. NOTE: this is a secondary aggregator, not the databank.worldbank.org portal itself (which could not be fetched directly); recommend independent verification against databank.worldbank.org/source/worldwide-governance-indicators before use in the regression dataset.\"",
+      "control_of_corruption": "\"31.6 percentile rank, 2023 (most recent year reported on the page consulted). Source: tradingeconomics.com/niger/control-of-corruption-percentile-rank-wb-data.html, citing World Bank WGI. Same verification caveat as above - secondary aggregator, recommend cross-check against databank.worldbank.org directly.\"",
+      "gti_score": "\"Niger ranked 5th globally in the Global Terrorism Index 2025 report (covering 2024 data), score 7.776; terrorism deaths in Niger rose 94% year-on-year to 930 fatalities in 2024, its worst-ever GTI ranking. Source: Institute for Economics and Peace, Vision of Humanity GTI 2025 coverage (visionofhumanity.org).\""
+    }
+  },
+  {
+    "country": "Cameroon",
+    "events": {
+      "country": "Cameroon",
+      "region": "Central Africa",
+      "positive_events": [],
+      "negative_domains_checked": [
+        {
+          "domain": "terrorism/security",
+          "search_summary": "No documented AI-specific harm event found. Boko Haram/ISWAP conducts sustained attacks in Cameroon's Far North (GTI 2024: 10th most terrorism-affected country globally, score 6.944, 205 deaths/153 incidents in 2024, per Vision of Humanity/GTI coverage). Group is known to use social media/digital comms for propaganda and intelligence-gathering (general literature on Boko Haram social-media use, PMC/Toda Peace Institute), but no source found documenting AI-specific tooling (deepfakes, generative propaganda, algorithmic targeting) used in Cameroon operations specifically -- this would be an inference, not a documented event, so it is NOT included as a scored AI-harm event."
+        },
+        {
+          "domain": "cyber/financial fraud",
+          "search_summary": "No Cameroon-specific documented AI-enabled fraud/scam incident (e.g., AI voice-cloning of a bank official, deepfake CEO fraud) was found despite searching directly. Global AI-fraud/voice-cloning trend pieces returned (loss figures like $442B globally, 1600% rise in vishing) are NOT Cameroon-specific and are excluded."
+        },
+        {
+          "domain": "biosecurity",
+          "search_summary": "No search conducted found any AI-biosecurity incident tied to Cameroon; domain not evidenced."
+        },
+        {
+          "domain": "neuropsychological/behavioral/disinformation",
+          "search_summary": "No documented AI-generated deepfake/disinformation incident tied to a specific Cameroonian election or event was found. General global 2024-election-deepfake commentary and one Africa-wide AI-safety paper (arXiv 2508.13179) surfaced but contained no Cameroon-specific documented case."
+        },
+        {
+          "domain": "environmental",
+          "search_summary": "Not searched in depth; no AI-environmental-harm event for Cameroon was identified in the searches run."
+        },
+        {
+          "domain": "surveillance/biometric (governance-adjacent, included as it is a documented AI-adjacent deployment with human-rights concern, not a 'harm event' with quantified victims)",
+          "search_summary": "Cameroon operates a live facial-recognition video-surveillance system in Yaounde (since 2019) and Douala, built with Huawei and state telco CAMTEL under the DGSN/'Cameroon Smart Cities' project; government sought EUR 50M (March 2024) to expand it. Digital-rights advocates (per BiometricUpdate.com reporting) flag absence of parliamentary oversight, a human-rights impact assessment, or a dedicated biometric/data-protection law prior to deployment. This is a documented deployment with credible institutional-risk concern, but NOT a documented discrete 'harm event' (no confirmed case of wrongful identification/detention reported in the sources found) -- flagged here as context, excluded from positive_events/harm-event count pending a concrete incident."
+        }
+      ],
+      "domains_not_searched": [
+        "biosecurity (no Cameroon-specific search run beyond general check)",
+        "environmental AI-harm (not searched)",
+        "labor/gig-economy algorithmic harm (not searched)"
+      ],
+      "risk_vectors": [
+        "terrorism/security (Boko Haram, Far North insurgency)",
+        "cyber/digital fraud",
+        "financial/mobile-money fraud",
+        "surveillance/biometric misuse",
+        "disinformation (limited direct AI-specific evidence found)"
+      ]
+    },
+    "verdict": {
+      "country": "Cameroon",
+      "overall_risk": "medium",
+      "wgi_gti_sanity_check": "The WGI figures (RL=35.4, GE=35.8, CC=23.1, all \"2024 update\") are specific, checkable numbers in the correct 0-100 percentile-rank format the World Bank uses, with a real indicator-code source (GOV_WGI_RL.SC etc.) and a queryable API URL \u2014 this is the right shape for genuine WGI data, though the entry never states the underlying report/survey year (WGI 2024 update typically reflects 2023 data collection) and the analyst did not paste actual API response values, only claims to have queried them. Treat as plausible-but-unverified pending an actual pull. The GTI figure (rank 10, score 6.944, 205 deaths/153 incidents in 2024) is specific and internally consistent with known Boko Haram/Far North activity, sourced to Vision of Humanity/GTI with two secondary corroborating outlets named \u2014 this looks like a real, specific, checkable number, not an invented one. Overall: both WGI and GTI figures pass the \"specific and checkable\" test structurally, but the entry's WGI sourcing is weaker (paraphrased API description vs. an actual reported value) than its GTI sourcing (named report + score + rank + underlying casualty count).",
+      "events_to_downgrade_or_reject": [
+        {
+          "description": "Surveillance/biometric: Cameroon Huawei/CAMTEL facial-recognition system in Yaounde/Douala, EUR 50M expansion request",
+          "verdict": "confirmed",
+          "reasoning": "Correctly excluded from positive_events and flagged as context only, not a harm event with quantified victims \u2014 appropriately conservative. This is the entry's strongest, most concrete finding and is properly caveated (no wrongful-identification case documented)."
+        },
+        {
+          "description": "GTI 2024 terrorism statistics for Cameroon (rank 10, score 6.944, 205 deaths/153 incidents)",
+          "verdict": "confirmed",
+          "reasoning": "Specific, dated, and attributed to a named annual index with a direct report title; corroborated by two independent secondary outlets. This is the kind of figure that should anchor the entry rather than be treated skeptically."
+        },
+        {
+          "description": "Governance deficit score of 58 with 'upper-middle of tier, not low end' justification",
+          "verdict": "rejected",
+          "reasoning": "This is a subjective scoring judgment dressed as if it were data-derived. The SNIA strategy being 'unusually detailed for the region' is an analyst opinion, not a checkable metric, and no comparator countries or scoring rubric are shown \u2014 the 58 is essentially an unfalsifiable point estimate. Should be presented with an explicit range (e.g., 50-65) or the qualitative rationale alone, not a single decimal-free but falsely precise integer."
+        },
+        {
+          "description": "Susceptibility value of 52% (Global Findex 2021) presented as current",
+          "verdict": "rejected",
+          "reasoning": "The entry itself admits the 2021 figure is stale (most recent locatable) and that a newer 2024/2025 Global Findex exists but couldn't be pulled \u2014 good transparency, but using a 4+ year-old figure as the headline 'susceptibility' number without a recency discount or trend estimate risks material misstatement given mobile money's rapid growth in Cameroon since 2021; this figure is likely understating current susceptibility and should be flagged as a known-stale proxy rather than presented at face value."
+        },
+        {
+          "description": "'No documented AI-specific harm event' conclusions across terrorism, cyber/fraud, biosecurity, disinformation domains",
+          "verdict": "confirmed",
+          "reasoning": "The negative findings are honestly reported as absence-of-evidence rather than evidence-of-absence, with explicit statements that inferring AI-specific tooling from general Boko Haram digital-comms literature would be unwarranted. This restraint is correct methodology and should not be second-guessed into false positives."
+        }
+      ],
+      "citation_issues": [
+        "The all_sources list includes three World Bank WGI API query URLs presented as sources, but no actual JSON response values or access date are shown in the entry \u2014 this is a claim of having queried an API, not reproducible evidence; a reviewer cannot verify the 35.4/35.8/23.1 figures without re-running the query themselves.",
+        "Two of the GTI corroborating sources (BusinessDay NG, 'Kolaking Substack') are secondary blogs/news aggregators reposting GTI data rather than primary sources; the Substack citation in particular is a weak/unvetted source for a quantitative figure and should be dropped or clearly marked as tertiary.",
+        "The Levellers.ai source used for governance_deficit rationale is a non-authoritative explainer/blog site (marketing content for an AI-compliance vendor), not a primary legal or government source \u2014 citing it alongside OECD.AI (legitimate) inflates the apparent evidentiary weight of the governance section.",
+        "Exposure and infrastructural_fragility metrics mix multiple sources/years within a single field (DataReportal for exposure; World Bank + Afrobarometer 2022 + a 2025 feature story for infrastructure) without a single canonical 'as of' date, making the composite number harder to independently reproduce.",
+        "No access/retrieval dates are given for any live source (DataReportal, World Bank data pages, OECD.AI dashboard), which matters because these are dynamically updated pages, not static reports \u2014 a figure pulled today could differ from one pulled a month from now."
+      ]
+    },
+    "wgi": {
+      "rule_of_law": "Governance score (percentile-rank-equivalent, 0-100 scale) = 35.4, year 2024 (World Bank WGI 2024 update, via World Bank API indicator GOV_WGI_RL.SC)",
+      "government_effectiveness": "Governance score = 35.8, year 2024 (World Bank WGI 2024 update, indicator GOV_WGI_GE.SC)",
+      "control_of_corruption": "Governance score = 23.1, year 2024 (World Bank WGI 2024 update, indicator GOV_WGI_CC.SC) -- notably low, near bottom quartile globally",
+      "gti_score": "Global Terrorism Index 2024/2025 edition: rank 10th globally (re-entered top 10 for first time since 2019), score 6.944; 205 deaths from 153 terrorism incidents recorded in 2024 (source: Vision of Humanity / Institute for Economics and Peace GTI reporting, corroborated by BusinessDay NG and Kolaking Substack coverage)"
+    }
+  },
+  {
+    "country": "Uganda",
+    "events": {
+      "country": "Uganda",
+      "region": "East Africa",
+      "positive_events": [],
+      "negative_domains_checked": [
+        {
+          "domain": "financial/fraud",
+          "search_summary": "Confirmed: AI-enabled mobile money and SIM-swap fraud is documented as a major and growing threat in Uganda specifically (telecom-agent registration exploitation), part of a broader East African wave (Kenya/Uganda/Tanzania/Ethiopia/Rwanda) where AI was involved in 55% of surveyed 2025 cybercrime cases regionally. Uganda's identity-fraud rate was reported at 4.7% in 2025 (Sumsub)."
+        },
+        {
+          "domain": "cyber/critical infrastructure",
+          "search_summary": "Confirmed: a suspected ransomware attack targeted Uganda's national electricity transmission company (mentioned in techtrendske.co.ke Uganda Cybersecurity Conference 2026 coverage); details/date not fully corroborated with a primary incident report in this pass."
+        },
+        {
+          "domain": "political disinformation / elections",
+          "search_summary": "Confirmed as an emerging/anticipated risk rather than a confirmed past incident: The Observer (Uganda) op-ed 'AI and the 2026 elections in Uganda' discusses deepfake risk ahead of the 2026 election; framed as a forward-looking concern, not a documented past manipulation event."
+        },
+        {
+          "domain": "terrorism/security",
+          "search_summary": "No AI-specific terrorism events found; general terrorism activity (ADF insurgency) reflected in the GTI 6.4 score, but no AI-enabled terrorism incident was found in this search pass."
+        },
+        {
+          "domain": "biosecurity",
+          "search_summary": "No documented AI-linked biosecurity incident found for Uganda in this search pass."
+        },
+        {
+          "domain": "neuropsychological/behavioral (e.g. AI companion/chatbot harm, algorithmic manipulation)",
+          "search_summary": "No documented Uganda-specific case found in this search pass."
+        },
+        {
+          "domain": "environmental",
+          "search_summary": "No documented AI-linked environmental harm event found for Uganda in this search pass."
+        }
+      ],
+      "domains_not_searched": [
+        "Deep primary-source verification of the suspected electricity-company ransomware incident (only a secondary conference-preview mention was found)",
+        "Full GTI 2024 PDF for Uganda's exact global rank number",
+        "Direct databank.worldbank.org table query for Government Effectiveness and Control of Corruption percentile ranks (session lacked live database query tooling)"
+      ],
+      "risk_vectors": [
+        "financial/mobile-money fraud (SIM-swap, AI-enabled scam calls)",
+        "election-related political disinformation / deepfakes",
+        "cyber (ransomware against critical infrastructure \u2014 national electricity transmission company)",
+        "terrorism/security (ADF insurgency; elevated GTI score)",
+        "weak AI-specific governance creating a regulatory gap during rapid AI/deepfake fraud growth"
+      ]
+    },
+    "verdict": {
+      "country": "Uganda",
+      "overall_risk": "medium",
+      "wgi_gti_sanity_check": "GTI 6.4 (2024, up from 6.3 in 2023, vs world avg ~4.87/176 countries) is confirmed real and specific via independent search (matches theglobaleconomy.com/TradingEconomics-sourced GTI data). WGI Rule of Law figure (24.53, lower-bound-of-90%-CI series, 2023) is also confirmed as a real, checkable number \u2014 but the entry correctly self-flags that this is the CI lower-bound series, not the standard point-estimate percentile rank, which is an unusual and non-standard choice for a risk metric; the plain point-estimate should be substituted before use in any regression. WGI Government Effectiveness was marked \"not found\" in the entry, but a basic search actually surfaces it easily (Uganda Government Effectiveness percentile rank = 31.6%, 2023, via TradingEconomics/World Bank) \u2014 so the entry's \"could not be completed\" claim is not accurate; the search effort was incomplete rather than the data being unavailable. Control of Corruption remains genuinely unconfirmed. Overall: the cited figures that exist are real, specific, and dated (not vague/invented), but the entry is incomplete/inconsistent in claiming non-retrievability for GE when it was retrievable.",
+      "events_to_downgrade_or_reject": [
+        {
+          "description": "UETCL ransomware/cyber incident against Uganda's national electricity transmission company",
+          "verdict": "confirmed",
+          "reasoning": "Independently verified with more specificity than the entry itself provides: the Qilin ransomware-as-a-service group claimed UETCL as a victim on its leak site around August 18, 2025, claiming exfiltration of internal contracts, ID documents, financial statements, and service agreements (reported by allAfrica, The Independent Uganda, East African Herald, CyHawk Africa). The entry actually understates its own confidence here by calling it 'suspected' and 'not fully corroborated' \u2014 multiple independent outlets corroborate a named threat actor, named victim, and approximate date. This is the one item in the entry that is stronger than claimed, not weaker."
+        },
+        {
+          "description": "Election-related political disinformation / deepfakes risk vector for 2026 Uganda election",
+          "verdict": "confirmed",
+          "reasoning": "The entry itself correctly frames this as forward-looking/anticipated rather than a documented past incident (citing a single Observer Uganda op-ed). This is an honest characterization, not an overclaim \u2014 but it means this risk vector rests on zero actual incident data, only commentary/opinion piece speculation about the 2026 election. Should be weighted as low-confidence/anticipatory in any scoring, not treated as evidence of a realized event."
+        },
+        {
+          "description": "AI-enabled mobile money and SIM-swap fraud risk vector, including the '55% of 2025 East African cybercrime cases involved AI' and 'Uganda 4.7% identity fraud rate' figures",
+          "verdict": "confirmed",
+          "reasoning": "Plausible and consistent with widely reported East African fraud trends (Sumsub identity fraud reporting, multiple African fintech/security outlets), but the entry's own sourcing (businessday.ng, algeriatech.news, techtrendske.co.ke) are secondary aggregator/trade-press pieces, not primary Sumsub or law-enforcement data \u2014 the specific 55% and 4.7% figures could not be independently re-verified against a primary Sumsub report in this pass and should be treated as directionally credible but not fully primary-sourced."
+        },
+        {
+          "description": "positive_events list is empty",
+          "verdict": "confirmed",
+          "reasoning": "Nothing to refute; the entry did not fabricate any positive/mitigating events, which is itself a defensible (if perhaps under-searched) choice \u2014 no counter-evidence found that a positive event was omitted."
+        }
+      ],
+      "citation_issues": [
+        "Government Effectiveness WGI figure incorrectly marked 'not found' / 'requires direct databank query' when a basic web search retrieves it (31.6%, 2023, via TradingEconomics mirroring World Bank data) \u2014 the entry's stated search limitation is overstated.",
+        "Rule of Law WGI figure uses the 'lower bound of 90% confidence interval' series rather than the standard point-estimate percentile rank; real and checkable, but a non-standard/less-authoritative variant that could understate Uganda's actual rule-of-law percentile if the point estimate is materially higher.",
+        "Infrastructural fragility metric mixes several non-comparable numbers (20,429 total outages 2021; 1,248h and 5,826h 'average outage durations' for transmission vs distribution subsystems) from a single academic paper without a clear year-over-year trend or a directly comparable World Bank SAIDI figure, since the entry admits SAIDI itself isn't assignable to Uganda under the index's threshold rule \u2014 this makes the field internally inconsistent as a single 'value' (20429) representing a metric whose own metric description contains three different figures.",
+        "GTI global rank number for Uganda not retrieved (entry admits this); confirmed independently that the score 6.4 is correct but the numeric rank still needs the primary PDF.",
+        "Susceptibility figure (73% Findex mobile money/financial account, up from 66% in 2021) sourced to an AfricaNenda blog summary rather than the primary World Bank Global Findex database table \u2014 plausible but not independently re-verified in this pass.",
+        "Ransomware/cyber item is under-cited relative to what's actually available: primary reporting names the threat actor (Qilin) and an approximate date (August 18, 2025) that the entry does not include, despite these being readily searchable."
+      ]
+    },
+    "wgi": {
+      "rule_of_law": "Uganda Rule of Law percentile rank (lower bound of 90% CI) = 24.53, 2023 (most recent year in the series found) \u2014 World Bank Worldwide Governance Indicators via Trading Economics/World Bank data. NOTE: this is the lower-bound-of-confidence-interval series, not the raw point-estimate percentile rank series; I could not independently confirm the plain point-estimate percentile rank figure through search snippets alone and could not directly query databank.worldbank.org (no live data-table access from this tool). Treat the 24.53 figure as approximate/lower-bound and verify the exact point estimate directly at databank.worldbank.org before using in the final regression dataset.",
+      "government_effectiveness": "Not found via search \u2014 WebSearch returned only the WGI landing/methodology pages, not Uganda's specific Government Effectiveness percentile rank figure. Requires a direct query at https://databank.worldbank.org/source/worldwide-governance-indicators (select Uganda, Government Effectiveness, most recent year) \u2014 could not be completed with the tools available in this session (no direct database query capability, only search-snippet access).",
+      "control_of_corruption": "Not found via search \u2014 same limitation as Government Effectiveness above. Requires direct databank.worldbank.org query; not independently confirmable through this session's WebSearch tool.",
+      "gti_score": "6.4 (2024 Global Terrorism Index score, up from 6.3 in 2023; world average \u22484.87 across 176 countries). Numerical global rank not found in the retrieved snippets \u2014 the source PDF (economicsandpeace.org GTI 2024 report) likely contains it but was not opened directly."
+    }
+  },
+  {
+    "country": "Rwanda",
+    "events": {
+      "country": "Rwanda",
+      "region": "East Africa",
+      "positive_events": [],
+      "negative_domains_checked": [
+        {
+          "domain": "Political/information-operations",
+          "search_summary": "CONFIRMED, high-quality sourcing: Reuters/VOA/The Conversation (June 2024) documented a Rwandan government-linked AI disinformation campaign -- at least 464 X accounts posting ~650,000 posts since Jan 2024, using LLM-generated text and AI-generated imagery to push pro-Kagame/anti-Tshisekedi narratives re: the DRC/M23 conflict (hashtags e.g. #TshisekediCriminel). This is the strongest, best-documented AI-harm event found for Rwanda."
+        },
+        {
+          "domain": "Financial/fraud (cyber)",
+          "search_summary": "CONFIRMED at regional level, partial country-specific: TransUnion Africa (2025) reports Rwanda's suspected digital fraud rate (7.7% at account creation) is below the global rate; INTERPOL reports AI involved in 55% of African cybercrime cases surveyed (regional, not Rwanda-specific); reports of 123,000+ fraudulent SIM cards issued across Tanzania/Rwanda enabling mobile-money hijacking (regional East Africa framing, Rwanda named but not isolated numerically)."
+        },
+        {
+          "domain": "AI-enabled surveillance/targeting of dissidents",
+          "search_summary": "CONFIRMED, well-documented but NOT strictly 'AI' in the generative sense: Rwandan state use of NSO Group Pegasus spyware against 3,500+ activists, journalists, politicians, and diplomats (Carine Kanimba/Rusesabagina family case is the flagship documented instance, per Citizen Lab/Amnesty findings reported via IDN-InDepthNews and others). Also broader CIPESA/Rest of World reporting on Rwanda's AI-powered 'smart city' surveillance investment (~$2B across 11+ African states, Rwanda included but not broken out). Categorized as a risk vector but flagged as surveillance-tech rather than a generative-AI-harm event per se."
+        },
+        {
+          "domain": "Biosecurity",
+          "search_summary": "NOT SEARCHED IN DEPTH / no events found in the searches run. No documented AI-biosecurity harm event for Rwanda surfaced; this domain should be treated as unchecked/no-finding rather than confirmed-absent."
+        },
+        {
+          "domain": "Neuropsychological/behavioral",
+          "search_summary": "NOT SEARCHED IN DEPTH / no events found. No documented case of AI-driven neuropsychological/behavioral manipulation harm specific to Rwanda surfaced in searches run; treat as unchecked."
+        },
+        {
+          "domain": "Environmental",
+          "search_summary": "NOT SEARCHED IN DEPTH / no events found. No documented AI-linked environmental harm event for Rwanda surfaced; treat as unchecked."
+        }
+      ],
+      "domains_not_searched": [
+        "Biosecurity (no dedicated search run)",
+        "Neuropsychological/behavioral (no dedicated search run)",
+        "Environmental (no dedicated search run)",
+        "Direct primary-source pull from databank.worldbank.org WGI query tool for exact percentile-rank numbers (relied on secondary aggregator theglobaleconomy.com instead)",
+        "Primary IEP/Vision of Humanity GTI 2024 report for Rwanda's exact numeric rank out of 163 countries"
+      ],
+      "risk_vectors": [
+        "political/information-operations (state-linked AI-generated propaganda)",
+        "digital financial fraud (mobile money, SIM-swap, account-takeover)",
+        "AI-enabled surveillance and targeting of dissidents/journalists",
+        "cross-border conflict disinformation (M23/DRC)"
+      ]
+    },
+    "verdict": {
+      "country": "Rwanda",
+      "overall_risk": "high",
+      "wgi_gti_sanity_check": "The WGI figures (rule of law ~60th percentile, government effectiveness 0.35/2024, control of corruption 0.63/2024) and the GTI score (0) are NOT primary-sourced \u2014 the entry itself admits it could not query databank.worldbank.org or visionofhumanity.org directly and instead pulled numbers from a secondary aggregator (theglobaleconomy.com) and tradingeconomics/eulerpool. These are specific, dated, checkable-in-principle numbers (not vague language like \"moderate\" or \"improving\"), which is good, but they are one hop removed from the authoritative source and could be stale, mis-scraped, or reflect a different WGI vintage than claimed. The entry's own caveats are honest and should be preserved, not stripped, in any downstream use. Rule-of-law entry is especially weak: it gives a raw-score range (0.21 to 0.10) that is internally suspicious (0.21 > 0.10, described as if it's a range across 2023-2024, but WGI rule of law is usually reported as a single point estimate per year) \u2014 this looks like a garbled or conflated pull rather than a clean figure and should be treated as unverified until re-pulled from the primary databank.",
+      "citation_issues": [
+        "WGI rule-of-law entry contains an internally inconsistent raw-score range ('0.21 to 0.10') attributed to 2023-2024 without clarifying which year maps to which value \u2014 likely a scraping/aggregation artifact from theglobaleconomy.com rather than a genuine WGI datapoint; needs a direct databank.worldbank.org pull before it's cited as fact.",
+        "All three WGI sub-scores (rule of law, government effectiveness, control of corruption) and the GTI score are sourced from secondary aggregators (theglobaleconomy.com, tradingeconomics/eulerpool) rather than the primary World Bank WGI databank or IEP/Vision of Humanity report \u2014 the entry flags this itself, which is good practice, but the underlying numbers are unverified at the primary-source level.",
+        "governance_deficit value (60) is an analyst-assigned score with a qualitative tier_rationale, not a cited external number \u2014 it should not be read as equivalent in evidentiary weight to the WGI/GTI figures even though it sits in the same JSON structure.",
+        "exposure and susceptibility figures both explicitly flag source divergence (ITU/TechCabal 38% vs DataReportal 34.2%; FinScope 96% overall vs 92% formal, not Global Findex) \u2014 the entry handles this transparently but a downstream consumer could easily drop the caveat and treat 38% or 96% as a clean single figure.",
+        "infrastructural_fragility uses a 2023 World Bank figure (63.9%) while the entry notes 2024-2025 Rwandan government figures are meaningfully higher (75-84.6%) \u2014 defensible as the 'internationally standardized' choice but represents a 2+ year lag that understates current grid access.",
+        "Financial/fraud negative_domain finding cites a 123,000+ fraudulent-SIM-card statistic as 'Tanzania/Rwanda' regional framing without isolating a Rwanda-specific number \u2014 this is acknowledged in the summary but the risk_vectors list still names 'SIM-swap' as a Rwanda-specific risk vector, which slightly overstates the country-specific evidence base.",
+        "AI-surveillance negative_domain finding (Pegasus/NSO) is well-documented via Citizen Lab/Amnesty but the entry itself flags it is not generative/agentic AI in the sense the AFAIRI framework likely intends (risk_vectors lists it under 'AI-enabled surveillance' which may overclaim relative to what was actually found \u2014 spyware targeting, not an AI system making autonomous surveillance/targeting decisions)."
+      ],
+      "events_to_downgrade_or_reject": [
+        {
+          "description": "positive_events list is empty \u2014 nothing to refute here, but worth noting: the entry made no attempt to search for or document any positive/mitigating AI-governance events for Rwanda (e.g., the National AI Policy and National AI Agency are treated only as governance_deficit context, not surfaced as a positive_events entry), despite Rwanda having a genuinely notable claim to being first in Africa with a dedicated AI agency.",
+          "reasoning": "This is an omission rather than a fabrication, so nothing to reject, but flagging it: if positive_events is supposed to be adversarially balanced against negative_domains_checked, the entry is one-sided by construction (four negative-risk vectors, zero positive-events search). This asymmetry should be disclosed to whoever consumes this entry, since AFAIRI's overall_risk framing could look more severe than a fully balanced search would produce.",
+          "verdict": "rejected"
+        },
+        {
+          "description": "Political/information-operations event: Rwandan-government-linked AI disinformation campaign (464 X accounts, ~650,000 posts since Jan 2024, LLM-generated text + AI imagery, pro-Kagame/anti-Tshisekedi).",
+          "reasoning": "Attempted refutation: this is corroborated by three independent, reputable outlets (Reuters via VOA, The Conversation, and academic/journalistic cross-referencing) with specific, checkable numbers (464 accounts, 650k posts) rather than vague claims. I could not find grounds to refute this \u2014 it holds up as the strongest-evidenced item in the entry. Confirmed, not downgraded.",
+          "verdict": "confirmed"
+        }
+      ]
+    },
+    "wgi": {
+      "rule_of_law": "\"~60th percentile rank, 2023 estimate (raw score 0.21 to 0.10 on the -2.5/+2.5 scale across 2023-2024 per secondary aggregators theglobaleconomy.com and a search-summarized percentile figure). CAVEAT: I could not independently pull the exact official percentile-rank number directly from databank.worldbank.org/source/worldwide-governance-indicators in this session (it requires interactive query-building the tool couldn't execute); the percentile figure and raw scores here are drawn from secondary aggregators (theglobaleconomy.com, search snippets) that source WGI, not a raw pull from the databank interface itself. Treat as a good-faith secondary-sourced estimate pending direct databank verification.\"",
+      "government_effectiveness": "\"Raw score 0.35 (2024), down from 0.41 (2023), on the WGI -2.5/+2.5 scale, above the 2024 world average of 0.05, per theglobaleconomy.com (WGI-sourced aggregator). Historical range 1996-2024: -1.43 (low, 2003) to 0.41 (high, 2023). Exact official percentile rank (0-100) not independently pulled from databank.worldbank.org in this session -- see caveat under Rule of Law.\"",
+      "control_of_corruption": "\"Raw score 0.63 (2024) on the WGI -2.5/+2.5 scale, per theglobaleconomy.com (WGI-sourced aggregator) -- Rwanda is consistently reported as a regional outlier with comparatively strong corruption control relative to income peers. Exact official percentile rank (0-100) not independently pulled from databank.worldbank.org in this session -- see caveat under Rule of Law.\"",
+      "gti_score": "\"2024/2025 Global Terrorism Index (Institute for Economics & Peace / Vision of Humanity): Rwanda's terrorism impact score reported as 0 (Terrorism Index, tradingeconomics/eulerpool secondary source), consistent across 2024 and 2025, indicating no measurable domestic terrorism impact recorded. Exact GTI rank-out-of-163-countries was not confirmed directly from the primary IEP/Vision of Humanity report in this session -- would need direct retrieval from visionofhumanity.org/maps/global-terrorism-index/ to cite an official rank number.\""
+    }
+  },
+  {
+    "country": "Botswana",
+    "events": {
+      "country": "Botswana",
+      "region": "Southern Africa",
+      "positive_events": [],
+      "negative_domains_checked": [
+        {
+          "domain": "Terrorism/security",
+          "search_summary": "GTI score 0/10, no incidents found; Botswana has no history of domestic or AI-enabled terrorism-related harm in search results."
+        },
+        {
+          "domain": "Cyber",
+          "search_summary": "No Botswana-specific AI-enabled cyberattack found. Regional INTERPOL African Cyberthreat Assessment 2026 notes AI now powers over half of African cybercrime and continental losses rose from $192M (2024) to $484M, with highest scam-centre concentration in West and Southern Africa broadly, but no Botswana-specific incident was located."
+        },
+        {
+          "domain": "Financial/fraud",
+          "search_summary": "No documented Botswana-specific AI/deepfake financial fraud case found. Regional Southern Africa biometric-spoofing data (Smile ID, 2026) shows 87% of failed biometric verifications in Southern Africa attributed to AI spoofing, and Africa-wide deepfake fraud surged 393% in 2025, but no Botswana-attributed case was identified."
+        },
+        {
+          "domain": "Biosecurity",
+          "search_summary": "No search conducted found any Botswana-specific AI-biosecurity harm event; none surfaced incidentally either."
+        },
+        {
+          "domain": "Neuropsychological/behavioral",
+          "search_summary": "No Botswana-specific case of AI-driven exam cheating, misinformation, or behavioral-manipulation harm found; searches on AI/ChatGPT cheating returned only South African university coverage, not Botswana."
+        },
+        {
+          "domain": "Environmental",
+          "search_summary": "No AI-linked environmental harm event found for Botswana; infrastructural fragility findings (grid instability) are power-sector reliability issues, not documented AI-attributable harms."
+        }
+      ],
+      "domains_not_searched": [],
+      "risk_vectors": [
+        "No documented AI-harm events found in any domain searched (terrorism/security, cyber, financial/fraud, biosecurity, neuropsychological/behavioral, environmental) specific to Botswana",
+        "Country functions as a genuine zero-count / low-risk contrast case for the regression, not an unsearched gap"
+      ]
+    },
+    "verdict": {
+      "country": "Botswana",
+      "overall_risk": "low",
+      "wgi_gti_sanity_check": "Figures are specific and checkable, not vague placeholders \u2014 they cite exact percentile values (72.17, 66.98, 73.58) tied to 2023 and a specific source chain (World Bank WGI via Trading Economics). This is good practice. However: (1) the entry itself flags that the rule-of-law figure (72.17) could not be confirmed as the plain point-estimate \u2014 it's actually the \"upper bound of 90% CI\" series, not the point estimate, which the entry admits but does not correct; using CI-upper-bound as if comparable to the govt-effectiveness/corruption point estimates is a real methodological inconsistency, not just an unverified footnote. My independent search corroborates this: Trading Economics separately publishes point-estimate, standard-error, and CI-bound series for rule of law, and the entry's own source URL is explicitly the CI-upper-bound page, not the point-estimate page, so 72.17 is very likely not apples-to-apples with the other two 2023 percentiles. (2) I could not independently verify the exact 66.98 and 73.58 figures from open search results (Trading Economics pages didn't surface full 2023 tables), so those remain plausible-but-unconfirmed rather than confirmed. (3) GTI score of 0/10 for 2024-2025 is independently corroborated by my search (Trading Economics: \"Terrorism Index remained unchanged at 0 Points in 2025 from 0 Points in 2024\"); the entry's admission that the numeric rank among 163 countries could not be found is also consistent with what I found \u2014 no rank surfaced. Net: the GTI figure is solid; the WGI rule-of-law figure has a specific, identified apples-to-oranges defect (CI bound vs. point estimate) that the entry flags but does not fix, and should be corrected before use in a regression; the other two WGI figures are unconfirmed-but-plausible.",
+      "events_to_downgrade_or_reject": [],
+      "citation_issues": [
+        "susceptibility.value=84 is asserted as the 'end-of-period figure' of a 2015-2021 roadmap, but the same field then cites a different FinScope figure (82%) as 'corroborating' it \u2014 a 2-point discrepancy is presented as corroboration rather than flagged as a discrepancy; the entry should state which figure is the actual measured value and which is an aspirational roadmap target (roadmap end-of-period targets are often goals, not achieved outcomes, which would make 84% an overclaim of financial inclusion).",
+        "wgi_rule_of_law field mixes a CI-upper-bound series (72.17) with two point-estimate series (66.98 corruption... govt-effectiveness, 73.58 corruption) without normalizing \u2014 internally inconsistent even though the entry flags it as unverified; this should be resolved (pull the actual point estimate) rather than left as a flagged approximation, since the regression will otherwise consume a systematically upward-biased number relative to the other two indicators.",
+        "infrastructural_fragility value of 55 is a self-constructed 'qualitative grid-reliability index' with no defined scale anchors beyond the two endpoints (0/100) and no worked formula for how the underlying generation-decline and outage figures map to 55 specifically \u2014 the number is not independently reproducible from the cited facts; it reads as an analyst's gut-check dressed as a quantitative index, and should either show the derivation or be labeled as a subjective/ordinal score explicitly (it does say 'qualitative' in the metric name, which is honest labeling, but 55 as a precise-looking integer against qualitative reasoning is still a soft spot).",
+        "positive_events is empty, so there is nothing to refute there \u2014 but the entry does not explicitly state why no positive AI-adoption/AI-governance events were searched for or found (e.g., Botswana's Smart Botswana / Digital and Innovation Strategy is mentioned only inside governance_deficit rationale, not surfaced as a candidate positive event and explicitly rejected/accepted) \u2014 the entry appears to have simply not looked for positive events as a category, rather than searching and coming up empty; this is a coverage gap, not a fabrication, but worth flagging since 'positive_events: []' silently conflates 'not searched' with 'searched and none found'."
+      ]
+    },
+    "wgi": {
+      "rule_of_law": "Approximately 72 percentile rank (2023) -- found the upper-bound-of-90%-CI series value (72.17%) via Trading Economics/World Bank data; the plain point-estimate percentile figure could not be independently confirmed after repeated fetch attempts (Trading Economics page returned \"content not available\" for the base series). Flagging this specific sub-figure as not fully verified to source -- recommend pulling the exact WGI point estimate directly from databank.worldbank.org before using in regression.",
+      "government_effectiveness": "66.98 percentile rank, 2023. Source: World Bank Worldwide Governance Indicators via Trading Economics.",
+      "control_of_corruption": "73.58 percentile rank, 2023. Source: World Bank Worldwide Governance Indicators via Trading Economics.",
+      "gti_score": "Global Terrorism Index score 0 (out of 10, where 0 = no measurable terrorism impact), unchanged 2024-2025; specific numeric rank among 163 countries not found in search results. Source: Trading Economics GTI country page, corroborating Vision of Humanity GTI 2024 report."
+    }
+  },
+  {
+    "country": "Mauritius",
+    "events": {
+      "country": "Mauritius",
+      "region": "Southern Africa / Indian Ocean",
+      "positive_events": [],
+      "negative_domains_checked": [
+        {
+          "domain": "terrorism/security",
+          "search_summary": "GTI score = 0 in 2024 (tied for lowest-impact tier globally); no AI-enabled terrorism/security incidents found."
+        },
+        {
+          "domain": "cyber/information manipulation",
+          "search_summary": "October-November 2024 'Missie Moustass' wiretapping leak: recordings of politicians, diplomats, journalists released via TikTok before the Nov 10, 2024 general election; government imposed a 24-hour nationwide social-media block (31 Oct-2 Nov 2024) via the ICTA, partly justified by PM Jugnauth's and the Police Force's claims that AI had altered/deepfaked the recordings -- a claim disputed by the journalists targeted. This is a real, well-documented event with a contested AI-manipulation angle (information/disinformation domain), confidence: confirmed for the leak and ban, plausible_needs_verification for the AI-alteration claim itself since authorities and journalists dispute it."
+        },
+        {
+          "domain": "financial/fraud",
+          "search_summary": "Found a 2025/2026-era Bank of Mauritius public data-breach caution notice and a referenced Rogers Capital Credit breach, but no documented AI-specific (deepfake voice/synthetic-identity) fraud case tied to Mauritius in search results; no confirmed AI-driven financial fraud event found."
+        },
+        {
+          "domain": "biosecurity",
+          "search_summary": "No documented AI-biosecurity harm events found for Mauritius in available search results."
+        },
+        {
+          "domain": "neuropsychological/behavioral",
+          "search_summary": "No documented AI-driven neuropsychological/behavioral-manipulation harm events specific to Mauritius found beyond the election-period disinformation/wiretap episode already logged under cyber."
+        },
+        {
+          "domain": "environmental",
+          "search_summary": "No documented AI-related environmental harm events found for Mauritius; energy-sector concerns found (fossil-fuel dependence, grid strain) are infrastructural, not AI-harm events."
+        }
+      ],
+      "domains_not_searched": [],
+      "risk_vectors": [
+        "Election-period information manipulation (wiretap leak + contested AI/deepfake authenticity claims, Oct-Nov 2024)",
+        "Financial-sector cyber exposure (banking-sector data breach alert, 2025)",
+        "Grid fragility under renewable transition (thin reserve margins, aging assets) creating infrastructure-dependent AI-service disruption risk",
+        "Low baseline: no terrorism, no documented AI-driven biosecurity, environmental, or large-scale financial-fraud harm events found"
+      ]
+    },
+    "verdict": {
+      "country": "Mauritius",
+      "overall_risk": "low",
+      "wgi_gti_sanity_check": "The entry's own language flags itself as non-checkable. For rule of law it explicitly says \"An exact 2024 percentile-rank figure...could not be confirmed\" and falls back to a 2021 secondary-citation figure (78.4) while quoting an unrelated -2.5..2.5 index value (0.64) from a different aggregator as if interchangeable \u2014 mixing scales is a red flag. Government effectiveness mixes a 2023 percentile (75th) with a 2024 index value (0.77) and admits \"exact 2024 percentile not independently confirmed\" \u2014 i.e. it is inferring rather than reporting. Control of corruption gives one real-looking number (65.57 percentile, 2023) but again admits no 2024 update was found. None of these are sourced to the primary WGI database (info.worldbank.org/governance/wgi) \u2014 all are routed through tertiary aggregators (tradingeconomics.com, theglobaleconomy.com), and the entry itself concedes the recency/precision problem rather than hiding it. GTI score of \"0 points, tied for lowest-impact tier\" is also unverifiable as stated: GTI's own scale does not award literal 0 to most low-terrorism countries in a way that produces a clean \"tied for ~100th rank\" claim, and the entry hedges with \"per aggregated search coverage\" rather than citing an actual GTI 2024 report page/table. Net: these figures are directionally plausible (Mauritius genuinely ranks high on WGI dimensions and low on terrorism) but none of the four numbers is a verified, precisely-dated, primary-sourced figure \u2014 they are best described as approximate/likely-correct-direction, unconfirmed-precision estimates, and the entry is honest about that rather than fabricating false precision.",
+      "events_to_downgrade_or_reject": [
+        {
+          "description": "AI/deepfake authenticity claims around the Oct-Nov 2024 Missie Moustass wiretap leak / social media ban",
+          "verdict": "confirmed",
+          "reasoning": "The underlying leak and the government's 24-hour ICTA-driven social media block around the Nov 10, 2024 election are well-documented (Wikipedia's '2024 Mauritian social media ban' page, Jurist, Africanews, DDoSecrets, local press) and multiple independent outlets corroborate them, so this factual core survives. However, the entry correctly self-flags the AI-alteration claim as 'plausible_needs_verification' since it originates only from the PM and police (the accused party has an incentive to claim fabrication) and is disputed by the targeted journalists \u2014 so the 'AI/deepfake' framing should be downgraded from a documented AI-harm event to a contested political claim about AI, not treated as evidence of an actual AI-enabled attack. As written in risk_vectors it is phrased neutrally as 'contested... claims' which is appropriate, but a reviewer should be alert to it being cited elsewhere as a confirmed AI-manipulation incident."
+        },
+        {
+          "description": "Financial-sector cyber exposure / banking-sector data breach alert, 2025",
+          "verdict": "rejected",
+          "reasoning": "The entry's own negative_domains_checked section admits: 'no documented AI-specific...fraud case tied to Mauritius' and cites only a Bank of Mauritius public caution notice plus a vaguely 'referenced' Rogers Capital Credit breach with no primary link in all_sources pointing to a confirmed incident report, damage figures, or date. This is a generic/conventional cyber-hygiene notice, not a verified, dated, specific breach event, and there is no AI angle at all \u2014 it should not be presented as a scored risk vector with the same confidence as the election-period incident; at most it belongs in a 'watch, unconfirmed' bucket."
+        },
+        {
+          "description": "August 2026 Fort George generator failure / emergency load-shedding appeal cited under infrastructural_fragility",
+          "verdict": "rejected",
+          "reasoning": "This is dated August 2026 - i.e. essentially 'now' relative to the stated current date - and sourced only to 'African Security Analysis,' a non-authoritative/low-visibility outlet with no corroboration from CEB (Central Electricity Board), Mauritian government press (govmu.org), or mainstream wire coverage in the provided source list. A single-source, very recent, specific infrastructure-failure claim of this kind (named facility, named month) is exactly the profile of an unverified or possibly fabricated/hallucinated detail and should be treated as unconfirmed until corroborated by a primary or mainstream source; it should not be used to justify a headline fragility narrative layered on top of a legitimate 100% electricity-access statistic."
+        }
+      ],
+      "citation_issues": [
+        "WGI figures are sourced to tertiary aggregators (tradingeconomics.com, theglobaleconomy.com) rather than the primary World Bank WGI database, and the entry itself admits it could not confirm exact current-year percentiles - precision is overstated relative to what was actually verified.",
+        "GTI 'score = 0, tied for lowest-impact tier globally' has no direct citation to a specific IEP GTI 2024 report page/table; sourced only to 'aggregated search coverage' and the general economicsandpeace.org homepage URL rather than a report PDF or country page.",
+        "The Fort George August 2026 incident is sourced to a single low-authority outlet (africansecurityanalysis.org) with no independent corroboration - unusually thin sourcing for a specific, recent, high-consequence infrastructure claim.",
+        "The Rogers Capital Credit breach is described as 'referenced' but no corresponding URL for it appears in all_sources - it cannot be checked at all from the citations given.",
+        "positive_events is empty despite Mauritius scoring well on GTI, WGI, financial inclusion, and being ranked 1st in Africa on the Global Cybersecurity Index 2024 (a source that IS in all_sources: govmu.org GCI 2024 Tier-1 announcement) - this looks like an asymmetric/one-sided compilation, since a genuinely 1st-in-Africa cybersecurity ranking is a real positive data point that was found but not surfaced as a positive_event."
+      ]
+    },
+    "wgi": {
+      "rule_of_law": "Index value 0.64 (scale -2.5 to 2.5), 2024, per theglobaleconomy.com aggregation of World Bank WGI -- highest Rule of Law score in Africa for 2024. An exact 2024 percentile-rank figure (0-100 scale) could not be confirmed from databank.worldbank.org in this search session; the most recent confirmed percentile-rank figure located was 78.4 (2021, per a secondary citation). Flagging this as approximate/unverified for 2024 rather than inventing a precise current percentile.",
+      "government_effectiveness": "75th percentile rank, 2023 (World Bank WGI, via tradingeconomics.com, sourced to World Bank development indicators); index value 0.77 (scale -2.5 to 2.5) for 2024 per theglobaleconomy.com, consistent with a high-70s percentile but exact 2024 percentile not independently confirmed.",
+      "control_of_corruption": "65.57 percentile rank, 2023 (World Bank WGI, via tradingeconomics.com, sourced to World Bank development indicators). 2024 update not independently confirmed in this search session.",
+      "gti_score": "0 points (2024 Global Terrorism Index), tied for the lowest-impact tier (effectively rank ~100th, no measurable terrorism impact over the trailing five years), per Institute for Economics & Peace GTI 2024 methodology as reported via aggregated search coverage."
+    }
+  },
+  {
+    "country": "Democratic Republic of Congo",
+    "events": {
+      "country": "Democratic Republic of Congo",
+      "region": "Central Africa",
+      "positive_events": [],
+      "negative_domains_checked": [
+        {
+          "domain": "terrorism/security",
+          "search_summary": "Confirmed real, severe: DRC had 753 recorded terrorism-related incidents in 2024 (+15% YoY per State Dept Country Reports on Terrorism 2024). AI-generated deepfake videos/photos depicting President Tshisekedi as instigator of the M23 conflict have circulated, per multiple outlets covering the 2023-2025 M23 crisis \u2014 this is a genuine AI-enabled harm event, though I could not pin an exact publication date/single primary source beyond secondary reporting."
+        },
+        {
+          "domain": "cyber",
+          "search_summary": "INTERPOL Africa reporting (2026) states AI now powers >50% of reported African cybercrime, with continent-wide losses rising from $192M (2024) to $484M (2025); DRC is implicated as part of this regional pattern (SIM-swap/AI-deepfake authentication-gap fraud) but I did not find a DRC-only loss figure."
+        },
+        {
+          "domain": "financial/fraud",
+          "search_summary": "Two concrete, checkable DRC events: (1) academic/industry report describing legacy rule-based fraud systems in Congolese banking being outpaced by AI-assisted scams (USSD social engineering, cross-border smurfing), with 71% of DRC fraud cases targeting sub-$50 transactions (ACM paper on AI-driven fraud detection in Congolese banking). (2) GiveDirectly cash-aid fraud in DRC (staff stealing recipients' SIM cards during mobile money account setup, affecting ~1,900 families), which prompted GiveDirectly to deploy machine-learning fraud detection as a countermeasure (The New Humanitarian, Feb 2024) \u2014 this is an AI-adjacent harm/response event, not itself an 'AI-caused' harm, so flagged as such."
+        },
+        {
+          "domain": "biosecurity",
+          "search_summary": "No documented AI-linked biosecurity harm events found for DRC in this search pass."
+        },
+        {
+          "domain": "neuropsychological/behavioral",
+          "search_summary": "No documented AI-linked neuropsychological/behavioral manipulation harm events found for DRC beyond the election-disinformation/hate-speech items already logged under security/terrorism."
+        },
+        {
+          "domain": "environmental",
+          "search_summary": "No documented AI-linked environmental harm events found for DRC in this search pass."
+        }
+      ],
+      "domains_not_searched": [
+        "biosecurity (only a single negative-check search performed, not exhaustive)",
+        "environmental (only a single negative-check search performed, not exhaustive)"
+      ],
+      "risk_vectors": [
+        "Security/conflict-related AI-enabled disinformation (M23 conflict deepfakes)",
+        "Election disinformation and AI-generated hate-speech content (2023 elections)",
+        "AI-driven mobile money / financial fraud",
+        "Humanitarian cash-aid fraud (mobile money SIM theft, addressed partly via ML detection)",
+        "Cybercrime broadly amplified by AI (regional INTERPOL findings covering DRC)"
+      ]
+    },
+    "verdict": {
+      "country": "Democratic Republic of the Congo (DRC)",
+      "overall_risk": "high",
+      "wgi_gti_sanity_check": "The entry's WGI/GTI figures are honestly hedged, not fabricated. Independent verification found: (1) WGI Government Effectiveness \u2014 the entry cites ~3.85 percentile rank via a secondary UNDP document and flags the year as unconfirmed; I independently found only the raw estimate (-1.66 on -2.5/+2.5 scale, TheGlobalEconomy.com/World Bank) but likewise could not pin a specific percentile/year without a direct DataBank pull \u2014 the entry's caution is warranted, not evasive. (2) WGI Rule of Law and Control of Corruption are correctly marked NOT FOUND; I also could not retrieve numeric values via search. (3) GTI score \u2014 the entry marks this NOT FOUND/unverified, but I found a real, specific, checkable figure: DRC ranked 11th globally in the Global Terrorism Index 2025 with a score of 6.768 (visionofhumanity.org PDF), plus a reported +27.9% YoY worsening. This is a retrievable gap the entry should be updated with, not a sign of fabrication \u2014 no invented numbers were found anywhere in the entry.",
+      "events_to_downgrade_or_reject": [],
+      "citation_issues": [
+        "GTI score for DRC (11th globally, score 6.768, GTI 2025) is real and retrievable but was marked 'NOT FOUND' in the entry \u2014 should be added with source https://www.visionofhumanity.org/wp-content/uploads/2025/03/Global-Terrorism-Index-2025.pdf",
+        "wgi_government_effectiveness figure sourced only from a secondary UNDP evaluation document, not the primary World Bank WGI DataBank table \u2014 entry correctly flags this as needing direct verification but the underlying raw estimate (-1.66) is available via TheGlobalEconomy.com/World Bank and could be cross-checked",
+        "wgi_rule_of_law and wgi_control_of_corruption remain genuinely unconfirmed after independent search as well \u2014 entry's 'NOT FOUND' status is accurate, not an evasion",
+        "M23 deepfake claim relies on secondary reporting with no single primary source pinned, as the entry itself acknowledges",
+        "susceptibility (financial inclusion) value of -1 is explicitly and correctly flagged as a non-value placeholder, not a real Findex figure"
+      ]
+    },
+    "wgi": {
+      "rule_of_law": "NOT FOUND with a verifiable numeric percentile via search in this session \u2014 World Bank DataBank page did not return a numeric value in fetchable form; only qualitative confirmation that DRC ranks very low (World Justice Project Rule of Law Index 2024: 136 of 142 countries, a related but distinct index). Requires direct DataBank query/download for the actual WGI Rule of Law percentile rank.",
+      "government_effectiveness": "Approximately 3.85 percentile rank (out of 100, i.e., in roughly the bottom 4% of countries worldwide), cited in a UNDP Independent Country Programme Evaluation document referencing World Bank WGI data; Sub-Saharan Africa regional average cited alongside as 26.66. Year of underlying WGI estimate not confirmed in the retrieved excerpt \u2014 treat as indicative, not a directly-sourced current-year figure, and verify against databank.worldbank.org before using in the regression dataset.",
+      "control_of_corruption": "NOT FOUND \u2014 no numeric percentile rank for DRC located in this search session; would require a direct WGI DataBank query.",
+      "gti_score": "NOT FOUND as a specific numeric GTI score/rank \u2014 search results confirm DRC is ranked in the Global Terrorism Index (one snippet suggested rank ~8, but this could not be corroborated against a primary Vision of Humanity source and should be treated as unverified) and confirm 753 terrorism incidents in 2024 (+15% YoY) per the US State Department's Country Reports on Terrorism 2024, which is a distinct but real, checkable figure. The GTI report itself (visionofhumanity.org) was found but its specific DRC score/rank was not extracted from the search snippets."
+    }
   }
 ]
