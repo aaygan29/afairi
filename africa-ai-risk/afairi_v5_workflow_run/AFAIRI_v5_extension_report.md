@@ -1,7 +1,9 @@
 # AFAIRI v5 extension: methodology survey, replication, validation, application
 
-Produced by a 33-agent multi-agent workflow (Sonnet 5), 2026-08-24. Raw structured
-output: `raw_result.json`. Figures: `fig_tranche2_components.png`,
+Produced by a 33-agent multi-agent workflow (Sonnet 5), 2026-08-24. Full
+raw structured output (all 5 steps, every agent's sourcing and reasoning):
+`raw_result.json`. Flattened per-country table for Step A+E specifically:
+`app_rows.json`. Figures: `fig_tranche2_components.png`,
 `fig_validation_benchmark.png`.
 
 ## What this is
