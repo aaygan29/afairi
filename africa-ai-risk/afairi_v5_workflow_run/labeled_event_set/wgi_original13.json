@@ -1,0 +1,267 @@
+[
+  {
+    "country": "Egypt",
+    "wgi_rule_of_law": "Not found as a percentile rank. Only found: Rule of Law raw estimate score of -0.75 (scale -2.5 to +2.5) for 2024, per TheGlobalEconomy.com citing World Bank WGI data (world average -0.07 across 194 countries). Could not retrieve the corresponding 0-100 percentile rank figure despite multiple attempts (tradingeconomics.com pages for the rank itself returned no data; only upper/lower 90% confidence-interval bound pages loaded, showing 54.25% as the upper bound for 2023, which is not the point-estimate percentile rank).",
+    "wgi_government_effectiveness": "41.98 percentile rank, 2023 (World Bank WGI, via tradingeconomics.com/egypt/government-effectiveness-percentile-rank-wb-data.html, sourced from World Bank collection of development indicators)",
+    "wgi_control_of_corruption": "24.53 percentile rank, 2023 (World Bank WGI, via tradingeconomics.com/egypt/control-of-corruption-percentile-rank-wb-data.html, sourced from World Bank collection of development indicators)",
+    "gti_score": "Global Terrorism Index score \u22484.416 (on 0-10 scale), rank 30th of 163 countries, per the Global Terrorism Index 2025 report (Institute for Economics & Peace / Vision of Humanity), as aggregated by worldpopulationreview.com's GTI country ranking table. Note: tradingeconomics.com/egypt/terrorism-index shows a closely related but not identical figure (4.42 for \"2024\", declining to 3.47 for \"2025\" in their own indexing convention) \u2014 the two sources' year-labeling conventions differ slightly and I could not fully reconcile which GTI report edition (2024 vs 2025) each figure corresponds to. Treat the score as approximately 4.4 and rank ~30th as of the most recent GTI report, but the exact report year/edition should be double-checked against the primary GTI 2025 PDF at visionofhumanity.org if precision matters.",
+    "source_urls": [
+      "https://tradingeconomics.com/egypt/government-effectiveness-percentile-rank-wb-data.html",
+      "https://tradingeconomics.com/egypt/control-of-corruption-percentile-rank-wb-data.html",
+      "https://www.theglobaleconomy.com/Egypt/wb_ruleoflaw/",
+      "https://tradingeconomics.com/egypt/rule-of-law-percentile-rank-upper-bound-of-90percent-confidence-interval-wb-data.html",
+      "https://worldpopulationreview.com/country-rankings/global-terrorism-index-by-country",
+      "https://tradingeconomics.com/egypt/terrorism-index",
+      "https://www.visionofhumanity.org/wp-content/uploads/2025/03/Global-Terrorism-Index-2025.pdf",
+      "https://databank.worldbank.org/source/worldwide-governance-indicators"
+    ],
+    "data_unavailable": [
+      "Exact World Bank WGI Rule of Law percentile rank (0-100) for Egypt, most recent year -- could not retrieve the point-estimate figure from databank.worldbank.org or tradingeconomics.com in this session; only a raw estimate score (-0.75, 2024) and a confidence-interval upper bound (54.25%, 2023) were retrievable, neither of which is the percentile rank itself",
+      "Precise Global Terrorism Index report edition/year reconciliation -- score/rank pulled from a secondary aggregator (worldpopulationreview.com) rather than confirmed directly against the primary visionofhumanity.org GTI 2025 PDF, which could not be fetched in full detail"
+    ]
+  },
+  {
+    "country": "Nigeria",
+    "wgi_rule_of_law": "Not confirmed with a specific percentile-rank figure despite repeated search/fetch attempts (only the raw Rule of Law \"Estimate\" was found: -0.89 in 2023, per Trading Economics/World Bank data \u2014 not the 0-100 percentile rank). Listed in data_unavailable.",
+    "wgi_government_effectiveness": "20.28 percentile rank, 2023 (World Bank WGI data, via Trading Economics)",
+    "wgi_control_of_corruption": "16.98 percentile rank, 2023 (World Bank WGI data, via Trading Economics)",
+    "gti_score": "Global Terrorism Index 2025 report (covering 2024 data): Nigeria ranked 6th globally, score 7.658; 565 terrorism-related deaths in 2024 (up 34% from 533 in 2023)",
+    "source_urls": [
+      "https://databank.worldbank.org/source/worldwide-governance-indicators",
+      "https://tradingeconomics.com/nigeria/government-effectiveness-percentile-rank-wb-data.html",
+      "https://tradingeconomics.com/nigeria/control-of-corruption-percentile-rank-wb-data.html",
+      "https://tradingeconomics.com/nigeria/rule-of-law-estimate-wb-data.html",
+      "https://humanglemedia.com/global-terrorism-index-nigeria-ranks-sixth-with-565-fatalities-in-2024/",
+      "https://www.voaafrica.com/a/nigeria-rises-to-sixth-place-in-new-global-terrorism-index-report/8004846.html",
+      "https://businessday.ng/news/article/nigeria-remains-high-in-global-terrorism-index-ranking-2024/"
+    ],
+    "data_unavailable": [
+      "WGI Rule of Law percentile rank (0-100 scale) for Nigeria \u2014 only found the raw 'Estimate' score (-0.89 in 2023), not the percentile rank; the dedicated Trading Economics percentile-rank page for this series failed to load content across multiple fetch attempts. Recommend checking databank.worldbank.org/source/worldwide-governance-indicators directly (Nigeria, Rule of Law, Percentile Rank series) for the authoritative figure."
+    ]
+  },
+  {
+    "country": "Kenya",
+    "wgi_rule_of_law": "Not confirmed with a specific number \u2014 WorldBank/tradingeconomics page for Kenya Rule of Law: Percentile Rank exists (https://tradingeconomics.com/kenya/rule-of-law-percentile-rank-wb-data.html and https://data.worldbank.org/indicator/RL.PER.RNK?locations=KE) but search snippets did not surface the actual percentile value, so this is listed as unavailable rather than guessed.",
+    "wgi_government_effectiveness": "38.68 percentile rank, 2023 (World Bank WGI, via Trading Economics)",
+    "wgi_control_of_corruption": "24.06 percentile rank, 2023 (World Bank WGI, via Trading Economics)",
+    "gti_score": "Not confirmed as an official Global Terrorism Index (IEP) score/rank for Kenya. Trading Economics separately publishes a \"Kenya Terrorism Index\" (different methodology/series, not the IEP GTI) showing 5.37 points for 2024 and 5.09 points for 2025 \u2014 this should not be conflated with the actual IEP Global Terrorism Index score/rank, which was not found for Kenya specifically in the 2024 GTI report search results.",
+    "source_urls": [
+      "https://data.worldbank.org/indicator/RL.PER.RNK?locations=KE",
+      "https://tradingeconomics.com/kenya/rule-of-law-percentile-rank-wb-data.html",
+      "https://tradingeconomics.com/kenya/government-effectiveness-percentile-rank-wb-data.html",
+      "https://data.worldbank.org/indicator/GE.PER.RNK",
+      "https://tradingeconomics.com/kenya/control-of-corruption-percentile-rank-wb-data.html",
+      "https://data.worldbank.org/indicator/CC.PER.RNK?locations=KE",
+      "https://databank.worldbank.org/source/worldwide-governance-indicators",
+      "https://www.economicsandpeace.org/report/global-terrorism-index-2024/",
+      "https://tradingeconomics.com/kenya/terrorism-index"
+    ],
+    "data_unavailable": [
+      "Kenya WGI Rule of Law percentile rank exact figure/year (page exists but value not retrieved)",
+      "Kenya's official IEP Global Terrorism Index 2024/2025 score and country rank (only a distinct, non-IEP 'Kenya Terrorism Index' figure from Trading Economics was found)"
+    ]
+  },
+  {
+    "country": "Morocco",
+    "wgi_rule_of_law": "50.6 (governance score, 0-100 scale, 2024) \u2014 World Bank WGI",
+    "wgi_government_effectiveness": "54.8 (governance score, 0-100 scale, 2024) \u2014 World Bank WGI",
+    "wgi_control_of_corruption": "37.4 (governance score, 0-100 scale, 2024) \u2014 World Bank WGI",
+    "gti_score": "Global Terrorism Index 2024: score 0.000 (effectively no measurable terrorism impact), rank 89th of countries listed (per Vision of Humanity / Institute for Economics & Peace GTI 2024); Morocco moved from 83rd in the 2023 GTI to 89th in the 2024 GTI",
+    "source_urls": [
+      "https://databank.worldbank.org/source/worldwide-governance-indicators",
+      "https://api.worldbank.org/v2/country/MAR/indicator/GOV_WGI_RL.SC?format=json",
+      "https://api.worldbank.org/v2/country/MAR/indicator/GOV_WGI_GE.SC?format=json",
+      "https://api.worldbank.org/v2/country/MAR/indicator/GOV_WGI_CC.SC?format=json",
+      "https://www.moroccoworldnews.com/2024/03/22066/global-terrorism-index-2024-morocco-continues-to-rank-among-safe-countries/",
+      "https://www.visionofhumanity.org/maps/global-terrorism-index/"
+    ],
+    "data_unavailable": [
+      "Note: The World Bank retired the old 0-100 'percentile rank' series (RL.PER.RNK / GE.PER.RNK / CC.PER.RNK) in its 2024/2025 WGI update and replaced it with a 0-100 'governance score' series (GOV_WGI_RL.SC etc.), which is methodologically similar but not identical to the old percentile rank \u2014 treat the figures above as the current official WGI 0-100 score, not the legacy percentile-rank metric, since the legacy series no longer returns data via the API.",
+      "Exact GTI numeric rank total-country-count denominator (e.g. 'out of 163 countries') was not independently confirmed beyond secondary press coverage of the Institute for Economics & Peace report."
+    ]
+  },
+  {
+    "country": "Tunisia",
+    "wgi_rule_of_law": "50.7 (governance score, 0-100 scale \u2014 World Bank's current WGI percentile-equivalent metric), year 2024. Source: World Bank API, indicator GOV_WGI_RL.SC, dataset \"Worldwide Governance Indicators,\" sourceid 3, last updated 2026-03-18.",
+    "wgi_government_effectiveness": "46.7 (governance score, 0-100 scale), year 2024. Source: World Bank API, indicator GOV_WGI_GE.SC.",
+    "wgi_control_of_corruption": "43.4 (governance score, 0-100 scale), year 2024. Source: World Bank API, indicator GOV_WGI_CC.SC.",
+    "gti_score": "Reported by secondary aggregators (worldpopulationreview, and a separate search summary) as Tunisia ranked 43rd of 163 countries in the Global Terrorism Index 2025, with a cited GTI score around 2.18-2.184. This was NOT independently verified against the primary Institute for Economics & Peace (IEP) report/PDF \u2014 could not fetch a rank/score table directly from visionofhumanity.org or reliefweb's GTI 2025 report page.",
+    "source_urls": [
+      "https://api.worldbank.org/v2/country/TUN/indicator/GOV_WGI_RL.SC?format=json&date=2018:2024",
+      "https://api.worldbank.org/v2/country/TUN/indicator/GOV_WGI_GE.SC?format=json&date=2018:2024",
+      "https://api.worldbank.org/v2/country/TUN/indicator/GOV_WGI_CC.SC?format=json&date=2018:2024",
+      "https://databank.worldbank.org/source/worldwide-governance-indicators",
+      "https://worldpopulationreview.com/country-rankings/global-terrorism-index-by-country",
+      "https://reliefweb.int/report/world/global-terrorism-index-2025",
+      "https://www.visionofhumanity.org/maps/global-terrorism-index/"
+    ],
+    "data_unavailable": [
+      "Legacy-style 'Percentile Rank' (0-100, e.g. RL.PER.RNK/GE.PER.RNK/CC.PER.RNK codes) values could not be pulled directly \u2014 those specific API indicator codes returned 'archived/not found'; the current WGI dataset uses GOV_WGI_*.SC 'governance score (0-100)' fields instead, which is the modern equivalent percentile-style metric and is what's reported here.",
+      "Tunisia's exact GTI 2025 numeric score and rank were not confirmed from a primary IEP source (visionofhumanity.org GTI report/interactive map did not return country-level figures via fetch); only secondary-aggregator figures (worldpopulationreview) were obtained, so treat the 43/163 rank and ~2.18 score as unverified against the primary report."
+    ]
+  },
+  {
+    "country": "Ghana",
+    "wgi_rule_of_law": "41st percentile (2023), World Bank Worldwide Governance Indicators",
+    "wgi_government_effectiveness": "47.17 percentile (2023), World Bank WGI",
+    "wgi_control_of_corruption": "51.42 percentile (2023), World Bank WGI",
+    "gti_score": "GTI 2024 score reported as 0 (out of 10, where 0 = no measurable terrorism impact); exact numeric rank position among the 163 ranked countries not confirmed in sources checked",
+    "source_urls": [
+      "https://data.worldbank.org/indicator/RL.PER.RNK?locations=GH",
+      "https://tradingeconomics.com/ghana/government-effectiveness-percentile-rank-wb-data.html",
+      "https://tradingeconomics.com/ghana/control-of-corruption-percentile-rank-wb-data.html",
+      "https://databank.worldbank.org/source/worldwide-governance-indicators",
+      "https://tradingeconomics.com/ghana/terrorism-index",
+      "https://www.visionofhumanity.org/10-countries-most-impacted-by-terrorism-gti-2024/",
+      "https://www.economicsandpeace.org/wp-content/uploads/2024/02/GTI-2024-web-290224.pdf"
+    ],
+    "data_unavailable": [
+      "Exact numeric GTI rank position (e.g., '#120 of 163') for Ghana in the 2024 Global Terrorism Index \u2014 only the score (0) was confirmed via secondary sources; the primary GTI 2024 PDF report was not directly parsed to extract the precise rank",
+      "2024-year WGI figures \u2014 the most recent confirmed WGI data found was for 2023 (World Bank's databank/tradingeconomics aggregator); 2024 WGI release figures were not directly retrieved"
+    ]
+  },
+  {
+    "country": "Senegal",
+    "wgi_rule_of_law": "Not found as a specific percentile rank figure. Related data point: World Bank Rule of Law \"Estimate\" (governance score, not percentile) was -0.20 in 2024 and -0.27 in 2023 per TheGlobalEconomy.com/tradingeconomics (World Bank WGI data), but the 0-100 percentile rank value could not be retrieved from accessible pages.",
+    "wgi_government_effectiveness": "54.25 percentile rank, 2023, per Trading Economics citing World Bank WGI (data.worldbank.org GE.PER.RNK series)",
+    "wgi_control_of_corruption": "56.6 percentile rank, 2023, per Trading Economics citing World Bank WGI (data.worldbank.org CC.PER.RNK series)",
+    "gti_score": "Terrorism Index (Institute for Economics & Peace / Global Terrorism Index, via Trading Economics): 1.58 points in the 2024 GTI report, decreasing to 1.07 points in the 2025 GTI report (0-10 scale, higher = more impact). Specific global rank number (e.g. \"#X of 163\") could not be confirmed from accessible sources.",
+    "source_urls": [
+      "https://tradingeconomics.com/senegal/control-of-corruption-percentile-rank-wb-data.html",
+      "https://tradingeconomics.com/senegal/government-effectiveness-percentile-rank-wb-data.html",
+      "https://data.worldbank.org/indicator/CC.PER.RNK?locations=SN",
+      "https://data.worldbank.org/indicator/GE.PER.RNK.UPPER?locations=SN",
+      "https://tradingeconomics.com/senegal/terrorism-index",
+      "https://www.theglobaleconomy.com/Senegal/wb_ruleoflaw/",
+      "https://databank.worldbank.org/source/worldwide-governance-indicators",
+      "https://www.visionofhumanity.org/maps/global-terrorism-index/"
+    ],
+    "data_unavailable": [
+      "Senegal WGI Rule of Law percentile rank (0-100 scale) - only the raw governance 'Estimate' score (-0.20 in 2024) was retrievable, not the percentile rank; the specific databank.worldbank.org table could not be scraped directly",
+      "Senegal's exact Global Terrorism Index numeric global rank (e.g. rank out of 163 countries) for 2024 or 2025 GTI report - only the raw score (1.58 in 2024 report, 1.07 in 2025 report) was found"
+    ]
+  },
+  {
+    "country": "Ethiopia",
+    "wgi_rule_of_law": "19.34 percentile (2023) \u2014 note: this is the \"lower bound of 90% confidence interval\" variant of the Rule of Law percentile rank series as reported via Trading Economics (sourcing World Bank WGI data); could not independently confirm this equals the headline point-estimate percentile rank figure on databank.worldbank.org itself.",
+    "wgi_government_effectiveness": "24.06 percentile rank, 2023 (World Bank WGI, via Trading Economics)",
+    "wgi_control_of_corruption": "39.42 percentile rank, but dated 2021 \u2014 NOT 2023 (World Bank WGI); could not find a verified 2023 figure in this search pass",
+    "gti_score": "Global Terrorism Index 2025 report (Institute for Economics & Peace / Vision of Humanity): Ethiopia score 0.787 (0\u201310 scale), rank 78 of countries assessed",
+    "source_urls": [
+      "https://tradingeconomics.com/ethiopia/rule-of-law-percentile-rank-lower-bound-of-90percent-confidence-interval-wb-data.html",
+      "https://databank.worldbank.org/source/worldwide-governance-indicators",
+      "https://tradingeconomics.com/ethiopia/government-effectiveness-percentile-rank-wb-data.html",
+      "https://data.worldbank.org/indicator/CC.PER.RNK?view=chart&locations=ET",
+      "https://www.visionofhumanity.org/wp-content/uploads/2025/03/Global-Terrorism-Index-2025.pdf",
+      "https://tradingeconomics.com/ethiopia/terrorism-index"
+    ],
+    "data_unavailable": [
+      "Exact headline (point-estimate, not CI-bound) Rule of Law percentile rank for Ethiopia 2023 directly confirmed from databank.worldbank.org itself \u2014 only the CI-lower-bound variant was found via secondary aggregator",
+      "Control of Corruption percentile rank for year 2023 specifically \u2014 only found a 2021 figure (39.42); a matching-year 2023 number was not located in this pass",
+      "Whether GTI report year (2025 edition, reporting on 2024 data) aligns with the 2023 WGI year requested \u2014 years are not matched across the two indices"
+    ]
+  },
+  {
+    "country": "Tanzania",
+    "wgi_rule_of_law": "Found one unverified secondary claim of ~28th percentile (2023) via a search-engine AI summary, not confirmed against the actual databank.worldbank.org table or a screenshot of the source page \u2014 treating this as unconfirmed rather than reporting it as fact.",
+    "wgi_government_effectiveness": "Not found \u2014 TheGlobalEconomy.com only surfaced the raw index score (not percentile rank), last confirmed around -0.63 (2021); no specific percentile-rank figure for a specific year was retrievable via search.",
+    "wgi_control_of_corruption": "Not found as a percentile rank \u2014 only the raw index score surfaced: -0.34 (2022) per TheGlobalEconomy.com/wb_corruption citing World Bank WGI. No percentile-rank number was retrievable.",
+    "gti_score": "Global Terrorism Index (IEP) score reported by Trading Economics: 1.57 in 2024, down from 2.27 in 2023 (0-10 scale, higher = more impact). Tanzania's numeric country rank (out of 163 countries) could not be confirmed from available search results.",
+    "source_urls": [
+      "https://databank.worldbank.org/source/worldwide-governance-indicators",
+      "https://tradingeconomics.com/tanzania/terrorism-index",
+      "https://www.theglobaleconomy.com/Tanzania/wb_corruption/",
+      "https://www.theglobaleconomy.com/Tanzania/wb_government_effectiveness/",
+      "https://en.wikipedia.org/wiki/International_rankings_of_Tanzania",
+      "https://www.economicsandpeace.org/global-terrorism-index/"
+    ],
+    "data_unavailable": [
+      "WGI Rule of Law percentile rank \u2014 no figure directly confirmed from databank.worldbank.org itself; only an unverifiable AI search summary claim of ~28th percentile (2023)",
+      "WGI Government Effectiveness percentile rank \u2014 only raw index score found, not percentile rank, and not for a recent/specific year with a checkable source",
+      "WGI Control of Corruption percentile rank \u2014 only raw index score found (-0.34, 2022), not the percentile rank figure",
+      "Tanzania's exact numeric rank position in the Global Terrorism Index (out of 163 countries) for 2023 or 2024"
+    ]
+  },
+  {
+    "country": "Zambia",
+    "wgi_rule_of_law": "Not found (searched World Bank DataBank, data.worldbank.org, and TradingEconomics; pages did not render specific percentile-rank figures for Rule of Law). World Bank WGI Rule of Law estimate (not percentile) was -0.56 in 2024 per TheGlobalEconomy.com aggregation of World Bank data.",
+    "wgi_government_effectiveness": "27.83 percentile rank (2023), per World Bank WGI data as cited by TradingEconomics (tradingeconomics.com/zambia/government-effectiveness-percentile-rank-wb-data.html)",
+    "wgi_control_of_corruption": "36.79 percentile rank (2023), per World Bank WGI data as cited by TradingEconomics (tradingeconomics.com/zambia/control-of-corruption-percentile-rank-wb-data.html)",
+    "gti_score": "Not found as a specific number/rank for Zambia in the current (2025/2026) Global Terrorism Index rankings tables checked. Historical TradingEconomics \"Terrorism Index\" series (a different, related metric) showed Zambia at 0.00 points in 2024-2025, meaning no measurable terrorism impact, but this could not be confirmed as the official GTI score/rank (out of 163 countries) from the Institute for Economics & Peace's own report.",
+    "source_urls": [
+      "https://data.worldbank.org/indicator/GE.EST?locations=ZM",
+      "https://tradingeconomics.com/zambia/government-effectiveness-percentile-rank-wb-data.html",
+      "https://tradingeconomics.com/zambia/control-of-corruption-percentile-rank-wb-data.html",
+      "https://data.worldbank.org/indicator/CC.PER.RNK?locations=ZM",
+      "https://databank.worldbank.org/source/worldwide-governance-indicators",
+      "https://www.theglobaleconomy.com/Zambia/wb_rule_of_law/",
+      "https://www.visionofhumanity.org/maps/global-terrorism-index/",
+      "https://tradingeconomics.com/zambia/terrorism-index"
+    ],
+    "data_unavailable": [
+      "Zambia WGI Rule of Law percentile rank (specific figure) - could not retrieve exact number/year from databank.worldbank.org, data.worldbank.org, or tradingeconomics.com despite multiple fetch attempts; only the raw estimate score (-0.56, 2024) was retrievable via a secondary aggregator",
+      "Zambia's official Global Terrorism Index score and numeric rank out of 163 countries from the Institute for Economics & Peace's published GTI report - not confirmed from primary source (visionofhumanity.org / economicsandpeace.org); only a similarly-named but distinct TradingEconomics 'Terrorism Index' series (0.00 in 2024) was found, which may not be identical methodology to the official GTI"
+    ]
+  },
+  {
+    "country": "Zimbabwe",
+    "wgi_rule_of_law": "36.1 (percentile rank, 0-100 scale), 2024 \u2014 World Bank WGI. (2023 value: 35.1)",
+    "wgi_government_effectiveness": "32.1 (percentile rank, 0-100 scale), 2024 \u2014 World Bank WGI. (2023 value: 32.1)",
+    "wgi_control_of_corruption": "22.5 (percentile rank, 0-100 scale), 2024 \u2014 World Bank WGI. (2023 value: 23.7)",
+    "gti_score": "Global Terrorism Index (Institute for Economics & Peace, GTI 2025 report, reflecting 2024 data): score 0.0 out of 10 (no measurable terrorism impact), rank change -6 vs prior year edition; Zimbabwe is not among ranked countries with measurable impact.",
+    "source_urls": [
+      "https://api.worldbank.org/v2/country/ZW/indicator/GOV_WGI_RL.SC?format=json",
+      "https://api.worldbank.org/v2/country/ZW/indicator/GOV_WGI_GE.SC?format=json",
+      "https://api.worldbank.org/v2/country/ZW/indicator/GOV_WGI_CC.SC?format=json",
+      "https://databank.worldbank.org/source/worldwide-governance-indicators",
+      "https://www.visionofhumanity.org/wp-content/uploads/2025/03/Global-Terrorism-Index-2025.pdf",
+      "https://tradingeconomics.com/zimbabwe/terrorism-index"
+    ],
+    "data_unavailable": [
+      "Zimbabwe's exact overall GTI numeric country rank (e.g. '#X of 163 countries') for the 2025 report was not directly confirmed from a fetched page \u2014 only the score (0.0) and rank-change (-6) were found via secondary source (TheGlobalEconomy/tradingeconomics summary); the primary GTI 2025 PDF was not opened page-by-page to extract Zimbabwe's specific rank number."
+    ]
+  },
+  {
+    "country": "Somalia",
+    "wgi_rule_of_law": "Approximately 0\u20131st percentile rank (near bottom of 194 countries), most recent year 2023, per World Bank WGI data as aggregated by countriesby.org and theglobaleconomy.com (raw governance estimate score: -2.21 in 2024 per theglobaleconomy.com). Exact official percentile figure from databank.worldbank.org itself could not be directly retrieved/confirmed in this search session.",
+    "wgi_government_effectiveness": "Not confirmed as a percentile rank. Only the raw governance estimate score was found: -1.95 (2024), per theglobaleconomy.com, citing World Bank WGI. The corresponding percentile rank figure was not retrievable in this session.",
+    "wgi_control_of_corruption": "Not confirmed as a current percentile rank. Raw governance estimate score: -1.79 (2024) per theglobaleconomy.com. One secondary source (tradingeconomics.com) showed a \"Control of Corruption: Percentile Rank, Upper Bound of 90% Confidence Interval\" figure of 4.33% for 2021 \u2014 but this is the upper confidence bound, not the point-estimate percentile rank, and is two years stale, so it is not reported as the answer.",
+    "gti_score": "Somalia ranked 7th out of countries assessed in the Global Terrorism Index 2025 report (covering 2024 data), with a GTI score of 7.614, per Vision of Humanity / Institute for Economics and Peace reporting.",
+    "source_urls": [
+      "https://www.theglobaleconomy.com/Somalia/wb_ruleoflaw/",
+      "https://www.theglobaleconomy.com/Somalia/wb_government_effectiveness/",
+      "https://www.theglobaleconomy.com/Somalia/wb_corruption/",
+      "https://countriesby.org/lists/countries-by-rule-of-law-percentile-rank/",
+      "https://tradingeconomics.com/somalia/control-of-corruption-percentile-rank-upper-bound-of-90percent-confidence-interval-wb-data.html",
+      "https://www.visionofhumanity.org/10-countries-most-impacted-by-terrorism-gti-2024/",
+      "https://databank.worldbank.org/reports.aspx?Id=ceea4d8b&Report_Name=WGI-Table"
+    ],
+    "data_unavailable": [
+      "Exact, current point-estimate percentile rank for Rule of Law directly from databank.worldbank.org (only a raw governance score and an approximate 2023 percentile from a secondary aggregator were retrievable)",
+      "Exact percentile rank (point estimate) for Government Effectiveness for any year \u2014 only the raw -1.95 (2024) governance score was found, no percentile conversion",
+      "Exact current percentile rank (point estimate) for Control of Corruption \u2014 only a stale 2021 upper-confidence-bound figure (4.33%) and a 2024 raw score (-1.79) were found, not a current point-estimate percentile"
+    ]
+  },
+  {
+    "country": "Iraq",
+    "wgi_rule_of_law": "Precise 0-100 percentile rank not confirmed via search. Verified instead: WGI Rule of Law raw estimate (-2.5 to 2.5 scale) = -1.69 in 2023 (up from -1.75 in 2022), vs. world average -0.04 (193 countries) \u2014 TheGlobalEconomy.com, sourced from World Bank WGI.",
+    "wgi_government_effectiveness": "Precise main percentile rank not confirmed. Only figure found: Government Effectiveness percentile rank, upper bound of 90% confidence interval = 17.92% in 2023 (Trading Economics/World Bank WGI) \u2014 this is a CI bound, not the point estimate, so do not treat it as the percentile rank itself.",
+    "wgi_control_of_corruption": "Precise 0-100 percentile rank not confirmed. Verified instead: WGI Control of Corruption raw estimate = -1.25 in 2021 (most recent found), vs. world average -0.03 (192 countries) \u2014 TheGlobalEconomy.com/World Bank WGI. Note this data point is from 2021, not more recent.",
+    "gti_score": "Global Terrorism Index 2024 report (covering 2023 data): Iraq score = 7.08. Iraq exited the worst-10 ranked countries for the first time since GTI's inception; exact numeric rank not found in search snippets. Deaths from terrorism fell 99% from the 2007 peak to 69 in 2023.",
+    "source_urls": [
+      "https://databank.worldbank.org/source/worldwide-governance-indicators",
+      "https://www.theglobaleconomy.com/Iraq/wb_ruleoflaw/",
+      "https://www.theglobaleconomy.com/Iraq/wb_corruption/",
+      "https://tradingeconomics.com/iraq/government-effectiveness-percentile-rank-upper-bound-of-90percent-confidence-interval-wb-data.html",
+      "https://www.economicsandpeace.org/wp-content/uploads/2024/02/GTI-2024-web-290224.pdf",
+      "https://www.visionofhumanity.org/7-key-findings-from-the-global-terrorism-index-2024/",
+      "https://knoema.com/atlas/Iraq/topics/World-Rankings/World-Rankings/Global-terrorism-index"
+    ],
+    "data_unavailable": [
+      "Exact WGI Rule of Law percentile rank (0-100 scale) for Iraq, specific year \u2014 only the raw governance score (-1.69, 2023) was confirmed, not the percentile rank point estimate",
+      "Exact WGI Government Effectiveness percentile rank (main point estimate, not CI bound) for Iraq \u2014 only the 90% CI upper bound (17.92%, 2023) was found",
+      "Exact WGI Control of Corruption percentile rank (0-100 scale) for Iraq, current year \u2014 only a 2021 raw score (-1.25) was found, which is not current",
+      "Iraq's exact numeric rank (e.g. '#X of 163 countries') in the 2024 Global Terrorism Index \u2014 only the score (7.08) and the qualitative note that it left the worst-10 were confirmed"
+    ]
+  }
+]

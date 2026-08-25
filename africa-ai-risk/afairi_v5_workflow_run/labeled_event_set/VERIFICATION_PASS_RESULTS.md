@@ -49,8 +49,6 @@ check predicted. **Verification pass: done and worth having done. Next
 bottleneck: more labeled country-years, not better cleaning of the
 existing ones.**
 
-Full data: `../scoped_pilot_experiment_v2_post_verification.json` (the
-"before" run's numbers are the ones in the table above; the raw
-pre-verification file was superseded and removed once its results were
-folded into this comparison), `rejected_claims_log.json` (what was cut and
-why).
+Full data: `scoped_pilot_experiment.json` (before),
+`scoped_pilot_experiment_v2_post_verification.json` (after),
+`rejected_claims_log.json` (what was cut and why).
