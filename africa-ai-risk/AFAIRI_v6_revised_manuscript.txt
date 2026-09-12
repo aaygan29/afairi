@@ -1,0 +1,455 @@
+DRAFT MANUSCRIPT (REVISED, SEPTEMBER 2026)
+
+THE STRUCTURAL ASYMMETRY OF FRONTIER AI RISKS: A REGIONAL RISK INDEX, THREAT ACTOR CHARACTERIZATION, AND GOVERNANCE ARCHITECTURE FOR FOUR ANCHOR STATES OF THE AFRICAN AI ECOSYSTEM, WITH A NOTE ON THE CENTRAL AFRICAN SUPPLY CHAIN
+
+
+ABSTRACT
+
+Frontier AI risk on the African continent does not present as a scaled-down version of the risk profile modeled in the United States, European Union, or China. A field study based on 57 interviews with 27 former members of Boko Haram reports use of consumer frontier AI systems by an armed group in northeast Nigeria (Juelich, 2026); because that evidence is self-reported by former combatants and has not been forensically corroborated in public, this paper treats it as a credible but untriangulated account. TransUnion Africa reports a roughly 1,200% year-over-year rise in deepfake incidents in South Africa, concentrated in banking and fintech (TransUnion Africa, 2025). Kenya's electoral information environment saw over 550,000 social media posts screened for toxicity by AI classifiers during the 2022 general election (Code for Africa / MAPEMA, 2023). Egypt's biosecurity posture is assessed here through the WHO Joint External Evaluation rather than an unpublished screening-compliance report.
+
+The paper covers four anchor states (Egypt, Nigeria, Kenya, South Africa) standing in for North, West, East, and Southern Africa, and adds a short, unscored section on the Central African mineral supply chain that underlies global compute. It builds a revised four-component index (AFAIRI v4) in response to external review: internet exposure (E), reported scam victimization from a single harmonized four-country survey (H), a governance deficit that now scores enforcement capacity and not only legislative existence (G), and infrastructure disruption measured by grid failures and subsea-cable outages rather than grid carbon intensity (I). A Monte Carlo sensitivity analysis over index weights and independent input error finds no robust top-ranked state: South Africa has the highest mean score and ranks first in about 47% of sampled weightings, Egypt in about 31%, Nigeria in about 15%, and Kenya in about 7%, and no state outscores another on every component. The earlier claim that Southern Africa's top ranking is robust (90-95%) does not survive the construct revision and is withdrawn. The paper closes with a three-pillar governance architecture scoped to what the regional evidence supports.
+
+
+1. INTRODUCTION AND THEORETICAL FRAMING
+
+1.1 The Asymmetry Principle
+
+Frontier AI safety frameworks built in the United States, European Union, and China assume a baseline of institutional and physical infrastructure that is not uniform across the African continent: stable power grids, formal banking clearinghouses, biological-material screening regimes, and mature statutory enforcement capacity (Anthropic, 2024; European Union, 2024). Where that baseline is present, frontier AI risk is modeled primarily around misalignment, intellectual-property infringement, and long-horizon loss-of-control scenarios.
+
+Large parts of the continent combine rapid consumer AI adoption with material gaps in that baseline. We call this the Asymmetry Principle: the same model capability produces different realized failure modes depending on the infrastructural density and governance capacity of the environment into which it is deployed. This is a qualitative organizing claim, not a fitted function. No panel dataset spanning enough countries and years exists to estimate such a function, and this paper does not claim to have built one.
+
+  GLOBAL NORTH RISK PROFILE:
+  High model capability + high infrastructure + high regulatory capacity
+    -> primary modeled threats: misalignment, IP infringement, long-horizon scenarios
+
+  FOUR-STATE AFRICAN CASE-STUDY PROFILE (this paper):
+  High model capability + variable infrastructure + variable enforcement capacity
+    -> observed threats: organized-actor operational misuse (West Africa, self-reported);
+       deepfake and digital-banking fraud (Southern Africa);
+       electoral information-integrity strain (East Africa);
+       biosecurity oversight gaps (North Africa, and continent-wide)
+
+1.2 Why organize by region, and what "region" means here
+
+Each region is represented by one anchor state. This is a case-study design, not a regional average, and results should not be read as describing every state in a region. Region remains a useful organizing unit because several phenomena cross borders: Boko Haram's integration into Islamic State networks (Section 7.1) connects to a wider jihadist ecosystem that includes Al-Shabaab in East Africa (Section 7.2); West African cyber-fraud actors (Sections 7.3 and 7.4) target victims and operate cells across the continent and beyond, including in South Africa (Section 5.4); and the governance-capacity gaps in Sections 2 through 5 predate AI and now interact with AI-enabled tooling.
+
+1.3 Scope
+
+Central Africa is not scored in the index because comparable inputs could not be assembled for any Central African state (Section 10). It is not ignored: Section 9 addresses the Democratic Republic of Congo's role as the dominant source of mined cobalt, the physical supply-chain dimension of the structural asymmetry this paper describes. The title has been narrowed to reflect the actual coverage.
+
+
+2. NORTH AFRICA: EGYPT, BIOSECURITY OVERSIGHT AND ENFORCEMENT CAPACITY
+
+2.1 Regional profile
+
+Internet penetration in Egypt reached 74.0% of the population in 2023, up from 37.8% in 2015 (World Bank WDI, IT.NET.USER.ZS), the largest proportional increase of the four anchor states (a factor of 1.96, narrowly ahead of Kenya at 1.93). Financial inclusion, including mobile wallets, reached 74.8% of adults by end-2024 (Central Bank of Egypt, 2025). An earlier draft stated that Egypt has the region's highest density of BSL-3 research capacity; no source for that claim was located on re-verification and it has been removed.
+
+2.2 Governance posture
+
+Egypt published the second edition of its National AI Strategy (2025-2030) in early 2025 through the Ministry of Communications and Information Technology (Egypt MCIT, 2025). The Anti-Cyber and Information Technology Crimes Law (Law 175/2018) is in force, with no AI-specific provision located. On enforcement capacity, Egypt's Personal Data Protection Law (Law 151/2020) had no implementing regulations until Prime Ministerial Decree No. 816 of 1 November 2025, and enforcement by the Personal Data Protection Center is scheduled to begin in October 2026 (Kennedys, 2026; Clyde & Co, 2026). No monetary data-protection penalty had been issued at the time of writing. This is the main reason Egypt now carries the highest Governance Deficit score of the four states (Section 6).
+
+2.3 Biosecurity: replacing an unpublished metric with an existing one
+
+The earlier draft built this section on DNA-synthesis screening compliance, citing a country-level IBBIS report that has not been published. External review correctly identified this as an evidentiary gap. That framing is withdrawn, and the section now rests on two published instruments.
+
+First, the WHO Joint External Evaluation (JEE) of Egypt's IHR capacities, conducted 16-20 April 2018, scored indicator P.6.2 (biosafety and biosecurity training and practices) at 5, the highest level, describing a government-subsidized, multi-tier biosafety and biosecurity training system (WHO, 2018). This paper did not retrieve the full mission report during this revision and does not report the P.6.1 score (whole-of-government biosafety and biosecurity system); it should be taken from the primary document before citation. The JEE is also eight years old.
+
+Second, the Africa Health Security Index (NTI, Johns Hopkins Center for Health Security, and Brown University Pandemic Center, July 2026), which assessed all 54 African countries, reports continental averages of 14.9 out of 100 for biosecurity, 18.2 for biosafety, and 1.9 for dual-use research of concern, against an overall average of 41.5. The index's 2021 predecessor found that no African country had demonstrated oversight of research with especially dangerous pathogens or required screening by providers of genetic material. Egypt's individual 2026 scores were not retrieved during this revision.
+
+What this supports: Egypt has documented strength in laboratory biosafety training (JEE 2018), while the continent as a whole, which includes Egypt, scores very low on biosecurity oversight and dual-use research governance (AHSI 2026). The North Africa case is therefore reframed from "a screening-compliance gap" (unmeasured) to "strong laboratory practice alongside weak oversight architecture" (measured at the indicator level for Egypt and at the continental level for oversight). Biosecurity is not scored in AFAIRI because Egypt-specific AHSI scores for all four states were not assembled; it is a qualitative pillar only.
+
+2.4 AFAIRI v4 component scores, Egypt
+
+  Exposure (E): 74.0
+  Reported scam victimization (H): 39.0
+  Governance Deficit (G): 62.5
+  Infrastructure Disruption (I): 50.0
+
+
+3. WEST AFRICA: NIGERIA, SELF-REPORTED OPERATIONAL MISUSE AND INFRASTRUCTURE DISRUPTION
+
+3.1 Regional profile
+
+Internet penetration reached 40.1% in 2023, up from 22.5% in 2015 (World Bank WDI). Mobile-money app adoption reached 57% of adults in 2023 within a formal financial-inclusion rate of 64% (EFInA, 2023).
+
+3.2 Governance posture
+
+A National AI Strategy was published in draft in August 2024 (NITDA/NCAIR). The Cybercrimes Act 2015 was amended in 2024, and the Senate was reported in December 2025 to be pursuing a further overhaul aimed at AI-driven threats (Alexa.ng, 2025). On enforcement, the Nigeria Data Protection Commission (NDPC) has issued the largest data-protection penalties of the four states: NGN 555.8 million against Fidelity Bank (August 2024), NGN 766.2 million against MultiChoice Nigeria, and USD 32.8 million against Meta (February 2025), the last subsequently moving toward an out-of-court settlement (Nairametrics, 2025; Techpoint Africa, 2025). The size of the Meta penalty partly reflects the size of the target rather than regulatory capacity alone, and this is treated as a limitation (Section 10).
+
+3.3 Infrastructure disruption, and what it does and does not tell us about threat actors
+
+Nigeria's national grid collapsed 12 times in 2024 (Guardian Nigeria, 2025, compiling Transmission Company of Nigeria incidents). Nigeria was also among 13 countries affected by the 14 March 2024 cuts to the WACS, SAT-3, ACE, and MainOne subsea cables, with MainOne not fully repaired until 9 May 2024 (Internet Society, 2024a).
+
+External review asked whether grid instability actually impedes or alters the AI threat landscape in Section 7. On the evidence located, it does not appear to impede the documented threat actors, and the earlier draft should not have implied that it does. Three findings bear on this:
+
+(a) Telecom towers in Nigeria rely heavily on diesel generators during grid failures, and diesel cost and supply disputes, not grid collapses as such, are what have threatened tower shutdowns. In August 2025 the operators' association ALTON warned that more than 16,000 base stations in Lagos, Kaduna, and Delta states could go offline because of a diesel-access dispute (Guardian Nigeria, 2025; AllAfrica, 2025).
+
+(b) Insurgent connectivity has partly moved off terrestrial networks. In May 2026 the Nigerian military reported seizing more than 400 Starlink terminals linked to Boko Haram and ISWAP in Sambisa Forest and surrounding areas (Sahara Reporters, 2026, citing Operation Hadin Kai briefings). Satellite terminals with their own power supply are largely insulated from both grid collapse and terrestrial tower outages.
+
+(c) No evidence was located, in interview material, platform disclosures, or press reporting, that a grid collapse or telecom outage disrupted AI access by Boko Haram, ISWAP, or Nigerian cyber-fraud networks.
+
+The Infrastructure Disruption component is therefore reinterpreted. It is not a measure of friction on attackers. It measures the resilience deficit faced by defenders, legitimate users, and service operators: fraud monitoring, incident response, bank authentication, and public-sector digital services all degrade when grid and cable infrastructure fail, while well-resourced adversaries can route around the failure. Whether this asymmetry is empirically large is an open question that this paper cannot answer.
+
+3.4 AFAIRI v4 component scores, Nigeria
+
+  Exposure (E): 40.1
+  Reported scam victimization (H): 73.0
+  Governance Deficit (G): 12.5
+  Infrastructure Disruption (I): 75.0
+
+
+4. EAST AFRICA: KENYA, MOBILE-FIRST ECOSYSTEM AND ELECTORAL INTEGRITY
+
+4.1 Regional profile
+
+Internet penetration reached 32.1% in 2023, up from 16.6% in 2015 (World Bank WDI). Electricity access rose from 41.6% to 76.2% over the same period (World Bank WDI, EG.ELC.ACCS.ZS), the largest increase of the four states. Digital financial services usage is reported at 82-92% of adults (Central Bank of Kenya, 2025; Afrobarometer, 2025).
+
+4.2 Governance posture
+
+Kenya launched its National AI Strategy 2025-2030 in March 2025. The Computer Misuse and Cybercrimes Act (2018) and the Data Protection Act (2019) are in force, with no AI-specific provision located. On enforcement, the Office of the Data Protection Commissioner (ODPC) has issued monetary penalties since 2023, beginning with three penalty notices totaling KES 9,375,000 in September 2023 and reaching at least KES 26,275,000 across at least nine entities by September 2024 (ODPC, 2023; CADMUS, 2024). No single penalty located exceeds USD 1 million.
+
+4.3 Electoral information integrity
+
+The MAPEMA consortium (Code for Africa, Shujaaz, AIfluence, with UN Peacebuilding Fund support) used AI/ML classifiers to screen over 550,000 social media posts for toxicity around the 2022 general election, of which approximately 800 were confirmed and flagged as hate speech (Code for Africa / MAPEMA, 2023). The 550,000 figure describes posts screened, not confirmed hate speech. The ORF analysis cited alongside it is specific to the 2022 election (ORF, 2025).
+
+4.4 Infrastructure disruption (correction)
+
+The earlier draft stated that no documented grid-instability record was located for Kenya and assigned no penalty. That was incorrect. Kenya experienced nationwide or near-nationwide blackouts on 25-26 August 2023 and 10 December 2023, a grid disturbance affecting most of the country in May 2024, and a blackout on 30 August 2024 affecting Nairobi and six of eight regions on the national grid (The Star, 2024; Kenyans.co.ke, 2023). Kenya was also among the countries most affected by the 12 May 2024 damage to the SEACOM and EASSy subsea cables off KwaZulu-Natal, repaired by 3 June 2024 (Internet Society, 2024b).
+
+4.5 AFAIRI v4 component scores, Kenya
+
+  Exposure (E): 32.1
+  Reported scam victimization (H): 83.0
+  Governance Deficit (G): 37.5
+  Infrastructure Disruption (I): 50.0
+
+
+5. SOUTHERN AFRICA: SOUTH AFRICA, COMPUTE, ENERGY, AND FRAUD
+
+5.1 Regional profile
+
+Internet penetration reached 78.3% in 2023, up from 51.9% in 2015 (World Bank WDI). Approximately 88% of adults are financially included (FinMark Trust, FinScope South Africa 2023).
+
+5.2 Governance posture
+
+South Africa published a National AI Policy Framework in August 2024. The Cybercrimes Act 19 of 2020 is in force, with no AI-specific or deepfake-specific provision located. On enforcement, the Information Regulator issued its first administrative fine under POPIA, ZAR 5 million against the Department of Justice and Constitutional Development, on 3 July 2023, after the department failed to comply with an enforcement notice following a 2021 ransomware incident (Information Regulator, 2023). Enforcement notices to direct marketers followed in 2024. No single penalty located exceeds USD 1 million.
+
+5.3 Compute and energy (retained, not scored)
+
+South Africa's grid is predominantly coal-fired. Using Eskom's published grid emission factor of 0.699 kg CO2/kWh (Eskom Data Portal, 2025), a representative 100 MW data center at a Power Usage Effectiveness of 1.4 would draw:
+
+  Annual energy = 100,000 kW x 1.4 x 8,760 h = 1,226,400,000 kWh
+  Annual emissions = 1,226,400,000 kWh x 0.699 kg CO2/kWh = 857,253,600 kg, about 857,254 metric tons CO2 per year
+  (about 186,000 passenger vehicles at the US EPA figure of 4.6 metric tons CO2 per vehicle per year)
+
+This arithmetic was re-verified and is unchanged. The facility is illustrative, not a specific site. Following external review, grid carbon intensity has been removed from the risk index entirely: it is an environmental measure, not a measure of vulnerability to AI failure or misuse. It remains relevant only to Pillar 2 (Section 8), which is an environmental-governance recommendation rather than a safety-risk claim.
+
+5.4 Fraud
+
+TransUnion Africa reported that deepfake incidents in South Africa rose about 1,200% year over year, with banking and fintech hardest hit (TransUnion Africa, 2025; Biometric Update, October 2025). The figure is South Africa-specific. SABRIC reports 97,975 digital banking fraud incidents in 2024 with gross losses of about ZAR 1.888 billion, up from ZAR 1.082 billion in 2023, with banking apps accounting for 65.3% of incidents and early cases of AI-generated phishing and voice-deepfake impersonation (SABRIC, 2025a). SABRIC's 2025 report puts digital banking losses at about ZAR 2.4 billion (SABRIC, 2025b). These national loss figures are not index inputs (Section 6.3) but are used as a cross-check.
+
+5.5 Infrastructure disruption
+
+Eskom suspended load-shedding from 26 March 2024, so national load-shedding was in force for fewer than 90 days of 2024. South Africa was among the countries affected by the March 2024 West Africa cable cuts (Internet Society, 2024a). It was the landing point of the May 2024 SEACOM/EASSy damage but is not listed among the most-affected countries for that event, so that event is not counted for South Africa.
+
+5.6 AFAIRI v4 component scores, South Africa
+
+  Exposure (E): 78.3
+  Reported scam victimization (H): 77.0
+  Governance Deficit (G): 37.5
+  Infrastructure Disruption (I): 50.0
+
+
+6. STATISTICAL METHODOLOGY: THE AFAIRI v4 COMPOSITE INDEX
+
+6.1 What kind of index this is
+
+AFAIRI is a composite proxy index in the family of the Human Development Index or ND-GAIN: a small number of individually cited indicators combined under a disclosed weighting scheme. It is not validated against an external ground truth of realized AI-enabled harm, because no such dataset exists across these states. It is a structured comparison of four documented case studies, not a risk-prediction model.
+
+6.2 What changed from v3, and why
+
+External review identified construct-validity problems in two components and a binary trap in a third. The revisions are:
+
+  Susceptibility (financial inclusion) replaced by H, reported scam victimization. Financial inclusion measures attack surface but also digital literacy and institutional integration, which can be protective. The share of adults reporting a scam experience measures harm exposure directly, from one survey instrument applied identically in all four states. It is an outcome rather than a vulnerability, and the component has been renamed to say so.
+
+  Infrastructural Fragility (grid carbon intensity) replaced by I, infrastructure disruption. Carbon intensity is an environmental metric. I now counts grid failures and subsea-cable outages with documented national connectivity impact.
+
+  Governance Deficit now includes enforcement capacity. Legislative existence is performative without enforcement. A new criterion scores whether the data protection authority has actually issued monetary penalties, and the weight on strategy existence is halved.
+
+  The coupling term lambda x S x I / 100 is removed from the main specification. In v3 it encoded an intuition that fraud susceptibility and grid fragility compound. With the revised constructs there is no stated mechanism linking fraud harm to outages, so the term is kept only as a sensitivity run.
+
+  Input-error robustness is now implemented as stated. The v3 text described independent perturbation of each component, but the v3 code applied a single random factor per country to all four components simultaneously. v4 perturbs each of the 16 inputs independently.
+
+6.3 Component definitions
+
+Formal structure:
+
+  AFAIRI(state) = wE x E + wH x H + wG x G + wI x I,   with wE + wH + wG + wI = 1
+
+Exposure (E): 2023 internet penetration, World Bank WDI IT.NET.USER.ZS, untransformed. Values verified against the World Bank API: Egypt 74.0, Nigeria 40.1, Kenya 32.1, South Africa 78.3.
+
+Reported scam victimization (H): percentage of adults aged 18 and over reporting at least one scam experience in the previous 12 months, from the Global Anti-Scam Alliance's State of Scams in Africa 2025 (GASA, launched March 2026), a survey of 4,000 adults covering exactly Egypt, Kenya, Nigeria, and South Africa. Used directly on its 0-100 scale: Kenya 83; South Africa 77; Nigeria 73; Egypt 39 (continental aggregate 68%). The same report states that 41% of those targeted lost money.
+
+  Why this source. External review asked for a validated measure of digital vulnerability in place of financial inclusion. National fraud-loss statistics exist for Nigeria (NIBSS: NGN 52.26 billion in 2024), Kenya (Central Bank of Kenya: KES 1.5 billion in bank cyber fraud, 2024), and South Africa (SABRIC: ZAR 1.888 billion in digital banking fraud, 2024), but Egypt publishes no comparable figure and the three differ in scope. An earlier version of this revision bounded Egypt's missing value with scenarios; that approach was dropped in favor of a published, harmonized measure covering all four states.
+
+  Cross-check. Converted to USD per adult (World Bank 2024 exchange rates and population aged 15 and over), the national loss figures are about USD 2.17 per adult in South Africa, USD 0.31 in Kenya, and USD 0.26 in Nigeria. The ordering of South Africa relative to Kenya and Nigeria differs from the GASA prevalence ordering. Prevalence and loss per adult measure different things (how many people are reached versus how much money is lost through the banking system), so the disagreement is reported rather than resolved.
+
+  Limitations: GASA's country-level figures are drawn from the public summary and independent coverage of the report (Centre for Multilateral Affairs, 2026; Africa.com, 2026); the full report is restricted to GASA members and per-country sample sizes, fieldwork dates, and panel method were not verified. Self-reported "scam experience" depends on how respondents understand the term, and Egypt's much lower rate (39%) may partly reflect differences in response or awareness rather than exposure. GASA is an industry-supported alliance, not a statistical agency. Per-country average-loss figures circulating in secondary coverage were not used because they could not be reconciled with the report's continental average.
+
+Governance Deficit (G) = 100 - (A + B + C):
+
+  Criterion A, national AI strategy status: 25 if published or launched, 12.5 if draft only, 0 if none.
+    Egypt 25; Kenya 25; South Africa 25; Nigeria 12.5.
+  Criterion B, AI-specificity of cybercrime law: 25 if there is a documented, dated legislative process specifically targeting AI-driven threats; 12.5 if only a general statute is in force; 0 if none.
+    Nigeria 25; Egypt 12.5; Kenya 12.5; South Africa 12.5.
+  Criterion C, enforcement capacity: 50 if the data protection authority has issued at least one monetary penalty of USD 1 million or more; 25 if it has issued monetary penalties, all below USD 1 million; 0 if no monetary penalty has been issued.
+    Nigeria 50 (Meta, USD 32.8 million); Kenya 25 (at least KES 26.3 million across at least nine entities); South Africa 25 (ZAR 5 million); Egypt 0 (enforcement begins October 2026).
+
+  Resulting G: Egypt 62.5; Kenya 37.5; South Africa 37.5; Nigeria 12.5.
+
+  Limitations: Criterion C uses penalty issuance as a proxy for enforcement capacity. Budget allocations for AI or data-protection oversight, which external review also suggested, were not located in comparable form for the four states. Penalty size partly reflects the size of the penalized firm, and Nigeria's largest penalty was later negotiated toward settlement. Criterion B for Nigeria rests on a reported legislative push, not an enacted AI-specific provision.
+
+Infrastructure Disruption (I) = grid tier + cable score, calendar year 2024:
+
+  Grid tier: 50 if six or more national grid collapses, or national rolling load-shedding in force for 90 days or more; 25 if one to five nationwide blackout events, or load-shedding in force for fewer than 90 days; 0 if none located.
+    Nigeria 50 (12 collapses); Egypt 50 (load-shedding 1 January to 21 July 2024, about 202 days); Kenya 25 (nationwide or near-nationwide events in May and August 2024); South Africa 25 (load-shedding ended 26 March 2024).
+  Cable score: 50 x min(1, number of 2024 subsea-cable outage events with documented national connectivity impact / 2).
+    Nigeria 25; South Africa 25; Kenya 25; Egypt 0 (the February 2024 Red Sea cuts damaged AAE-1, EIG, and SEACOM, but no documented Egyptian national connectivity impact was located; this is absence of evidence, not evidence of resilience).
+
+  Resulting I: Nigeria 75.0; Egypt 50.0; Kenya 50.0; South Africa 50.0.
+
+  External review also suggested data-center uptime and SLA-breach rates, and critical-infrastructure cyber-attack frequency. Neither was located in public, comparable form for the four states.
+
+6.4 Table 1: component matrix (0-100 scale)
+
+(Plain-text table. Each line is one state: E, H, G, I.)
+
+  Egypt (North Africa): E 74.0; H 39.0; G 62.5; I 50.0
+  Nigeria (West Africa): E 40.1; H 73.0; G 12.5; I 75.0
+  Kenya (East Africa): E 32.1; H 83.0; G 37.5; I 50.0
+  South Africa (Southern Africa): E 78.3; H 77.0; G 37.5; I 50.0
+
+6.5 Sensitivity analysis
+
+We drew N = 10,000 weight vectors from a symmetric Dirichlet(1,1,1,1) distribution, which samples uniformly over all weightings that sum to 1, and recomputed AFAIRI for each state. We repeated this with independent multiplicative perturbations of each of the 16 inputs, uniform on plus or minus 10% and plus or minus 25%, and with the v3 coupling term restored (lambda = 0.15, applied to H and I). Seed 42.
+
+How to read the outputs. "Share ranked first" is the fraction of the sampled weight space in which a state has the highest score. It is not the probability that a state is in fact the riskiest, because the uniform prior over weights is itself a modeling choice. The reported ranges are the 2.5th to 97.5th percentiles of the score across weightings. They are sensitivity ranges, not confidence intervals, and earlier drafts mislabeled them as 95% CIs.
+
+Table 2: results, weights only (plain-text table)
+
+  South Africa: mean 60.8; range 45.3 to 74.5; ranked first in 47.1% of weightings
+  Egypt: mean 56.4; range 45.0 to 67.7; ranked first in 31.0%
+  Kenya: mean 50.7; range 37.2 to 70.8; ranked first in 6.7%
+  Nigeria: mean 50.2; range 25.8 to 69.6; ranked first in 15.2%
+
+  Most frequent full orderings: Egypt > South Africa > Kenya > Nigeria (21.5%); South Africa > Egypt > Nigeria > Kenya (16.8%); South Africa > Egypt > Kenya > Nigeria (9.3%). No single ordering occurs in more than about a fifth of weightings.
+
+Robustness (share ranked first; South Africa / Egypt / Nigeria / Kenya):
+
+  Weights only: 47.1% / 31.0% / 15.2% / 6.7%
+  Plus independent +/-10% input error: 46.9% / 31.7% / 14.6% / 6.7%
+  Plus independent +/-25% input error: 44.0% / 31.1% / 14.8% / 10.0%
+  Coupling term restored: 50.7% / 20.4% / 21.2% / 7.7%
+
+Pairwise comparisons (exact share of the weight simplex in which the first state outscores the second): South Africa over Egypt 65.8%; South Africa over Nigeria 82.5%; South Africa over Kenya 87.4%; Egypt over Kenya 67.1%; Egypt over Nigeria 62.5%; Kenya over Nigeria 52.5%.
+
+No weight-invariant ordering exists: no state scores at least as high as another on every component.
+
+6.6 Verification of the computation
+
+The results above were checked by a separate script (verify_afairi_v4.py): (1) every component was recomputed by hand from the rubric and source values, and all matched; (2) because each Dirichlet(1,1,1,1) weight has expected value 1/4, each state's mean score must equal the simple average of its four components (South Africa 60.70, Egypt 56.375, Kenya 50.65, Nigeria 50.15), and a fresh 200,000-draw simulation matched these to within 0.07; (3) the share ranked first was recomputed exactly on a deterministic grid of about 176,000 points covering the weight simplex (South Africa 46.2%, Egypt 31.1%, Nigeria 15.3%, Kenya 7.3%), agreeing with the random-sampling results to within 1 percentage point. The pairwise shares in Section 6.5 come from the same exact grid. The v3 results in the previous draft were also re-run and reproduced exactly, which is how the jitter implementation error in Section 6.2 was found.
+
+6.7 What the index supports, and what it does not
+
+Supported: (a) South Africa has the highest mean score, ranks first more often than any other state, and outscores each other state in a majority of weightings (66% against Egypt, 83% against Nigeria, 87% against Kenya). (b) Egypt has the largest enforcement-capacity gap, because its data-protection regime is not yet enforced, and the lowest reported scam victimization. (c) Nigeria has the most severe measured infrastructure disruption and, on the penalty-issuance proxy, the strongest data-protection enforcement record. (d) Kenya has the highest reported scam victimization but low internet exposure.
+
+Not supported: a claim that any state is robustly the highest-risk. South Africa ranks first in fewer than half of weightings, and Egypt ranks first in almost a third, because the two states are high on different components (South Africa on victimization, Egypt on governance deficit). The previous draft's headline, that Southern Africa's top ranking is robust at 90-95%, came from constructs that external review identified as invalid and is withdrawn. The ordering of Kenya and Nigeria is effectively a coin flip (52.5% to 47.5%).
+
+Not supported by construction: the index says nothing about threat-actor activity (Section 7), which is not an index input, or about biosecurity, which is assessed qualitatively (Section 2.3).
+
+
+7. THREAT ACTOR CHARACTERIZATION
+
+Evidence tiers used in this section (revised following external review):
+
+  PRIMARY-READ, SELF-REPORTED, UNTRIANGULATED: the primary source was read directly, but its core claims rest on participant self-report and no independent technical corroboration (seized-device logs, platform disclosures, financial records) was located.
+  SECONDARY-CORROBORATED: several independent secondary sources describe the same primary claim consistently; the primary document was not read.
+  PLATFORM- OR LAW-ENFORCEMENT-CORROBORATED: at least one technical or enforcement source independent of the actor's own accounts supports the claim.
+
+The earlier label "PRIMARY-VERIFIED" for the Boko Haram study conflated reading a source with verifying its claims, and has been retired.
+
+7.1 Boko Haram / Islamic State West Africa Province (ISWAP): West Africa
+
+Evidence tier: PRIMARY-READ, SELF-REPORTED, UNTRIANGULATED.
+
+Origin and structure: Boko Haram emerged in northeastern Nigeria in the early 2000s and split by 2016 into the Shekau-aligned JAS faction and ISWAP, which pledged allegiance to the Islamic State. Both remain active in the Lake Chad Basin.
+
+Reported AI use: Juelich (2026), Cambridge Programme on AI Science & Policy, draws on 57 interviews with 27 former members, including mid-ranking commanders and technical specialists, conducted in northeast Nigeria in 2025-2026. Respondents described both factions using ChatGPT, Claude, Gemini, Grok, Meta AI, and DeepSeek to plan attacks, design and improve explosive devices, service weapons, and refine operational security; in-person AI training delivered by Islamic State operatives; dedicated AI units; distributed, unlinkable accounts paid for by others; and pretextual framing to defeat content restrictions ("They say they need it for a movie or something like that"). One respondent described AI-informed guidance shifting a unit from large assault groups toward smaller deployments.
+
+Why this evidence is weaker than the earlier draft implied. Self-reported accounts from former combatants are subject to recall bias, to incentives to exaggerate sophistication for researchers or reintegration programs, and to survivorship bias, since those interviewed are those who left and survived. The author acknowledges that the study relies on former rather than active members, mostly mid-ranking, and does not establish that AI provided capability that would not otherwise have been achievable.
+
+Triangulation attempted for this revision:
+
+  Connectivity channel: the Nigerian military's May 2026 report of more than 400 Starlink terminals seized from Boko Haram and ISWAP areas (Sahara Reporters, 2026) corroborates that these groups have internet access independent of terrestrial networks. It does not corroborate AI use.
+  Platform-side disclosures: OpenAI's public threat-intelligence reporting (October 2025) names scam networks originating in Nigeria among disrupted operations, but no public platform disclosure attributing activity to Boko Haram or ISWAP was located.
+  Seized-device forensics, recovered prompt histories, or payment trails for AI subscriptions: none located in public sources.
+
+The interview findings are therefore reported as a credible, detailed, but uncorroborated account. They motivate treating the documented workaround pattern (unlinkable accounts, pretextual framing) as a red-teaming scenario (Pillar 1). They are not treated as proof of operational uplift. The most valuable next step would be cooperation with Nigerian military exploitation units, or with AI providers, to check seized devices or account records against the interview claims.
+
+7.2 Al-Shabaab: East Africa
+
+Evidence tier: SECONDARY-CORROBORATED.
+
+Al-Shabaab is al-Qaida's Somali affiliate, with documented reach into Kenya. Secondary reporting (The Conversation, republished by Asia Times, August 2026) attributes to a mid-2025 UN Security Council Analytical Support and Sanctions Monitoring Team report the finding that Al-Shabaab used AI tools to translate propaganda into multiple languages. The primary UN document was not read. Before citing this claim as primary-sourced, retrieve the relevant UN monitoring-team report directly.
+
+7.3 "Yahoo Boys" / "AI Boys": West Africa, targeting global victims
+
+Evidence tier: PLATFORM- OR LAW-ENFORCEMENT-CORROBORATED (upgraded from SECONDARY-CORROBORATED).
+
+A diffuse Nigeria-based demographic engaged in romance fraud and business-email compromise. Press reporting describes a shift toward AI-generated images, voice synthesis, and deepfake video, including a case reported by France24 (January 2025) in which scammers allegedly used AI-generated imagery to impersonate the actor Brad Pitt. The upgrade in tier rests on an independent, technical source: OpenAI's October 2025 threat-intelligence report states that it disrupted scam networks appearing to originate from Cambodia, Myanmar, and Nigeria that used AI for translation, message writing, and social media content advertising investment scams. That disclosure does not name "Yahoo Boys", which is an informal label rather than an organization, but it independently confirms AI-assisted fraud operations of Nigerian origin from platform-side account data rather than from the actors' own accounts.
+
+7.4 Black Axe: West Africa-originated, transnational
+
+Evidence tier: LAW-ENFORCEMENT-CORROBORATED for the organization and its fraud activity; no Black Axe-specific AI-use claim is made.
+
+Founded in 1977 as a student confraternity at the University of Benin, Black Axe is described by the Africa Center for Strategic Studies as Nigeria's most notorious transnational criminal organization, with an estimated 30,000 members and cells in many countries. INTERPOL's Operation Jackal III (21 countries) produced 300 arrests and USD 3 million in seized assets in July 2024; Europol reported 34 arrests in Spain on 9 January 2026 linked to EUR 5.9 million in fraud. Organized syndicates in West Africa and Southeast Asia are reported to use AI to bypass identity verification (Dark Reading, 2025), but no source located ties AI tooling specifically to a Black Axe operation, and none is claimed.
+
+7.5 Threat actor summary (plain text)
+
+  Boko Haram / ISWAP: insurgent group; West Africa; reported use for tactical planning, explosives, weapons, and operational security; PRIMARY-READ, SELF-REPORTED, UNTRIANGULATED.
+  Al-Shabaab: al-Qaida affiliate; East Africa; propaganda translation; SECONDARY-CORROBORATED.
+  "Yahoo Boys" / "AI Boys": diffuse fraud demographic; West Africa with global targets; AI-generated image, voice, and message content for fraud; PLATFORM-CORROBORATED at the level of Nigeria-origin AI-assisted scam networks.
+  Black Axe: structured transnational syndicate; West Africa with global cells; cyber-enabled fraud confirmed by law enforcement, AI use not confirmed for this actor; LAW-ENFORCEMENT-CORROBORATED (organization only).
+
+
+8. GOVERNANCE ARCHITECTURE
+
+Each pillar is scoped to the evidence behind it.
+
+Pillar 1: AU-level red-teaming and evaluation capacity. Motivated by Section 7.1, with its evidentiary limits: the self-reported workaround pattern (unlinkable accounts, pretextual framing) needs no technical sophistication and is cheap to include in evaluation suites whether or not the interview claims of uplift hold. Pillar 1 should include a forensic-corroboration workstream linking providers, researchers, and national security agencies, so that future threat-actor claims can be checked against account and device evidence rather than resting on interviews alone.
+
+Pillar 2: Additionality and base-load isolation for new compute. Motivated by the emissions arithmetic in Section 5.3. This is an environmental-governance recommendation, and it is kept separate from the safety-risk index.
+
+Pillar 3: Application-layer provenance and enforcement capacity. Motivated by Section 5.4 (South Africa's deepfake and digital-banking fraud), Section 7.3 (platform-corroborated Nigeria-origin AI-assisted fraud), and Section 7.2 (propaganda translation). A C2PA-style provenance standard on consumer messaging, dating, and financial-services platforms addresses part of this. The revised Governance Deficit results add a second requirement: provenance rules are only as effective as the authority enforcing them. Egypt's regime begins enforcement in October 2026, and the penalty record elsewhere is recent and thin. Pillar 3 therefore includes funded enforcement capacity for data-protection and consumer-protection authorities, alongside algorithmic-recourse channels for fraud victims.
+
+
+9. THE CENTRAL AFRICAN SUPPLY CHAIN (UNSCORED)
+
+The asymmetry this paper describes also runs through the physical supply chain beneath compute. The Democratic Republic of Congo accounted for about 74% of world mined cobalt production in 2023, and companies owned or controlled by Chinese firms accounted for most of the cobalt produced there (USGS, Mineral Commodity Summaries 2024). Cobalt is used in lithium-ion batteries, including those in the backup-power and uninterruptible power supply systems that data centers and telecom towers depend on, and USGS expects expansions in the DRC and Indonesia to drive further growth in supply.
+
+This means the states whose infrastructure resilience is scored in Section 6 depend, like the rest of the world, on a mineral supply chain concentrated in a Central African state whose own governance and conflict conditions fall outside the index. Artisanal-mining labor conditions, conflict financing in eastern DRC, and the concentration of processing outside Africa are well-established policy concerns, but they were not re-verified for this revision and no specific figures are claimed here. A proper treatment would require a separate section with its own sources, and is identified as priority future work rather than filled with unverified material. Section 9 is included so that the paper does not present African AI risk as a purely downstream, consumer-side phenomenon.
+
+
+10. LIMITATIONS
+
+Coverage. Four anchor states stand in for four regions; results do not generalize to every state in a region. Central Africa is discussed only qualitatively (Section 9) and is not scored.
+
+Victimization measure. H relies on one industry-alliance survey whose country-level figures were taken from its public summary and independent coverage, not from the members-only full report; it disagrees with national loss statistics on South Africa's relative position (Section 6.3). Governance and infrastructure criteria use tiered rubrics whose thresholds (for example USD 1 million, 90 days, six collapses) were chosen by the authors before the results were computed but are not empirically derived.
+
+Enforcement proxy. Penalty issuance is an imperfect measure of state capacity; oversight budgets were not available in comparable form.
+
+Threat actors. Section 7.1 rests on self-report and remains untriangulated. Section 7.2 rests on secondary reporting of a UN document that was not read.
+
+Biosecurity. The JEE for Egypt dates from 2018, only indicator P.6.2 was confirmed during this revision, and Egypt-specific 2026 AHSI scores were not retrieved.
+
+Validation. AFAIRI is not validated against realized AI-enabled harm. An earlier pilot correlating index scores with a labeled harm-event dataset in this project's repository was underpowered and found no significant association.
+
+
+11. CONCLUSION
+
+The four anchor states show structurally different ways in which frontier AI capability meets variable infrastructure and enforcement capacity: self-reported insurgent misuse and severe infrastructure disruption in Nigeria, measured digital-fraud harm in South Africa, electoral information strain and repeated grid failures in Kenya, and an enforcement gap in Egypt alongside strong laboratory biosafety practice. Revising the index in response to external review changed its headline result. Once environmental and inclusion proxies are replaced with measures of reported victimization, disruption, and enforcement, South Africa remains the most frequently top-ranked state but not a robust one, and Egypt's unenforced data-protection regime makes it a close second. That is a less striking conclusion than the previous draft's, and a more defensible one. The threat-actor evidence likewise separates into what is platform- or law-enforcement-corroborated (Nigeria-origin AI-assisted fraud; Black Axe's fraud enterprise) and what rests on self-report (Boko Haram's AI use), and the governance architecture is scoped accordingly.
+
+
+APPENDIX A: CITATION AND METHODOLOGY AUDIT LOG
+
+Items 1-12 are carried forward from the previous draft. Items 13-24 are new in this revision.
+
+  1. CASP/Juelich model-by-model attack-success table. FABRICATED; removed; replaced with qualitative findings (Section 7.1).
+  2. n = 57 interviews. CONFIRMED; clarified as 57 interviews with 27 individuals.
+  3. SABRIC deepfake-specific percentage. Not located; framed qualitatively.
+  4. TransUnion 1,200% "across African markets". Scope overstated; corrected to South Africa (Section 5.4). Re-verified in this revision.
+  5. MAPEMA 550,000 "hate speech" posts; 68.4% synthetic-audio figure. 550,000 relabeled as toxicity screening; 68.4% FABRICATED and removed.
+  6. IBBIS Egypt under-15% compliance. FABRICATED; removed. In this revision the entire IBBIS-based framing is also withdrawn (item 16).
+  7. Eskom factor 0.980. Incorrect; corrected to 0.699. Downstream arithmetic re-verified in this revision.
+  8. World Bank internet and electricity values. CONFIRMED; re-pulled from the World Bank API in this revision and matched to one decimal place.
+  9. ORF Kenya election framing. Corrected to 2022 election.
+  10. Africa CDC 2026 biosecurity strategy. CONFIRMED in previous draft.
+  11. Monte Carlo "97.8% rank invariance". Not reproducible; replaced in previous draft.
+  12. Rubric did not generate reported scores. Mechanized in previous draft.
+  13. v3 input-jitter implementation. ERROR: code applied one random factor per country to all four components, while the text claimed independent perturbation. Fixed in v4 (Section 6.2).
+  14. "95% CI" and "probability of ranking highest". MISLABELED: these were sensitivity ranges and shares of weight space. Relabeled (Section 6.5).
+  15. Kenya "no documented grid-instability record". INCORRECT: nationwide or near-nationwide blackouts in August 2023, December 2023, May 2024, and August 2024. Corrected and scored (Section 4.4).
+  16. Egypt reliability penalty of 0. INCORRECT: national load-shedding ran from July 2023 to July 2024. Corrected and scored (Section 6.3).
+  17. Grid carbon intensity as infrastructural fragility. CONSTRUCT-INVALID per external review; removed from index.
+  18. Financial inclusion as susceptibility. CONSTRUCT-INVALID per external review; replaced with reported scam victimization from the harmonized GASA 2025 four-country survey. National loss statistics were considered first but rejected as the input because Egypt publishes none.
+  19. Governance scored on legislative existence only. Per external review; enforcement criterion added.
+  20. Egypt "highest density of BSL-3 capacity". UNSOURCED; removed.
+  21. Boko Haram evidence labeled "PRIMARY-VERIFIED". MISLABELED: source was read, claims were not verified. Relabeled; triangulation attempted and reported (Section 7.1).
+  22. Southern Africa "robust" top ranking (90-95%). WITHDRAWN: under revised constructs South Africa ranks first in about 47% of weightings (Section 6.7).
+  23. Section 1.2 cross-references pointed to wrong section numbers. Corrected.
+  24. Kenya "16th African country to publish an AI strategy" and "also covered in The New York Times". Not re-verified in this revision; removed.
+
+
+APPENDIX B: COMPUTATION CODE
+
+Companion files in the AFAIRI repository (africa-ai-risk/):
+
+  afairi_compute_v4.py: all inputs hard-coded with source comments; Dirichlet(1,1,1,1) weights, N = 10,000, seed 42; independent per-input jitter at +/-10% and +/-25%; coupling-term sensitivity; component-wise dominance check.
+  verify_afairi_v4.py: independent hand recomputation of all components, analytic mean check, and exact simplex-grid computation of shares ranked first and pairwise shares.
+  afairi_compute_v3.py: previous version, retained for the audit trail.
+
+
+REFERENCES
+
+1. Juelich, A. (2026). "God Has Helped Us, and So Will AI": How the Terrorist Group Boko Haram Uses Frontier AI. Cambridge Programme on AI Science & Policy. https://casp.ac/reports/ai-enabled-terrorism
+2. TransUnion Africa. (2025). H1 2025 Digital Fraud Trends in Africa. https://www.transunionafrica.com/content/dam/transunion/roa/business/collateral/report/H1-2025-TransUnion-Africa-Digital-Fraud-Trends-Report-Final.pdf
+3. SABRIC. (2025a). Annual Crime Statistics 2024. https://www.sabric.co.za/wp-content/uploads/2025/09/CRIME-STATISTICS-REPORT-2024.pdf
+4. SABRIC. (2025b). Annual Crime Statistics Report 2025. https://www.sabric.co.za/wp-content/uploads/2026/08/SABRIC-Annual-Crime-Statistics-Report-2025.pdf
+5. Code for Africa / MAPEMA Consortium. (2023). Unmasking Hate Speech in Kenyan Elections with AI and Collaboration. https://medium.com/code-for-africa/unmasking-hate-speech-in-kenyan-elections-with-ai-and-collaboration-576e37d4ccb5
+6. Observer Research Foundation. (2025). AI and Electoral Integrity: Insights from Kenya's 2022 Elections. https://www.orfonline.org/expert-speak/ai-and-electoral-integrity-insights-from-kenya-s-2022-elections
+7. World Health Organization. (2018). Joint External Evaluation of IHR Core Capacities of the Arab Republic of Egypt: Mission Report, 16-20 April 2018. https://iris.who.int/server/api/core/bitstreams/6fcf85c4-e330-4c82-8ae4-13858c4cafec/content
+8. NTI, Johns Hopkins Center for Health Security, and Brown University Pandemic Center. (2026). Africa Health Security Index. https://ghsindex.org/africa-health-security-index/ ; summary at https://pandemics.sph.brown.edu/news/2026-07-22/africa-health-security-index
+9. Eskom. (2025). GHG Emissions Data Portal. https://www.eskom.co.za/dataportal/emissions/
+10. World Bank. World Development Indicators: IT.NET.USER.ZS, EG.ELC.ACCS.ZS, PA.NUS.FCRF, SP.POP.TOTL, SP.POP.0014.TO.ZS. https://api.worldbank.org/v2/
+11. Central Bank of Kenya. (2025). Financial Sector Stability Report 2025 (as reported by Finance in Africa, https://financeinafrica.com/insights/fraud-costs-hit-11m-kenyan-banks/).
+12. Nigeria Inter-Bank Settlement System (NIBSS). (2025). Fraud report for 2024 (as reported by Nairametrics, 26 February 2025, https://nairametrics.com/2025/02/26/nigerias-financial-sector-suffers-n52-26-billion-loss-to-fraud-in-2024-nibss-report/).
+13. Internet Society. (2024a). 2024 West Africa Submarine Cable Outage Report. https://www.internetsociety.org/resources/doc/2024/2024-west-africa-submarine-cable-outage-report/
+14. Internet Society. (2024b). 2024 East Africa Submarine Cable Outage Report. https://www.internetsociety.org/resources/doc/2024/2024-east-africa-submarine-cable-outage-report/
+15. Guardian Nigeria. (2025). Timeline: The 12 times national grid collapsed in 2024. https://guardian.ng/news/timeline-the-12-times-national-grid-collapsed-in-2024/
+16. Guardian Nigeria. How Nigeria's power crisis slows broadband expansion. https://guardian.ng/technology/how-nigerias-power-crisis-slows-broadband-expansion/
+17. AllAfrica. (2025). Nigeria: Telecoms Blackout Looms As Base Station Operators, Diesel Suppliers Battle. https://allafrica.com/stories/202508080069.html
+18. Sahara Reporters. (2026). Nigerian Military Intercepts Over 400 Starlink Devices Linked To Boko Haram, ISWAP In North-East. 12 May 2026. https://saharareporters.com/2026/05/12/nigerian-military-intercepts-over-400-starlink-devices-linked-boko-haram-iswap-north
+19. OpenAI. (2025). Disrupting malicious uses of AI: October 2025. https://openai.com/global-affairs/disrupting-malicious-uses-of-ai-october-2025/
+20. Nairametrics. (2025). NDPC, Meta discuss USD 32.8m data privacy penalty settlement. https://nairametrics.com/2025/10/03/ndpc-meta-discuss-32-8m-data-privacy-penalty-settlement/
+21. DataGuidance. (2024). Nigeria: NDPC fines Fidelity Bank NGN 555.8M. https://www.dataguidance.com/news/nigeria-ndpc-fines-fidelity-bank-ngn-5558m-data
+22. The ICIR. NDPC fines MultiChoice Nigeria NGN 766 million over data privacy violations. https://www.icirnigeria.org/ndpc-fines-multichoice-nigeria-%E2%82%A6766-million-over-data-privacy-violations/
+23. Office of the Data Protection Commissioner, Kenya. (2023). ODPC Issues Three Penalty Notices Totalling KShs 9,375,000. https://www.odpc.go.ke/wp-content/uploads/2024/02/ODPC-ISSUES-THREE-PENALTY-NOTICES-TOTALLING-TO-KSHS-9375000.pdf
+24. CADMUS Cyber Solutions. (2024). Kenyan Businesses Fined Over KES 26 Million For Data Privacy Violations. https://www.cadmuscyber.com/insight/kenyan-businesses-fined-over-kes-26-million-for-data-privacy-violations
+25. Information Regulator (South Africa). (2023). Infringement notice issued to the Department of Justice and Constitutional Development. https://inforegulator.org.za/wp-content/uploads/2020/07/MEDIA-STATEMENT-INFRINGEMENT-NOTICE-ISSUED-TO-THE-DEPARTMENT-OF-JUSTICE-AND-CONSTITUTIONAL.pdf
+26. Kennedys. (2026). Egypt's Personal Data Protection Law: the compliance countdown has begun. https://www.kennedyslaw.com/en/thought-leadership/article/2026/egypt-s-personal-data-protection-law-the-compliance-countdown-has-begun/
+27. Clyde & Co. (2026). Egypt regulatory update on data privacy. https://www.clydeco.com/en/insights/2026/01/egypt-regulatory-update-on-data-privacy
+28. Egypt Today. (2024). Egypt announces end to year-long load shedding program. https://www.egypttoday.com/Article/1/134864/Egypt-announces-end-to-year-long-load-shedding-program
+29. The Star (Kenya). (2024). Most parts of country have suffered blackout: Kenya Power. https://www.the-star.co.ke/news/2024-05-02-most-parts-of-country-have-suffered-blackout-kenya-power
+30. Energynews.pro. (2024). Kenya: Nairobi and six regions plunged into darkness. https://energynews.pro/en/kenya-nairobi-and-six-regions-plunged-into-darkness
+31. AllAfrica. (2023). Kenya's Third Nationwide Power Blackout Could Be a Result of Sabotage. https://allafrica.com/stories/202312120461.html
+32. Kentik. What Caused the Red Sea Submarine Cable Cuts? https://www.kentik.com/blog/what-caused-the-red-sea-submarine-cable-cuts/
+33. U.S. Geological Survey. (2024). Mineral Commodity Summaries 2024: Cobalt. https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-cobalt.pdf
+34. Egypt MCIT. (2025). Egypt National Artificial Intelligence Strategy, Second Edition (2025-2030). https://ai.gov.eg/SynchedFiles/en/Resources/AIstrategy%20English%2016-1-2025-1.pdf
+35. Central Bank of Egypt. (2025). Financial Inclusion Rates in Egypt Continue to Rise, Reaching 74.8% by the End of 2024.
+36. FinMark Trust. (2023). FinScope South Africa Consumer Survey 2023.
+37. EFInA. (2023). Access to Finance in Nigeria 2023 Survey.
+38. NITDA / NCAIR. (2024). National Artificial Intelligence Strategy, draft.
+39. Republic of Kenya, Ministry of Information, Communications and the Digital Economy. (2025). Kenya National AI Strategy 2025-2030.
+40. Republic of South Africa, Department of Communications and Digital Technologies. (2024). National Artificial Intelligence Policy Framework.
+41. Alexa.ng. (2025). Nigeria's Senate Pushes for Overhaul of Cybercrime Law Amid Rising AI-Driven Threats. December 2025.
+42. Asia Times / The Conversation. (2026). Al-Qaida and Islamic State are both adopting AI, but differ in how they think about the technology. August 2026.
+43. France24. (2025). Nigerian scammers accused in AI-driven fake Brad Pitt fraud. 21 January 2025.
+44. Africa Center for Strategic Studies. Black Axe: Nigeria's Most Notorious Transnational Criminal Organization. https://africacenter.org/spotlight/black-axe-nigeria-transnational-organized-crime/
+45. Europol. (2026). 34 arrests in Spain during action against the "Black Axe" criminal organisation. 9 January 2026.
+46. Dark Reading. (2025). AI Sends Global Crime Syndicates Into Fraud Nirvana.
+47. Biometric Update. (2025). Deepfakes on steep rise in South Africa, fintech and banking hardest hit. https://www.biometricupdate.com/202510/deepfakes-on-steep-rise-in-south-africa-fintech-banking-hardest-hit
+48. Anthropic. (2024). Responsible Scaling Policy.
+49. European Union. (2024). Regulation (EU) 2024/1689 (Artificial Intelligence Act). https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689
+50. Global Anti-Scam Alliance (GASA). (2026). State of Scams in Africa 2025. https://gasa.org/knowledge-base/reports/state-of-scams-in-africa-2025
+51. Centre for Multilateral Affairs. (2026). Africa's Cybercrime Crisis: A Deep Dive into GASA's 2025 State of Scams in Africa Report. https://thecfma.org/africas-cybercrime-crisis-a-deep-dive-into-gasas-2025-state-of-scams-in-africa-report/
+52. Africa.com. (2026). Africa Lost USD 57.8 Billion To Cybercrime in 2025. https://africa.com/africa-lost-57-8-billion-to-cybercrime-in-2025-now-bank-boards-are-personally-liable/

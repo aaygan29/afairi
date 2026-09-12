@@ -1,0 +1,45 @@
+RESPONSE TO REVIEWER (ALEX), REVIEWS OF 7 AND 11 SEPTEMBER 2026
+
+Thank you for both rounds of comments. Each point is listed below with the change made and where to find it in the revised manuscript. Two changes go beyond what was asked: re-running the index code turned up an implementation error, and re-checking sources turned up two incorrect grid-stability claims. Both are logged in Appendix A (items 13-16).
+
+
+PART 1: GAPS IN THE EVIDENCE BASE
+
+1.1 Grid instability and the West African threat actors
+Comment: Nigeria's grid collapses were used to penalize the country without evidence that they affect Boko Haram/ISWAP or Yahoo Boys operations.
+Response: Accepted. We looked for evidence in both directions (Section 3.3). None was found that grid or telecom outages disrupt these actors' AI access, and there is evidence that insurgents route around terrestrial networks (400+ Starlink terminals seized, May 2026). Tower outages are driven mainly by diesel supply rather than by grid collapse itself. The infrastructure component is now defined as a resilience deficit for defenders and legitimate users, not as friction on attackers, and the manuscript says directly that the grid-to-threat-actor link is not established.
+
+1.2 The North Africa biosecurity pillar rests on an unpublished IBBIS report
+Response: Accepted. The IBBIS framing is withdrawn. Section 2.3 now uses the WHO Joint External Evaluation for Egypt (2018; P.6.2 biosafety and biosecurity training scored 5) and the 2026 Africa Health Security Index continental biosecurity, biosafety, and dual-use research scores. The case is reframed as strong laboratory practice alongside weak oversight architecture. Stated limitations: the JEE is from 2018, only P.6.2 was confirmed, and Egypt-specific 2026 AHSI scores were not retrieved.
+
+1.3 Central Africa and the cobalt supply chain
+Response: Accepted, using both of the suggested remedies. The title now names the actual scope ("Four Anchor States of the African AI Ecosystem"). A new Section 9 addresses the DRC's roughly 74% share of world mined cobalt (USGS 2024) and its relevance to compute and backup-power infrastructure. It is deliberately short and unscored: we did not include mining-governance figures we had not verified.
+
+
+PART 2: METHODOLOGICAL LIMITATIONS
+
+2.1 Construct validity: carbon intensity as fragility
+Response: Accepted. Carbon intensity has been removed from the index. Infrastructure Disruption (I) now combines a 2024 grid-failure tier (collapses or load-shedding days) with 2024 subsea-cable outage events that had documented national impact (Internet Society outage reports). Data-center uptime and SLA-breach data, and critical-infrastructure attack frequencies, were not publicly available in comparable form; this is disclosed. The emissions arithmetic is kept only as the basis for the environmental Pillar 2.
+
+2.2 Construct validity: financial inclusion as susceptibility
+Response: Accepted. Replaced with reported scam victimization (H): the share of adults with a scam experience in the past 12 months from the Global Anti-Scam Alliance's State of Scams in Africa 2025, a single survey of 4,000 adults covering exactly Egypt, Kenya, Nigeria, and South Africa. This also removes the old comparability problem of four different national surveys. National fraud-loss statistics (NIBSS, Central Bank of Kenya, SABRIC) were considered first, but Egypt publishes no equivalent, so they are used only as a cross-check. Algorithmic-recourse mechanisms were not scored because no comparable measure was located.
+
+2.3 Self-reported combatant interviews
+Response: Accepted. "PRIMARY-VERIFIED" has been retired as a label because it conflated reading a source with verifying its claims. Section 7.1 is now rated PRIMARY-READ, SELF-REPORTED, UNTRIANGULATED, with recall, exaggeration, and survivorship bias discussed explicitly. We attempted triangulation and report the results: the Starlink seizures corroborate the connectivity channel but not AI use; no platform disclosure naming Boko Haram or ISWAP was found; no public device forensics or payment trails were found. By contrast, the Yahoo Boys profile was upgraded because OpenAI's October 2025 report independently confirms AI-assisted scam networks of Nigerian origin.
+
+2.4 The governance binary trap
+Response: Accepted. Governance Deficit now includes Criterion C, enforcement capacity, based on actual data-protection monetary penalties (worth up to 50 of 100 points), and the weight on AI-strategy existence is halved. This moved Egypt to the largest deficit (its data-protection law is not enforced until October 2026) and Nigeria to the smallest (NDPC penalties including USD 32.8 million against Meta). The limitations are stated: penalty size partly tracks firm size, and oversight budget data were not available in comparable form.
+
+
+CONSEQUENCE FOR THE HEADLINE RESULT
+
+The previous draft reported Southern Africa as robustly highest-risk (90-95%). Under the revised constructs this does not hold. South Africa still has the highest mean score and ranks first in about 47% of sampled weightings, followed by Egypt at 31%, driven mainly by its unenforced data-protection regime. No state outscores another on every component. The robustness claim has been withdrawn, and the manuscript now reports this instability as the finding.
+
+
+ADDITIONAL CORRECTIONS FOUND DURING RE-VERIFICATION
+
+  The v3 code applied one random perturbation per country to all four components, while the text described independent perturbations. Fixed.
+  "95% CI" and "probability of ranking highest" were relabeled as sensitivity ranges and shares of weight space.
+  Kenya had four nationwide or near-nationwide blackouts in 2023-2024, and Egypt had a year of national load-shedding (July 2023 to July 2024). Both had been scored as having no instability record. Corrected.
+  An unsourced claim about Egypt's BSL-3 capacity was removed.
+  All results were checked by an independent script: hand recomputation of components, analytic means, and an exact simplex grid. It agrees with the Monte Carlo output to within 1 percentage point.

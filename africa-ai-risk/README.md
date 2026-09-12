@@ -2,9 +2,11 @@
 
 Multi-region risk index + threat actor characterization for frontier AI misuse/risk on the African continent, organized by spatial region (North/West/East/Southern Africa) with a fully mechanized, citation-audited composite index.
 
-**Current version: `AFAIRI_v4_regional.md`** — organized by region, includes the sourced Threat Actor Characterization section (Boko Haram/ISWAP, Al-Shabaab, "Yahoo Boys"/"AI Boys", Black Axe), plain-text math (paste-ready for Google Docs). Its own Appendix A is the citation audit log (including what was fabricated in an earlier draft and removed) and Appendix B is the reproducible Monte Carlo computation code — both self-contained in this one file.
+**Current version: `AFAIRI_v6_revised_manuscript.txt`** (September 2026 revision responding to external review; plain text, paste-ready for Google Docs; point-by-point reply in `RESPONSE_TO_REVIEWER_2026-09.txt`). Index v4 replaces carbon intensity with grid/subsea-cable disruption, financial inclusion with GASA 2025 scam victimization, and adds a data-protection enforcement criterion to governance; the earlier 90-95% "Southern Africa robustly highest" result is withdrawn (South Africa now ranks first in ~47% of weightings). Code: `afairi_compute_v4.py`, independently checked by `verify_afairi_v4.py`.
 
-**Figures:**
+**Previous version: `AFAIRI_v4_regional.md`** — organized by region, includes the sourced Threat Actor Characterization section (Boko Haram/ISWAP, Al-Shabaab, "Yahoo Boys"/"AI Boys", Black Axe), plain-text math (paste-ready for Google Docs). Its own Appendix A is the citation audit log (including what was fabricated in an earlier draft and removed) and Appendix B is the reproducible Monte Carlo computation code — both self-contained in this one file.
+
+**Figures (v3 index, superseded; not regenerated for v4):**
 - `afairi_v3_montecarlo.png` — Monte Carlo sensitivity (N=10,000 Dirichlet weight draws + input-jitter robustness layer), by region
 - `afairi_v3_components_by_region.png` — grouped bar chart of the four AFAIRI components (Exposure/Susceptibility/Governance Deficit/Infra. Fragility) by region
 
