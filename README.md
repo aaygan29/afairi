@@ -10,9 +10,12 @@ AI-regulatory-deficit risk.
 ## Start here
 
 - **[africa-ai-risk/](africa-ai-risk/)** — the index itself. Current
-  version: `AFAIRI_v4_regional.md` (North/West/East/Southern Africa, one
-  deeply-documented anchor country per region, Monte Carlo sensitivity
-  analysis, threat-actor characterization for Boko Haram/ISWAP,
+  version: `AFAIRI_v6_revised_manuscript.txt` (September 2026 revision
+  after external review; index v4 with revised constructs, figures
+  `afairi_v4_*.png`, independent verification script). Previous version
+  `AFAIRI_v4_regional.md` is retained for the audit trail. Both cover
+  North/West/East/Southern Africa, one deeply-documented anchor country
+  per region, Monte Carlo sensitivity analysis, threat-actor characterization for Boko Haram/ISWAP,
   Al-Shabaab, "Yahoo Boys"/"AI Boys", Black Axe).
 - **[africa-ai-risk/afairi_v5_workflow_run/](africa-ai-risk/afairi_v5_workflow_run/)**
   — extension to 8 more African countries plus Middle Eastern countries,
