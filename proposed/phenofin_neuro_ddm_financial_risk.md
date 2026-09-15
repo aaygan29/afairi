@@ -1,6 +1,6 @@
 # PhenoFin: Neuro-Grounded Drift-Diffusion Modeling of Financial Risk-Taking Phenotypes
 
-**Status:** Proposed idea (2026-08-24), not yet started. Team lead: the author,
+**Status:** Proposed idea (2026-08-24), not yet started. Team lead: Aayush,
 financial AI / legal AI research collaboration program.
 
 ## Idea
@@ -67,4 +67,4 @@ recovery, time-series/panel regression against market anomalies.
 
 | Title | Type | Lead |
 |---|---|---|
-| PhenoFin: Neuro-Grounded Drift-Diffusion Modeling of Financial Risk-Taking Phenotypes | Computational Modeling / Empirical Paper | The author |
+| PhenoFin: Neuro-Grounded Drift-Diffusion Modeling of Financial Risk-Taking Phenotypes | Computational Modeling / Empirical Paper | Aayush |
