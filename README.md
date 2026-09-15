@@ -7,6 +7,19 @@ labeled dataset of documented AI-enabled harm events, and a proposed
 (not yet validated) theoretical framework for pricing and forecasting
 AI-regulatory-deficit risk.
 
+## Workshop paper (Africa in AI @ NeurIPS 2026)
+
+- **[paper/](paper/)** — a double-blind workshop paper, *African AI Security at Three Scales*,
+  that formalizes this index and makes three claims under one thesis (African AI security is
+  significantly at risk): (C1) national-scale risk is pervasive and not localizable (AFAIRI +
+  Dirichlet Monte Carlo); (C2) the corroborated operational misuse is AI-assisted fraud, not
+  terrorism (evidence-tier triangulation); (C3) individual-scale biosignal inference risk,
+  measured with a leakage-guarded decoding pipeline (nested CV, in-fold SMOTE-in-bagging,
+  reliability-weighted fusion, bootstrap) on two real African cohorts. The biosignal-decoding
+  results (C3) come from a separate, leakage-verified decoding codebase whose result files are
+  cited in the paper; that codebase is kept private to preserve double-blind review and will be
+  released on de-anonymization. The committed PDF is anonymized.
+
 ## Start here
 
 - **[africa-ai-risk/](africa-ai-risk/)** — the index itself. Current

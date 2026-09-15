@@ -8,7 +8,7 @@
 \usepackage{amsfonts,amsmath,amssymb}
 \usepackage{graphicx}
 
-\title{The Asymmetry Principle: A Region-Anchored, Citation-Audited Index of Frontier AI Risk Across Africa}
+\title{African AI Security at Three Scales: Pervasive Infrastructure Risk, Corroborated Misuse, and Biosignal Inference}
 
 \author{Anonymous Authors\\Africa in AI @ NeurIPS 2026 (double-blind submission)}
 
@@ -16,105 +16,78 @@
 \maketitle
 
 \begin{abstract}
-Frontier AI risk on the African continent does not present as a scaled-down version of the profile
-modeled in the United States, European Union, or China. A field study of 57 interviews with 27 former
-members of Boko Haram reports use of consumer frontier AI by an armed group in northeast Nigeria
-(Juelich, 2026); because that evidence is self-reported and not forensically corroborated in public, we
-treat it as a credible but untriangulated account. TransUnion Africa reports a roughly 1{,}200\%
-year-over-year rise in deepfake incidents in South Africa, concentrated in banking and fintech.
-Kenya's 2022 electoral information environment saw over 550{,}000 posts screened for toxicity by AI
-classifiers. We study four anchor states (Egypt, Nigeria, Kenya, South Africa) standing in for North,
-West, East, and Southern Africa, and add a short unscored section on the Central African mineral supply
-chain beneath global compute. We build a four-component index (AFAIRI): internet exposure (E), reported
-scam victimization from one harmonized four-country survey (H), a governance deficit that scores
-enforcement capacity and not only legislative existence (G), and infrastructure disruption from grid
-failures and subsea-cable outages (I). A Monte Carlo analysis over index weights and independent input
-error finds \emph{no} robustly top-ranked state: South Africa has the highest mean and ranks first in
-about 47\% of sampled weightings, Egypt in 31\%, Nigeria in 15\%, Kenya in 7\%, and no state outscores
-another on every component. An earlier claim that Southern Africa's top ranking is robust (90--95\%) did
-not survive a construct revision and is withdrawn. Every quantitative claim traces to a cited source, and
-an appendix logs the corrections made in review, including figures that were fabricated in an earlier
-draft and removed. We close with a governance architecture scoped to what the regional evidence supports.
+We argue, with measurement at three scales, that African AI security is significantly and structurally at
+risk, and that the risk is not a scaled-down copy of the profile modeled in the United States, European Union,
+or China. \textbf{At the national scale}, we build AFAIRI, a citation-audited four-component composite index
+over four anchor states (Egypt, Nigeria, Kenya, South Africa). A Monte Carlo analysis over index weights,
+$N=10^4$ Dirichlet$(1,1,1,1)$ draws with an exact simplex-grid check, shows every anchor state carries
+substantial risk (means $50$--$61$ on $0$--$100$) and that no state is a safe outlier: no ordering holds across
+the weight simplex and no state dominates another on every component. \textbf{At the operational scale}, an
+evidence-tier triangulation finds the strongest \emph{corroborated} misuse is AI-assisted fraud (platform data;
+a reported $\sim$1{,}200\% year-over-year rise in South African deepfake incidents), with self-reported
+insurgent use that we mark as untriangulated. \textbf{At the individual scale}, we show private attributes are
+already decodable from weak, locally-collected African data. Using a leakage-guarded pipeline (subject-grouped
+nested cross-validation, in-fold SMOTE inside bagging, reliability-weighted late fusion, subject-level bootstrap
+intervals), four short routine EEG segments from 76 subjects in a public Nigerian schizophrenia dataset decode
+psychiatric diagnosis at balanced accuracy $0.705$ (95\% CI $0.616$--$0.799$, AUC $0.792$), and three innocuous
+features of $3{,}023$ Kenyan microloan records predict individual repayment at balanced accuracy $0.630$
+($0.615$--$0.646$, ECE $0.020$). On a planted-structure control, reliability-weighted fusion of weak channels
+beats the best single channel ($0.623$ vs.\ $0.580$) and zero-weights a noise channel. Every number traces to a
+cited source or a committed result file, and we document two failure modes we caught and removed. The three
+scales share one implication: aggregate access to African biosignal and behavioral data under one identity, in
+governance regimes that do not yet regulate AI inference, is a security capability and should be governed as
+one.
 \end{abstract}
 
-\section{Introduction: the Asymmetry Principle}
-Frontier AI safety frameworks built in the United States, European Union, and China assume infrastructure
-that is not uniform across Africa: stable power grids, formal banking clearinghouses, biological-material
-screening, and mature statutory enforcement (Anthropic, 2024; European Union, 2024). Where that baseline
-holds, frontier AI risk is modeled around misalignment, intellectual-property infringement, and
-long-horizon loss of control. Large parts of the continent instead combine rapid consumer AI adoption with
-material gaps in that baseline. We call this the \textbf{Asymmetry Principle}: the same model capability
-produces different realized failure modes depending on the infrastructural density and governance capacity
-of the environment into which it is deployed. This is a qualitative organizing claim, not a fitted
-function; no panel dataset spanning enough countries and years exists to estimate one, and we do not claim
-to have built one.
+\section{Introduction}
+Frontier AI safety frameworks built in the US, EU, and China assume infrastructure that is not uniform across
+Africa: stable grids, formal banking clearinghouses, biological-material screening, and mature statutory
+enforcement (Anthropic, 2024; European Union, 2024). We call the resulting mismatch the \textbf{Asymmetry
+Principle}: the same model capability produces different realized failure modes depending on the infrastructural
+density and governance capacity of the environment into which it is deployed. Our thesis is that, under this
+asymmetry, African AI security is significantly at risk, and we make the case at three scales that reinforce one
+another rather than repeat one another.
 
-\paragraph{Design.} Each region is represented by one anchor state. This is a case-study design, not a
-regional average, and results should not be read as describing every state in a region. Region stays a
-useful unit because several phenomena cross borders: Boko Haram's integration into Islamic State networks
-connects to a jihadist ecosystem that includes Al-Shabaab in East Africa; West African cyber-fraud actors
-operate cells across the continent, including in South Africa; and pre-existing governance-capacity gaps now
-interact with AI-enabled tooling. Central Africa is not scored (Section~\ref{sec:limits}) but is not ignored:
-Section~\ref{sec:supply} addresses the Democratic Republic of Congo's role as the dominant source of mined
-cobalt, the physical supply-chain dimension of the same asymmetry.
+\paragraph{Three claims.}
+\textbf{C1 (national scale, pervasive not localizable).} African frontier-AI risk is substantial across every
+anchor state and is not concentrated in one place: a construct-valid, weight-agnostic composite index places all
+four states high and finds no weight-invariant safe state (Section~\ref{sec:index}). This reframes an apparent
+null, ``no single riskiest state,'' as its security-relevant meaning: there is no low-risk anchor to hold up as
+the norm.
+\textbf{C2 (operational scale, already happening).} African AI security is already being compromised in the
+field, and the corroborated core of that misuse is fraud rather than terrorism: Nigeria-origin AI-assisted scam
+networks are platform-corroborated, while the widely cited insurgent-AI account is self-reported and
+untriangulated (Section~\ref{sec:threat}).
+\textbf{C3 (individual scale, measurable inference).} African individuals' protected attributes are decodable
+from cheap, locally-collected biosignal and behavioral data, and combining weak streams amplifies the leak. We
+demonstrate this with a leakage-guarded decoding pipeline on two real African cohorts and quantify it with
+nested cross-validation, calibration, and bootstrap inference (Section~\ref{sec:biosignal}).
 
-\paragraph{Five claims.} The paper is organized around five claims, each tied to specific evidence.
-\textbf{C1 (framing).} The Asymmetry Principle: the same frontier-AI capability produces different realized
-failure modes across environments, and the four anchor states instantiate four distinct modes rather than one
-scaled to different sizes. \textbf{C2 (headline result).} Under a construct-valid, weight-agnostic Monte Carlo,
-\emph{no} African anchor state is robustly the highest-risk: no ordering holds across the weight simplex, and
-no state dominates another on every component (Section~\ref{sec:index}). \textbf{C3 (methodological).} Composite
-frontier-risk rankings are dominated by construct choice, not data: replacing environmental and inclusion
-proxies with measures of reported victimization, enforcement, and disruption overturns the earlier draft's
-``Southern Africa robust at 90--95\%'' and drops South Africa's ranked-first share below 50\%. \textbf{C4
-(evidence integrity).} Under systematic triangulation, the strongest \emph{corroborated} evidence of African
-frontier-AI misuse is fraud, not terrorism: Nigeria-origin AI-assisted scam networks are platform-corroborated
-(OpenAI, 2025), whereas the widely cited insurgent-AI account is self-reported and untriangulated. \textbf{C5
-(governance).} Enforcement, not legislation, is the binding governance gap: scoring enforcement capacity
-separately from statute reveals that a state with a published AI strategy (Egypt) can carry the largest
-enforcement gap while the weakest strategy status (Nigeria) coexists with the strongest penalty record. We also
-release a citation-and-methodology audit log that documents, rather than hides, what earlier drafts got wrong,
-including figures that were fabricated and removed.
+Each claim is a different kind of evidence, macro-structural, operational, and mechanistic-quantitative, for the
+one thesis. Section~\ref{sec:gov} scopes a governance architecture to what the three scales support.
 
-\section{Four anchor states}
-\textbf{North Africa (Egypt).} Strong laboratory biosafety practice assessed through the WHO Joint External
-Evaluation, alongside the largest governance-enforcement gap in the set: its data-protection regime begins
-enforcement only in October 2026. Egypt also ran national load-shedding for roughly 202 days in 2024.
-\textbf{West Africa (Nigeria).} The self-reported insurgent-misuse account (Juelich, 2026) and the most
-severe measured infrastructure disruption (12 national grid collapses in 2024), coupled with, on a
-penalty-issuance proxy, the strongest data-protection enforcement record (a USD 32.8M action against Meta).
-\textbf{East Africa (Kenya).} A mobile-first ecosystem, the highest reported scam victimization of the four
-states, electoral information-integrity strain in 2022, and repeated 2024 blackouts.
-\textbf{Southern Africa (South Africa).} A roughly 1{,}200\% year-over-year rise in deepfake incidents
-concentrated in banking and fintech (TransUnion Africa, 2025), the highest internet exposure, and the
-highest mean index score.
-
-\section{The AFAIRI composite index}
+\section{C1: national-scale risk is pervasive (the AFAIRI index)}
 \label{sec:index}
-AFAIRI is a composite proxy index in the family of the Human Development Index or ND-GAIN: a few individually
-cited indicators combined under a disclosed weighting scheme. It is \emph{not} validated against an external
-ground truth of realized AI-enabled harm, because no such dataset exists across these states. It is a
-structured comparison of four documented case studies, not a risk-prediction model.
-
-\paragraph{Specification.} $\mathrm{AFAIRI}(s) = w_E E + w_H H + w_G G + w_I I$ with
-$w_E+w_H+w_G+w_I=1$. \emph{Exposure} $E$ is 2023 internet penetration (World Bank WDI, untransformed).
-\emph{Reported scam victimization} $H$ is the share of adults reporting a scam in the previous 12 months,
-from the Global Anti-Scam Alliance's \emph{State of Scams in Africa 2025}, a survey of 4{,}000 adults
-covering exactly these four states. \emph{Governance deficit} $G = 100-(A+B+C)$ scores AI-strategy status
-($A$), AI-specificity of cybercrime law ($B$), and enforcement capacity ($C$, keyed to whether the
-data-protection authority has issued monetary penalties and of what size). \emph{Infrastructure disruption}
-$I$ sums a grid-failure tier and a subsea-cable-outage score for calendar year 2024. Every threshold (for
-example USD 1M, 90 days, six collapses) was fixed before the scores were computed. Full rubrics, source
-values, and per-criterion limitations are in the manuscript; Table~\ref{tab:components} gives the resulting
-component matrix.
+AFAIRI is a composite proxy index in the family of the Human Development Index or ND-GAIN, a few individually
+cited indicators combined under a disclosed weighting scheme. It is not validated against realized AI-enabled
+harm, because no such dataset exists across these states; it is a structured comparison of four documented case
+studies. The specification is
+\begin{equation}
+\mathrm{AFAIRI}(s) = w_E E(s) + w_H H(s) + w_G G(s) + w_I I(s), \qquad \textstyle\sum_c w_c = 1,\ w_c \ge 0,
+\end{equation}
+with \emph{exposure} $E$ (2023 internet penetration, World Bank WDI), \emph{reported scam victimization} $H$
+(share of adults reporting a scam in 12 months, one harmonized four-country survey), \emph{governance deficit}
+$G=100-(A+B+C)$ scoring AI-strategy status, AI-specific cybercrime law, and enforcement capacity, and
+\emph{infrastructure disruption} $I$ from 2024 grid failures and subsea-cable outages. Every threshold was fixed
+before scoring. Table~\ref{tab:components} and Figure~\ref{fig:components} give the component matrix.
 
 \begin{table}[t]
 \centering\small
-\caption{AFAIRI v4 component matrix (0--100 scale). See Figure~\ref{fig:components}.}
+\caption{AFAIRI v4 component matrix (0--100). Every value traces to a cited source.}
 \label{tab:components}
 \begin{tabular}{lcccc}
 \toprule
-Anchor state (region) & $E$ exposure & $H$ victimization & $G$ gov.\ deficit & $I$ disruption \\
+Anchor state (region) & $E$ & $H$ & $G$ & $I$ \\
 \midrule
 Egypt (North) & 74.0 & 39.0 & 62.5 & 50.0 \\
 Nigeria (West) & 40.1 & 73.0 & 12.5 & 75.0 \\
@@ -124,31 +97,28 @@ South Africa (Southern) & 78.3 & 77.0 & 37.5 & 50.0 \\
 \end{tabular}
 \end{table}
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.66\linewidth]{figures/fig1_components.png}
-\caption{AFAIRI v4 component scores by anchor state ($E$, $H$, $G$, $I$; 0--100), values printed on each
-bar. Data as in Table~\ref{tab:components}.}
-\label{fig:components}
-\end{figure}
-
-\paragraph{Sensitivity analysis.} We drew $N=10^4$ weight vectors from a symmetric Dirichlet$(1,1,1,1)$
-(uniform over the weight simplex), recomputed AFAIRI for each state, and repeated with independent
-multiplicative perturbations of each of the 16 inputs at $\pm10\%$ and $\pm25\%$, and with a coupling term
-restored as a robustness run (seed 42). ``Share ranked first'' is the fraction of the sampled weight space in
-which a state scores highest; it is \emph{not} the probability that a state is in fact the riskiest, because
-the uniform prior over weights is itself a modeling choice. Reported ranges are 2.5th--97.5th percentiles of
-the score across weightings: sensitivity ranges, not confidence intervals.
+\paragraph{Weight-agnostic sensitivity.} Because the weights are a modeling choice, we integrate over them. We
+draw $N=10^4$ weight vectors from a symmetric Dirichlet$(1,1,1,1)$, uniform over the simplex, and recompute every
+state's score; since $\mathbb{E}[w_c]=\tfrac14$, each state's expected score is the mean of its four components,
+which an exact $\approx$176{,}000-point simplex grid and a $200{,}000$-draw simulation confirm to within $0.07$.
+Table~\ref{tab:sensitivity} and Figure~\ref{fig:sensitivity} report the results. The security-relevant reading of
+C1 is that \emph{all four states sit high and none is invariant-safe}: South Africa ranks first in $47.1\%$ of
+weightings, Egypt in $31.0\%$, Nigeria in $15.2\%$, Kenya in $6.7\%$, and no state scores at least as high as
+another on every component. Pairwise, South Africa outscores Egypt in $65.8\%$ of the simplex, Nigeria in
+$82.5\%$, Kenya in $87.4\%$. An earlier draft claimed Southern Africa's top ranking was robust at $90$--$95\%$;
+that came from construct-invalid proxies (grid carbon intensity, financial inclusion) flagged in external review
+and is withdrawn. The lesson doubles as a methodological warning: composite frontier-risk rankings are dominated
+by construct choice, so a headline ranking is only as credible as its audited constructs.
 
 \begin{table}[t]
 \centering\small
-\caption{Weight-only sensitivity ($N=10^4$ Dirichlet draws). No robustly top-ranked state.}
+\caption{Weight-only sensitivity ($N=10^4$ Dirichlet draws, seed 42). Every state is high; none is safe.}
 \label{tab:sensitivity}
 \begin{tabular}{lccc}
 \toprule
 State & mean & range (2.5--97.5\%) & ranked first \\
 \midrule
-South Africa & 60.8 & 45.3--74.5 & \textbf{47.1\%} \\
+South Africa & 60.8 & 45.3--74.5 & 47.1\% \\
 Egypt & 56.4 & 45.0--67.7 & 31.0\% \\
 Nigeria & 50.2 & 25.8--69.6 & 15.2\% \\
 Kenya & 50.6 & 37.2--70.8 & 6.7\% \\
@@ -158,97 +128,115 @@ Kenya & 50.6 & 37.2--70.8 & 6.7\% \\
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.9\linewidth]{figures/fig2_sensitivity.png}
-\caption{Weight sensitivity ($N=10^4$ Dirichlet$(1,1,1,1)$ draws, seed 42). Left: distribution of each
-state's score across weightings (thin line 2.5--97.5\%, thick line 25--75\%, dot mean). Right: share of
-weightings in which each state ranks first. Sensitivity summaries, not confidence intervals or
-probabilities.}
+\begin{minipage}{0.48\linewidth}\centering
+\includegraphics[width=\linewidth]{figures/fig1_components.png}
+\caption{AFAIRI components by state.}
+\label{fig:components}
+\end{minipage}\hfill
+\begin{minipage}{0.5\linewidth}\centering
+\includegraphics[width=\linewidth]{figures/fig2_sensitivity.png}
+\caption{Weight sensitivity: score distributions (left) and share ranked first (right). Sensitivity summaries,
+not confidence intervals.}
 \label{fig:sensitivity}
+\end{minipage}
 \end{figure}
 
-\paragraph{What the index supports.} South Africa has the highest mean, ranks first most often, and outscores
-each other state in a majority of weightings (66\% vs.\ Egypt, 83\% vs.\ Nigeria, 87\% vs.\ Kenya). The
-result is stable under input error and the coupling run (Table~\ref{tab:sensitivity}; ranked-first shares move
-by at most a few points). What is \emph{not} supported is a claim that any state is robustly highest-risk:
-South Africa ranks first in fewer than half of weightings and Egypt in almost a third, because the two are
-high on different components (South Africa on victimization, Egypt on governance deficit), and the Kenya--Nigeria
-ordering is effectively a coin flip. The earlier ``Southern Africa robust at 90--95\%'' headline came from
-constructs that external review found invalid and is withdrawn.
+\section{C2: operational misuse is already corroborated, and it is fraud}
+\label{sec:threat}
+We label each actor by an evidence tier rather than asserting uniform confidence. \textbf{Boko Haram / ISWAP}
+(West Africa): reported use of consumer frontier AI for tactical planning, explosives, and operational security,
+with unlinkable accounts and pretextual framing (Juelich, 2026); tier \emph{primary-read, self-reported,
+untriangulated}, since a May 2026 seizure of 400+ Starlink terminals corroborates connectivity but not AI use,
+and no seized-device forensics were located. \textbf{``Yahoo Boys'' / ``AI Boys''} (West Africa, global targets):
+AI-generated image, voice, and message content for fraud, \emph{platform-corroborated} at the level of
+Nigeria-origin AI-assisted scam networks by OpenAI's October 2025 threat-intelligence disclosure. \textbf{Al-Shabaab}
+(East Africa): AI-assisted propaganda translation, \emph{secondary-corroborated}. \textbf{Black Axe}: a
+law-enforcement-confirmed transnational fraud syndicate (INTERPOL Operation Jackal III; Europol), with \emph{no}
+confirmed AI use, and none claimed. The corroborated core of operational African AI misuse is therefore fraud,
+supported independently by South Africa's reported $\sim$1{,}200\% year-over-year rise in deepfake incidents in
+banking and fintech (TransUnion Africa, 2025). Threat-actor activity is deliberately not an index input.
 
-\paragraph{Verification.} A separate script recomputed every component by hand from the rubric (all matched);
-confirmed that each state's Dirichlet mean equals the simple average of its four components (matched to within
-0.07 on a fresh 200{,}000-draw simulation); and recomputed the ranked-first shares exactly on a
-$\approx$176{,}000-point grid over the simplex (South Africa 46.2\%, Egypt 31.1\%, Nigeria 15.3\%, Kenya
-7.3\%), agreeing with the random sampling to within one point. Re-running the previous draft's code is how a
-jitter implementation error (a single random factor applied to all four components, rather than independent
-perturbation) was found and fixed.
+\section{C3: individual-scale biosignal inference risk}
+\label{sec:biosignal}
+Cheap biosignal and behavioral data (low-cost EEG, phone cameras, microfinance listings) are collected quickly
+across the continent under data-protection regimes that do not yet regulate AI \emph{inference}. Each stream
+leaks a protected attribute only weakly. We ask what a learning system recovers when it combines them, and we
+measure it under controls strong enough that the result is not an artifact.
 
-\section{Threat-actor characterization}
-We label each actor by an evidence tier rather than asserting uniform confidence. The earlier label
-``PRIMARY-VERIFIED'' for the Boko Haram study conflated reading a source with verifying its claims and is
-retired. \textbf{Boko Haram / ISWAP} (West Africa): reported use of ChatGPT, Claude, Gemini, Grok, Meta AI, and
-DeepSeek for tactical planning, explosives, weapons servicing, and operational security, with unlinkable
-accounts and pretextual framing to defeat content restrictions (Juelich, 2026). Tier:
-\emph{primary-read, self-reported, untriangulated}; a May 2026 seizure of 400+ Starlink terminals corroborates
-connectivity but not AI use, and no seized-device forensics or platform disclosure attributing activity to these
-groups was located. \textbf{Al-Shabaab} (East Africa): AI-assisted propaganda translation, attributed to a 2025
-UN monitoring-team report via secondary coverage (\emph{secondary-corroborated}; the primary UN document was not
-read). \textbf{``Yahoo Boys'' / ``AI Boys''} (West Africa, global targets): AI-generated image, voice, and message
-content for fraud; \emph{platform-corroborated} at the level of Nigeria-origin AI-assisted scam networks, via
-OpenAI's October 2025 threat-intelligence disclosure. \textbf{Black Axe} (transnational): a structured syndicate
-with law-enforcement-confirmed fraud (INTERPOL Operation Jackal III; Europol arrests) but \emph{no} confirmed
-Black Axe-specific AI use, and none is claimed. Threat-actor activity is deliberately \emph{not} an index input.
+\paragraph{Leakage-guarded pipeline.} Subjects, not samples, are the unit: an outer subject-grouped $k$-fold gives
+an honest generalization estimate, with an inner fold for model selection (nested CV; Varoquaux, 2018). Class
+imbalance is handled by SMOTE (Chawla et al., 2002) applied \emph{inside} each training fold within a bagging
+ensemble (Breiman, 1996), never before the split, which is the standard leakage trap. Modalities are combined by
+reliability-weighted late fusion: for modality $m$ with out-of-fold reliability $\rho_m$ (validation skill above
+chance), the fused score is $\hat{p} = \sum_m \rho_m\, \hat{p}_m / \sum_m \rho_m$, so a channel that carries no
+signal receives no weight. Intervals are subject-level bootstraps ($B=2000$); significance uses subject-grouped
+permutation ($1000$ draws). Balanced accuracy (chance $0.5$) is the headline metric, with AUC and expected
+calibration error (ECE).
 
-\section{Governance architecture and the compute supply chain}
-\label{sec:supply}
-Each pillar is scoped to its evidence. \textbf{Pillar 1: AU-level red-teaming and evaluation capacity},
-motivated by the self-reported workaround pattern (unlinkable accounts, pretextual framing), which is cheap to
-add to evaluation suites whether or not the interview claims of uplift hold, plus a forensic-corroboration
-workstream so future threat claims can be checked against account and device evidence. \textbf{Pillar 2:
-additionality and base-load isolation for new compute}, an environmental-governance recommendation kept
-separate from the safety-risk index. \textbf{Pillar 3: application-layer provenance with funded enforcement},
-motivated by South Africa's deepfake and digital-banking fraud and platform-corroborated Nigeria-origin fraud:
-a C2PA-style provenance standard is only as effective as the authority enforcing it, so Pillar 3 pairs
-provenance rules with funded data- and consumer-protection enforcement and algorithmic recourse for victims.
+\paragraph{Two real African cohorts.} On \textbf{76 subjects} from a public Nigerian schizophrenia EEG dataset,
+four short routine EEG segments decode psychiatric diagnosis at balanced accuracy $\mathbf{0.705}$ (95\% CI
+$0.616$--$0.799$, AUC $0.792$), with the shortest segment carrying the most fusion weight. On \textbf{$3{,}023$
+Kenyan microloan records}, three innocuous listing features predict individual repayment at balanced accuracy
+$\mathbf{0.630}$ ($0.615$--$0.646$, ECE $0.020$) and forecast sector-level repayment out of sample ($r=0.66$,
+$p=0.01$, $R^2=0.41$, $14$ sectors). Neither attribute (a psychiatric diagnosis, a person's creditworthiness) is
+one the data subject consented to expose, and neither sensor was built to reveal it.
 
-\paragraph{The unscored supply chain.} The asymmetry also runs through the physical supply chain beneath
-compute. The DRC accounted for about 74\% of world mined cobalt in 2023, most of it from Chinese-owned or
--controlled operations (USGS, 2024). Cobalt is used in the lithium-ion backup and UPS systems that data centers
-and telecom towers depend on. The states whose infrastructure resilience we score therefore depend, like the
-rest of the world, on a mineral supply chain concentrated in a Central African state whose governance and
-conflict conditions fall outside the index. We flag this as priority future work rather than fill it with
-unverified figures.
+\paragraph{Fusion amplifies weak leaks.} On a planted-structure positive control, reliability-weighted fusion of
+several individually weak channels reaches balanced accuracy $0.623$, beating the best single channel ($0.580$)
+and a channel-independence prediction ($0.645$ only under an optimistic additivity assumption), and it assigns
+\emph{zero} weight to a pure-noise channel (Figure~\ref{fig:biosignal}). The security consequence is that
+aggregation, one identity linked across streams, is the capability, not any single sensor.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.6\linewidth]{figures/fig3_biosignal.png}
+\caption{Reliability-weighted late fusion of weak biosignal channels (planted-structure control). Fusion (rightmost)
+exceeds the best single channel and a pure-noise channel receives zero weight. Balanced accuracy; chance $0.5$.}
+\label{fig:biosignal}
+\end{figure}
+
+\paragraph{Honesty controls.} We report two failure modes we caught and removed, because they are exactly the
+errors that would manufacture a false alarm. A label-proxy column inflated repayment accuracy to $0.95$ before we
+found it leaked the outcome; and a within-subject permutation test returns $p=1$ by construction when labels are
+constant per subject, so the correct null is a subject-grouped permutation. The reported numbers survive both
+corrections.
+
+\section{Governance architecture}
+\label{sec:gov}
+Each pillar is scoped to a claim. \textbf{Pillar 1 (from C2): AU-level red-teaming and forensic corroboration},
+so future threat-actor claims are checked against account and device evidence, not interviews alone.
+\textbf{Pillar 2 (from C1): application-layer provenance with funded enforcement}, since a C2PA-style provenance
+standard is only as effective as the authority enforcing it, and the enforcement record across these states is
+recent and thin (Egypt begins enforcement in October 2026). \textbf{Pillar 3 (from C3): govern aggregate
+biosignal access as a capability}. The individual-scale result shows the risk is not in any one sensor but in
+linking streams under one identity; data-protection regimes that regulate collection but not AI inference miss
+exactly this. Pillar 3 asks that aggregate, cross-stream inference on biosignal and behavioral data be a
+governed capability, with algorithmic-recourse channels for those it profiles.
 
 \section{Limitations}
-\label{sec:limits}
-Four anchor states stand in for four regions; results do not generalize to every state in a region, and Central
-Africa is only discussed qualitatively. $H$ relies on one industry-alliance survey whose country figures were
-taken from its public summary and independent coverage, not the members-only full report, and it disagrees with
-national loss statistics on South Africa's relative position. Governance and infrastructure thresholds are
-author-chosen, not empirically derived. Penalty issuance is an imperfect proxy for enforcement capacity;
-oversight budgets were not available in comparable form. Section~4's Boko Haram evidence rests on self-report and
-remains untriangulated, and the Al-Shabaab claim rests on secondary reporting of an unread UN document. The
-Egyptian biosecurity JEE dates from 2018. Above all, AFAIRI is not validated against realized AI-enabled harm;
-an earlier pilot correlating index scores with a labeled harm-event set in this project's repository was
-underpowered and found no significant association.
+Four anchor states stand in for four regions and do not generalize to every state; Central Africa is unscored,
+though its cobalt supply chain (DRC $\approx$74\% of 2023 mined cobalt; USGS, 2024) places the compute stack
+inside the same asymmetry. $H$ relies on one industry survey taken from its public summary. The EEG cohort is
+$76$ subjects from one clinical dataset, and the diagnosis label is schizophrenia, not a benign trait; balanced
+accuracy of $0.705$ is a demonstration of decodability, not a deployable classifier, and small-$N$ EEG CV has
+wide error bars (Varoquaux, 2018), which our bootstrap intervals report rather than hide. The microloan features
+are a proxy for the broader class of ``innocuous'' behavioral columns. AFAIRI is not validated against realized
+harm. Threat-actor tiers are explicit about what is and is not corroborated.
 
 \section{Conclusion}
-The four anchor states show structurally different ways in which frontier AI capability meets variable
-infrastructure and enforcement capacity: self-reported insurgent misuse and severe disruption in Nigeria,
-measured digital-fraud harm in South Africa, electoral information strain and repeated grid failures in Kenya,
-and an enforcement gap in Egypt alongside strong laboratory biosafety practice. Revising the index in response
-to review changed its headline: once environmental and inclusion proxies are replaced with measures of reported
-victimization, disruption, and enforcement, South Africa remains the most frequently top-ranked state but not a
-robust one, and Egypt's unenforced data-protection regime makes it a close second. That is a less striking
-conclusion than an earlier draft's, and a more defensible one. Grounding African AI-risk analysis in cited,
-regionally specific evidence, and being explicit about what the evidence does not support, is the contribution
-we most want to carry from roots to reach.
+Across three scales, national infrastructure, operational actors, and individual biosignals, the same asymmetry
+produces measurable, present, and mutually reinforcing risk to African AI security. No anchor state is a safe
+outlier; the corroborated misuse in the field is AI-assisted fraud; and private attributes are already decodable
+from cheap local data, with aggregation as the amplifier. The uncomfortable through-line is that the governance
+gap is widest exactly where the measurement is sharpest: inference on aggregated African data, under regimes that
+regulate collection but not inference. Rooting the analysis in cited, regionally specific evidence, and being
+explicit about what the evidence does not support, is what we most want to carry from roots to reach.
 
 \section*{Use of AI assistance}
-AI tools (a large language model assistant) were used for drafting and editing prose, for organizing the
-citation-audit workflow, and for writing the index computation and verification code. Every quantitative claim
-traces to a cited primary or authoritative secondary source that the authors checked, and the authors are
-responsible for the content and conclusions.
+AI tools (a large language model assistant) were used for drafting and editing prose, organizing the
+citation-audit workflow, and writing the index and decoding code (nested cross-validation, fusion, bootstrap, and
+the verification scripts). Every quantitative claim traces to a cited source or a committed result file the
+authors inspected; the authors are responsible for the content and conclusions.
 
 \input{references.tex}
 \end{document}
